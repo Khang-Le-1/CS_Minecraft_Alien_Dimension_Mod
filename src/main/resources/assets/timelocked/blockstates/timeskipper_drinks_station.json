@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_drinks_station"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_drinks_station",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_drinks_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_drinks_station",
+      "y": 270
+    }
+  }
+}

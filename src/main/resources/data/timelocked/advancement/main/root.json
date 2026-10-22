@@ -1,0 +1,23 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:sarc_floor_tile"
+  },
+  "title": {
+   "translate": "advancements.timelocked.root.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.root.description"
+  },
+  "frame": "task",
+  "show_toast": false,
+  "announce_to_chat": true,
+  "hidden": false,
+  "background": "timelocked:textures/block/sarc_wall_panel.png"
+ },
+ "criteria": {
+  "tick": {
+   "trigger": "minecraft:tick"
+  }
+ }
+}

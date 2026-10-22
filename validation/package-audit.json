@@ -1,0 +1,34 @@
+{
+  "jar": "timelocked-0.8.9.12-pa-welcome-dev.jar",
+  "size_bytes": 16579980,
+  "sha256": "8570620daa2fed51726757989e1ee843dccf7e4d504d08341baf416b75c5b554",
+  "all_unrelated_structure_templates_preserved": true,
+  "intentionally_changed_logo_templates": [
+    "data/timelocked/structure/sarc/drawing/x02_y00_z07.nbt",
+    "data/timelocked/structure/sarc/drawing/x02_y00_z08.nbt"
+  ],
+  "previous_structure_template_count": 232,
+  "unrelated_previous_resources_preserved": true,
+  "duplicate_entries": false,
+  "test_harness_shipped": false,
+  "java_source_files": 250,
+  "reconstructed_java_files": [
+    "src/main/java/com/timelocked/AlarmSounds.java",
+    "src/main/java/com/timelocked/Content.java",
+    "src/main/java/com/timelocked/DrawingAlarmIndex.java",
+    "src/main/java/com/timelocked/DrawingArrivalIndex.java",
+    "src/main/java/com/timelocked/FacilityDetails.java",
+    "src/main/java/com/timelocked/HallwayDecorBlock.java",
+    "src/main/java/com/timelocked/HubArrival.java",
+    "src/main/java/com/timelocked/JammedBlastDoorBlock.java",
+    "src/main/java/com/timelocked/LabContent.java",
+    "src/main/java/com/timelocked/LabFluids.java",
+    "src/main/java/com/timelocked/SarcHangingLogoBlock.java",
+    "src/main/java/com/timelocked/SiteProgress.java",
+    "src/main/java/com/timelocked/StationLightBlock.java",
+    "src/main/java/com/timelocked/Timelocked.java",
+    "src/main/java/com/timelocked/client/ClientEvents.java",
+    "src/main/java/com/timelocked/client/LabFluidRendering.java"
+  ],
+  "build_has_no_baseline_binary_dependency": true
+}

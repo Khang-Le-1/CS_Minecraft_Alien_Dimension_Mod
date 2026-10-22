@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:vibranite_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:vibranite_block",
+    "count": 1
+  }
+}

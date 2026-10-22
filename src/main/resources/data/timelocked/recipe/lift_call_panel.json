@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": [" C ", " S "], "key": {"C": {"item": "timelocked:circuit_board"}, "S": {"item": "timelocked:steel_ingot"}}, "result": {"id": "timelocked:lift_call_panel", "count": 2}}

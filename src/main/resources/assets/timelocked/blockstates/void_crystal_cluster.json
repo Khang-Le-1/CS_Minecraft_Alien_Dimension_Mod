@@ -1,0 +1,7 @@
+{
+ "variants": {
+  "": {
+   "model": "timelocked:block/void_crystal_cluster"
+  }
+ }
+}

@@ -1,0 +1,1349 @@
+diff --git a/README.md b/README.md
+index fb04f08..3174439 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+-# TIMELOCKED: Zero Point — 0.8.9.22 FULL SOURCE
++# TIMELOCKED: Zero Point — 0.8.9.23 FULL SOURCE
+ 
+-This is the complete, buildable source project for the 0.8.9.22 recessed-exit development release (retains A Road Inland). It compiles the mod's Java source and includes its assets and data. **No prior TIMELOCKED JAR is needed to build it.** The source ZIP is not an installable mod.
++This is the complete, buildable source project for the 0.8.9.23 recessed-exit development release (retains A Road Inland). It compiles the mod's Java source and includes its assets and data. **No prior TIMELOCKED JAR is needed to build it.** The source ZIP is not an installable mod.
+ 
+ ## Start here (club contributors)
+ 
+@@ -43,7 +43,7 @@ Windows:
+ gradlew.bat clean build --console=plain
+ ```
+ 
+-Install only `build/libs/timelocked-0.8.9.22-stair-lighting-dev.jar`. Replace older TIMELOCKED mod JARs rather than installing both. Usual NeoForge development runs are configured in `build.gradle`.
++Install only `build/libs/timelocked-0.8.9.23-first-contact-dev.jar`. Replace older TIMELOCKED mod JARs rather than installing both. Usual NeoForge development runs are configured in `build.gradle`.
+ 
+ For Windows PowerShell use `.\gradlew.bat clean build --console=plain`.
+ No Bash, Python, FFmpeg or asset regeneration is required for this build.
+@@ -175,6 +175,16 @@ See [the chapter script and contributor code map](docs/STORY-CHAPTER-1.md). Use
+ 
+ Registered SARC facilities now prevent ordinary mob spawning across all floors, even with the lights off. This does not disable spawning worldwide or remove existing mobs. Intended scientists, encounter waves and marked meltdown hazards are preserved. See [scope, exceptions and verification](docs/FACILITY-SPAWN-PROTECTION.md).
+ 
+-## Glass-slot stairs: photographed recessed exit (0.8.9.22)
++## Glass-slot stairs: photographed recessed exit (0.8.9.23)
+ 
+ The original glass-surrounded surface slot feeds two stair flights with a halfway landing, then exits west through the photographed recess in the old stairwell room—not into the hallway used by 0.8.9.20. The old spiral is removed, its upper hole is capped, and the previous hallway return flight is restored away. Stair emergency lighting does not bypass the lobby power-up sequence. Fresh facilities include the revised geometry; original or 0.8.9.20 worlds require the guarded `/sarcstairs repair confirm` command after making a backup. See [the stairwell guide](docs/GLASS-STAIRWELL.md).
++
++## Chapter 2: First Contact
++
++Story worlds now include a separate SARC Receptionist at the arrival reception
++counter. Finish Chapter 1/the welcome, speak to the receptionist, use a counter
++terminal, then return to confirm visitor registration. `/timelockedstory` shows
++the current objective; `/sarcreception` checks existing-world placement without
++rebuilding the facility. See [Chapter 2](docs/STORY-CHAPTER-2.md) for save, multiplayer
++and placement details. The siren also joins the beacon on the photographed wall;
++existing facilities use the backed-up stair repair command for that block move.
+diff --git a/build.gradle b/build.gradle
+index 57bfdb8..8e403a3 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -99,6 +99,7 @@ tasks.register('checkArrivalNumbers', Checkstyle) {
+     source = files(
+         'src/main/java/com/timelocked/HubArrival.java',
+         'src/main/java/com/timelocked/CoastChapter.java',
++        'src/main/java/com/timelocked/ReceptionChapter.java',
+         'src/main/java/com/timelocked/FacilitySpawnProtection.java',
+         'src/main/java/com/timelocked/GlassStairwell.java',
+         'src/main/java/com/timelocked/AuthoredGeometry.java',
+diff --git a/docs/CONTRIBUTING.md b/docs/CONTRIBUTING.md
+index a82ec1a..7d70394 100644
+--- a/docs/CONTRIBUTING.md
++++ b/docs/CONTRIBUTING.md
+@@ -56,7 +56,7 @@ task here means the report was produced, NOT that numeric debt is fixed. It cove
+ all main Java, including drawing data; it ignores only -1, 0, 1, 2, constant
+ initializers and hashCode methods according to Checkstyle's configured semantics.
+ No file-wide magic-number suppressions or hidden baseline are used.
+-`build` also enforces numeric checks in the 14 cleaned gameplay/geometry classes
++`build` also enforces numeric checks in the 18 selected gameplay/geometry classes
+ via `checkArrivalNumbers`; the full-codebase inventory remains non-gating. See
+ [geometry and numeric rules](GEOMETRY-AND-NUMERIC-RULES.md) for the exact scope.
+ 
+@@ -109,7 +109,7 @@ artwork: keep existing shipped textures unless the change is intentional.
+ `.cache/` are ignored. Actual `src/generated/resources` game assets are not hidden
+ wholesale: generated assets intended to ship still need review. Historical reports
+ and preview images already in `validation/` remain evidence, not current-run output.
+-`IntroAudit.java`, `CoastChapterAudit.java`, `FacilitySpawnAudit.java` and `GlassStairwellAudit.java` are wired into the current native runner;
++`IntroAudit.java`, `CoastChapterAudit.java`, `FacilitySpawnAudit.java`, `GlassStairwellAudit.java` and `ReceptionChapterAudit.java` are wired into the current native runner;
+ the other audit Java files document earlier releases, not additional automatically executed tests.
+ 
+ ## Finding the Story code
+diff --git a/docs/GLASS-STAIRWELL.md b/docs/GLASS-STAIRWELL.md
+index c626341..459b8fc 100644
+--- a/docs/GLASS-STAIRWELL.md
++++ b/docs/GLASS-STAIRWELL.md
+@@ -1,4 +1,4 @@
+-# Glass-slot stairs and the photographed recessed exit — 0.8.9.22
++# Glass-slot stairs and the photographed recessed exit — 0.8.9.23
+ 
+ The five-wide **glass-surrounded surface slot** stays where it is. The stairs now exit **west through the recessed opening in the old stairwell room**, not into the north/south entrance hallway used by 0.8.9.20. The old spiral staircase is removed and its upper hole is capped.
+ 
+@@ -30,7 +30,7 @@ The route and old-shaft closure are baked into the shipped drawing modules. New
+ ## Existing facilities: back up first
+ 
+ 1. Close Minecraft and copy the world save somewhere safe.
+-2. Install only `timelocked-0.8.9.22-stair-lighting-dev.jar` with the normal NeoForge dependencies. Remove the older TIMELOCKED JAR.
++2. Install only `timelocked-0.8.9.23-first-contact-dev.jar` with the normal NeoForge dependencies. Remove the older TIMELOCKED JAR.
+ 3. Enter the intended registered drawing-layout SARC facility in the Overworld. Keep the entrance chunks loaded.
+ 4. Move players, mobs and dropped items out of both the old and new stair areas. Stand back in the main lobby, away from the entrance stairwell.
+ 5. As an operator, run:
+@@ -78,12 +78,12 @@ has not been redesigned in this release.
+ 
+ Six permanent emergency strips light the bottom stair hallway: four in the
+ westbound exit ceiling and two along the return passage. They emit block light level
+-12 independently of arrival progression. The front doorway beacon is moved to the wall beside the lift; the other alarm
++12 independently of arrival progression. The front doorway beacon is moved to the wall beside the lift; the front doorway siren joins it in this release. The other alarm
+ fixtures and walking width/headroom are retained. Shader appearance still needs a client check.
+ 
+ Existing 0.8.9.21 worlds use the same backed-up `/sarcstairs repair confirm`
+ command. The preflight recognises the exact preserved .21 templates; upgrading
+-an unchanged .21 stairwell changes only eight blocks (six light strips and the two beacon endpoints), and a second run changes zero.
++an unchanged .21 stairwell changes only ten blocks (six light strips and the four alarm endpoints), and a second run changes zero.
+ This command does not reset an arrival sequence that has already fired.
+ 
+ ### Beacon beside the lift
+@@ -99,3 +99,16 @@ block-entity payload. It refuses containers and other block entities; only the
+ expected source/target alarm rotor is permitted. If both mounts already contain
+ beacons, the preflight refuses rather than discarding either one. The alarm index
+ keeps both mount positions for compatibility with worlds not yet repaired.
++
++### Siren on the same wall
++
++The front doorway siren at `(86, 6, 358)` now occupies `(85, 5, 359)` facing north,
++next to the beacon at `(83, 5, 359)`. The backing clean-panel wall is retained.
++Both fixtures preserve active/manual/lit state and complete rotor payloads during
++repair, and both new mounts are linked to the existing facility alarm group.
++Old mount coordinates stay indexed for worlds not yet repaired. Duplicate source
++and destination alarms cause a preflight refusal rather than an overwrite.
++
++An unchanged .22 facility needs only the same backed-up `/sarcstairs repair confirm`
++command: it changes exactly the two siren endpoints. Receptionist placement and
++Chapter 2 progress are separate and do not require this stair repair.
+diff --git a/docs/STORY-CHAPTER-1.md b/docs/STORY-CHAPTER-1.md
+index 6a55ebb..37b366c 100644
+--- a/docs/STORY-CHAPTER-1.md
++++ b/docs/STORY-CHAPTER-1.md
+@@ -39,7 +39,7 @@ Progress lives in each player's existing intro save compound as `CoastChapter`:
+ 
+ An existing Story save gains progress only while physically on its own saved route. Rejoining does not repeat finished beats; intro replay preserves progress. Other players have separate progress. Non-Story worlds, other dimensions, dead/spectator players, airborne movement and unloaded ground do not advance it. Leaving the route pauses active progression; there is no offline catch-up.
+ 
+-This chapter does not change terrain, inventory, clearance, camera or game mode. It adds no NPCs, rescue explanation or new mandatory quest item.
++This chapter does not change terrain, inventory, clearance, camera or game mode. It adds no NPCs, rescue explanation or new mandatory quest item. After completion, the story objective now hands off to the separate receptionist in [Chapter 2: First Contact](STORY-CHAPTER-2.md).
+ 
+ ## Checks
+ 
+diff --git a/docs/STORY-CHAPTER-2.md b/docs/STORY-CHAPTER-2.md
+new file mode 100644
+index 0000000..d5c85cd
+--- /dev/null
++++ b/docs/STORY-CHAPTER-2.md
+@@ -0,0 +1,74 @@
++# Chapter 2: First Contact
++
++A separate **SARC Receptionist** now stands at the reception counter in Story
++worlds. This uses the existing scientist model with a dedicated saved receptionist
++role and visible name; it is not Dr. Everleigh or another ambient trading NPC.
++The recorded welcome, anthem and arrival lighting remain owned by `HubArrival`.
++
++## Playing
++
++Finish Chapter 1 and the seven-line arrival welcome, then:
++
++1. Right-click the SARC Receptionist with your main hand to begin **First Contact**.
++2. Right-click one of the four workstations on that reception counter to register
++   your arrival. The terminal records the check-in and tells you to return.
++3. Speak to the receptionist again to confirm registration and finish the chapter.
++
++`/timelockedstory` shows the active objective and target coordinates. There is a
++short three-second dialogue cooldown after each completed interaction; repeated
++clicks do not replay lines or advance twice. Sneaking at a workstation preserves
++normal building interaction. No trading UI, bandage, power-restoration task,
++mandatory quest item or creative access is required. This first-contact chapter
++ends after visitor check-in; a later staff mission/Chapter 3 is not implemented.
++Pantheris's identity and motive are not explained.
++
++## Existing saves and placement
++
++The receptionist is added automatically when an eligible Story player enters their
++own registered drawing-layout facility's lobby. No new world, intro replay, stair
++repair or facility rebuild is needed. In that facility, `/sarcreception` checks
++placement and repeats the receptionist's location and current quest objective.
++It cannot skip the welcome, erase quest progress or overwrite a player build.
++
++Drawing-local positions are receptionist feet `(64, 2, 329)` and the main quest
++terminal `(67, 3, 327)`. Terminals at X=61, 64, 67 or 70 on that same counter all
++work. The receptionist stands on the approach side of the three-deep counter,
++where survival interaction reach can reach them. Placement verifies loaded chunks,
++floor support, headroom, collision and entity occupancy. It never generates a
++chunk or removes a player's blocks to make room. If blocked, clear the placement
++area yourself only after checking your build; the command does not force repairs.
++
++One receptionist UUID is saved in the facility's `SiteProgress`. The entity keeps
++its role and site in its persistent entity data, does not wander or get pushed,
++and is invulnerable to normal damage. Its saved UUID prevents a missing/unloaded
++entity from being mistaken for permission to spawn another. Wait for the reception
++chunk/entity to load if the command reports a saved NPC is unavailable. Deliberate
++operator removal of that entity is not automatically undone.
++
++## Progress and multiplayer
++
++Player progress lives in the existing intro save under `ReceptionChapter`: saved
++stages are not-started (0), register (1), return (2), complete (3), plus a bounded
++chat cooldown. Saving, relogging and intro replay retain it. Players share one
++receptionist but have independent assignments and completion. Clicking another
++facility's receptionist or a moved/unrelated workstation cannot advance it.
++Non-Story worlds, unfinished intros, spectators and other dimensions cannot
++advance the chapter. The existing `/timelockedstory skip` still skips **only
++Chapter 1**; it does not complete Chapter 2 or power/restart the PA.
++
++## Contributor map and verification
++
++- `ReceptionChapter`: placement, interaction, counter validation, objectives and
++  saved per-player assignment progression. Named timings, reach limits and authored
++  coordinates are covered by the existing named-number gate.
++- `SarcScientist`: routes the dedicated receptionist role to the chapter instead
++  of ordinary trades/ambient lore. Other staff behavior is unchanged.
++- `SiteProgress`: saves the shared receptionist UUID without changing save IDs.
++- `IntroSequence`: retains Chapter 2 data on intro replay.
++- `CoastChapter`: hands the existing objective command to reception after Chapter 1.
++- `ReceptionChapterAudit`: native entity creation, real NPC right-clicks, terminal
++  interactions, independent multiplayer progress, entity/save reload and duplicate
++  prevention. The existing audit runner includes it; no new Python helper is added.
++
++Run `./gradlew build` and `python tools/run_story_audit.py --accept-eula` with JDK 21.
++These are dedicated-server tests, not a graphical client playthrough.
+diff --git a/gradle.properties b/gradle.properties
+index 9148bf2..2bac935 100644
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -14,5 +14,5 @@ loader_version_range=[1,)
+ mod_id=timelocked
+ mod_name=TIMELOCKED: Zero Point
+ mod_license=All Rights Reserved
+-mod_version=0.8.9.22-stair-lighting-dev
++mod_version=0.8.9.23-first-contact-dev
+ mod_group_id=com.timelocked
+diff --git a/src/main/java/com/timelocked/CoastChapter.java b/src/main/java/com/timelocked/CoastChapter.java
+index 33e25be..902cf98 100644
+--- a/src/main/java/com/timelocked/CoastChapter.java
++++ b/src/main/java/com/timelocked/CoastChapter.java
+@@ -249,6 +249,9 @@ public final class CoastChapter {
+ 
+   static Component objective(ServerPlayer player, CompoundTag intro) {
+     int step = intro.contains(SAVE_KEY) ? step(chapter(intro)) : 0;
++    if (step == COMPLETE
++        && BlueprintRooms.drawing(player.serverLevel(), BlockPos.of(intro.getLong("Site"))))
++      return ReceptionChapter.objective(intro);
+     BlockPos site = BlockPos.of(intro.getLong("Site"));
+     BlockPos junction = IntroCoast.roadJunction(site), surface = IntroCoast.surfaceOrigin(site);
+     BlockPos target =
+diff --git a/src/main/java/com/timelocked/DrawingAlarmIndex.java b/src/main/java/com/timelocked/DrawingAlarmIndex.java
+index 94deef1..a60f688 100644
+--- a/src/main/java/com/timelocked/DrawingAlarmIndex.java
++++ b/src/main/java/com/timelocked/DrawingAlarmIndex.java
+@@ -92,6 +92,7 @@ final class DrawingAlarmIndex {
+         // Retain the old mount for worlds not yet repaired; both positions share alarm state.
+         {86, 6, 356},
+         {83, 5, 359},
++        {85, 5, 359},
+         {86, 6, 358},
+         {92, 6, 356},
+         {92, 6, 358},
+diff --git a/src/main/java/com/timelocked/GlassStairwell.java b/src/main/java/com/timelocked/GlassStairwell.java
+index a2ba564..d95a3ab 100644
+--- a/src/main/java/com/timelocked/GlassStairwell.java
++++ b/src/main/java/com/timelocked/GlassStairwell.java
+@@ -1,6 +1,7 @@
+ package com.timelocked;
+ 
+ import java.util.LinkedHashMap;
++import java.util.List;
+ import java.util.Map;
+ import net.minecraft.commands.Commands;
+ import net.minecraft.core.BlockPos;
+@@ -52,6 +53,17 @@ public final class GlassStairwell {
+   static final BlockPos OLD_BEACON = new BlockPos(86, 6, 356);
+   static final BlockPos WALL_BEACON = new BlockPos(83, 5, 359);
+   static final BlockPos BEACON_SUPPORT = WALL_BEACON.south();
++  static final BlockPos OLD_SIREN = new BlockPos(86, 6, 358);
++  static final BlockPos WALL_SIREN = new BlockPos(85, 5, 359);
++
++  private record AlarmMove(BlockPos from, BlockPos to, Block block) {}
++
++  private static List<AlarmMove> alarmMoves() {
++    return List.of(
++        new AlarmMove(OLD_BEACON, WALL_BEACON, FacilityDetails.ALARM_BEACON.get()),
++        new AlarmMove(OLD_SIREN, WALL_SIREN, FacilityDetails.ALARM_SIREN.get()));
++  }
++
+   private static final int[] HALL_LIGHT_X = {88, 92, 96, 100};
+   private static final int[] RETURN_LIGHT_Z = {350, 353};
+ 
+@@ -160,14 +172,12 @@ public final class GlassStairwell {
+     // Embed them in the ceiling and return wall, leaving alarms, headroom and width intact.
+     for (int x : HALL_LIGHT_X) put(out, x, EXIT_CEILING, EXIT_FRONT_Z, glow);
+     for (int z : RETURN_LIGHT_Z) put(out, LOWER_RIGHT + 1, RETURN_LIGHT_Y, z, glow);
+-    out.put(OLD_BEACON, AIR);
+-    out.put(
+-        WALL_BEACON,
+-        FacilityDetails.ALARM_BEACON
+-            .get()
+-            .defaultBlockState()
+-            .setValue(AlarmBlock.FACING, Direction.NORTH));
+-    out.put(BEACON_SUPPORT, baseline.get(BEACON_SUPPORT));
++    for (AlarmMove move : alarmMoves()) {
++      out.put(move.from(), AIR);
++      out.put(
++          move.to(), move.block().defaultBlockState().setValue(AlarmBlock.FACING, Direction.NORTH));
++      out.put(move.to().south(), baseline.get(move.to().south()));
++    }
+     return out;
+   }
+ 
+@@ -254,18 +264,19 @@ public final class GlassStairwell {
+       BlockPos p = origin.offset(entry.getKey());
+       if (!level.hasChunkAt(p)) return "Unloaded chunk at " + p.toShortString();
+       BlockState actual = level.getBlockState(p), old = baseline.get(entry.getKey());
+-      boolean authoredBeacon =
+-          actual.is(FacilityDetails.ALARM_BEACON.get())
+-              && level.getBlockEntity(p) instanceof AlarmRotorEntity
+-              && ((entry.getKey().equals(OLD_BEACON)
+-                      && actual.getValue(AlarmBlock.FACING) == Direction.WEST)
+-                  || (entry.getKey().equals(WALL_BEACON)
+-                      && actual.getValue(AlarmBlock.FACING) == Direction.NORTH));
+-      // The one requested beacon relocation is the only block-entity exception.
+-      // Its complete payload and active/manual/lit state are transferred by apply().
+-      if (level.getBlockEntity(p) != null && !authoredBeacon)
++      boolean authoredAlarm = false;
++      for (AlarmMove move : alarmMoves())
++        authoredAlarm |=
++            actual.is(move.block())
++                && level.getBlockEntity(p) instanceof AlarmRotorEntity
++                && ((entry.getKey().equals(move.from())
++                        && actual.getValue(AlarmBlock.FACING) == Direction.WEST)
++                    || (entry.getKey().equals(move.to())
++                        && actual.getValue(AlarmBlock.FACING) == Direction.NORTH));
++      // Only the two explicitly requested alarm rotors may move. Payload/state are preserved.
++      if (level.getBlockEntity(p) != null && !authoredAlarm)
+         return "Block entity at " + p.toShortString();
+-      if (authoredBeacon) continue;
++      if (authoredAlarm) continue;
+       if (actual.equals(entry.getValue())
+           || actual.equals(old)
+           || actual.equals(previous.get(entry.getKey()))
+@@ -281,33 +292,43 @@ public final class GlassStairwell {
+               || actual.is(Blocks.ANDESITE))) continue;
+       return "Changed/unsupported block at " + p.toShortString();
+     }
+-    if (level.getBlockState(origin.offset(OLD_BEACON)).is(FacilityDetails.ALARM_BEACON.get())
+-        && level.getBlockState(origin.offset(WALL_BEACON)).is(FacilityDetails.ALARM_BEACON.get()))
+-      return "Both beacon mounts are occupied; no beacon will be overwritten";
++    for (AlarmMove move : alarmMoves())
++      if (level.getBlockState(origin.offset(move.from())).is(move.block())
++          && level.getBlockState(origin.offset(move.to())).is(move.block()))
++        return "Both alarm mounts are occupied; no fixture will be overwritten";
+     return null;
+   }
+ 
+   static int apply(ServerLevel level, BlockPos origin, Map<BlockPos, BlockState> edits) {
+     int changed = 0;
+-    BlockPos oldBeacon = origin.offset(OLD_BEACON), newBeacon = origin.offset(WALL_BEACON);
+-    BlockState beaconState = level.getBlockState(oldBeacon);
+-    var rotor = level.getBlockEntity(oldBeacon);
+-    CompoundTag beaconData =
+-        rotor == null ? null : rotor.saveWithoutMetadata(level.registryAccess());
++    Map<BlockPos, BlockState> movedStates = new LinkedHashMap<>();
++    Map<BlockPos, CompoundTag> movedData = new LinkedHashMap<>();
++    for (AlarmMove move : alarmMoves()) {
++      BlockPos source = origin.offset(move.from());
++      BlockState state = level.getBlockState(source);
++      if (state.is(move.block())) {
++        movedStates.put(move.to(), state.setValue(AlarmBlock.FACING, Direction.NORTH));
++        var rotor = level.getBlockEntity(source);
++        if (rotor != null)
++          movedData.put(move.to(), rotor.saveWithoutMetadata(level.registryAccess()));
++      }
++    }
+     // Explicit authored shapes; suppress neighbour stair-shape rewrites during the batch.
+     for (var entry : edits.entrySet()) {
+       BlockPos p = origin.offset(entry.getKey());
+       BlockState desired = entry.getValue();
+-      if (entry.getKey().equals(WALL_BEACON)) {
+-        // Idempotence must preserve a running/manual alarm, not reset it to template defaults.
+-        if (level.getBlockState(p).is(FacilityDetails.ALARM_BEACON.get())) continue;
+-        if (beaconState.is(FacilityDetails.ALARM_BEACON.get()))
+-          desired = beaconState.setValue(AlarmBlock.FACING, Direction.NORTH);
+-      }
++      boolean alreadyMounted = false;
++      for (AlarmMove move : alarmMoves())
++        if (entry.getKey().equals(move.to()) && level.getBlockState(p).is(move.block()))
++          alreadyMounted = true;
++      // A repeated repair must not reset a running or manually enabled alarm.
++      if (alreadyMounted) continue;
++      desired = movedStates.getOrDefault(entry.getKey(), desired);
+       if (!level.getBlockState(p).equals(desired)) {
+         level.setBlock(p, desired, Block.UPDATE_CLIENTS);
+-        if (p.equals(newBeacon) && beaconData != null && level.getBlockEntity(p) != null) {
+-          level.getBlockEntity(p).loadWithComponents(beaconData, level.registryAccess());
++        CompoundTag data = movedData.get(entry.getKey());
++        if (data != null && level.getBlockEntity(p) != null) {
++          level.getBlockEntity(p).loadWithComponents(data, level.registryAccess());
+           level.getBlockEntity(p).setChanged();
+         }
+         changed++;
+@@ -331,7 +352,7 @@ public final class GlassStairwell {
+                                   Component.literal(
+                                       "BACK UP YOUR WORLD FIRST. Stand inside the facility but outside the stairwell. "
+                                           + "/sarcstairs repair confirm rebuilds only the glass-slot stairs for drawing geometry 5; "
+-                                          + "also lights its bottom hallway and moves the doorway beacon beside the lift; refuses edited blocks, inventories, occupied space and unloaded chunks."),
++                                          + "also lights its bottom hallway and moves the doorway beacon and siren beside the lift; refuses edited blocks, inventories, occupied space and unloaded chunks."),
+                               false);
+                       return 1;
+                     })
+@@ -391,7 +412,7 @@ public final class GlassStairwell {
+                                                     Component.literal(
+                                                         "Glass-slot stairwell and beacon repaired: "
+                                                             + count
+-                                                            + " blocks changed. West-facing recessed exit connected; old spiral removed and capped; original entrance glass retained; hallway strips installed; beacon moved beside lift."),
++                                                            + " blocks changed. West-facing recessed exit connected; old spiral removed and capped; original entrance glass retained; hallway strips installed; beacon and siren moved beside lift."),
+                                                 true);
+                                         return 1;
+                                       }
+diff --git a/src/main/java/com/timelocked/IntroSequence.java b/src/main/java/com/timelocked/IntroSequence.java
+index 0df8d3c..5d46849 100644
+--- a/src/main/java/com/timelocked/IntroSequence.java
++++ b/src/main/java/com/timelocked/IntroSequence.java
+@@ -275,6 +275,8 @@ public final class IntroSequence {
+     CompoundTag previous = state(p);
+     if (previous != null && previous.contains(CoastChapter.SAVE_KEY))
+       t.put(CoastChapter.SAVE_KEY, previous.getCompound(CoastChapter.SAVE_KEY).copy());
++    if (previous != null && previous.contains(ReceptionChapter.SAVE_KEY))
++      t.put(ReceptionChapter.SAVE_KEY, previous.getCompound(ReceptionChapter.SAVE_KEY).copy());
+     t.putInt("Slot", data.nextSlot++);
+     t.putLong("Site", site.asLong());
+     t.putString("ReturnDimension", p.level().dimension().location().toString());
+diff --git a/src/main/java/com/timelocked/ReceptionChapter.java b/src/main/java/com/timelocked/ReceptionChapter.java
+new file mode 100644
+index 0000000..752c8e7
+--- /dev/null
++++ b/src/main/java/com/timelocked/ReceptionChapter.java
+@@ -0,0 +1,234 @@
++package com.timelocked;
++
++import java.nio.charset.StandardCharsets;
++import java.util.UUID;
++import net.minecraft.commands.Commands;
++import net.minecraft.core.BlockPos;
++import net.minecraft.nbt.CompoundTag;
++import net.minecraft.network.chat.Component;
++import net.minecraft.server.level.ServerLevel;
++import net.minecraft.server.level.ServerPlayer;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.InteractionResult;
++import net.minecraft.world.entity.MobSpawnType;
++import net.minecraft.world.level.Level;
++import net.neoforged.bus.api.SubscribeEvent;
++import net.neoforged.fml.common.EventBusSubscriber;
++import net.neoforged.neoforge.event.RegisterCommandsEvent;
++import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
++import net.neoforged.neoforge.event.tick.ServerTickEvent;
++
++/** Chapter two: a real receptionist, visitor registration, and a return conversation. */
++@EventBusSubscriber(modid = "timelocked")
++public final class ReceptionChapter {
++  static final String SAVE_KEY = "ReceptionChapter";
++  static final String NPC_ROLE = "timelocked_receptionist";
++  static final String NPC_SITE = "timelocked_reception_site";
++  // Persisted quest milestones. Do not renumber existing saves.
++  static final int NOT_STARTED = 0, REGISTER = 1, RETURN = 2, COMPLETE = 3;
++  static final int POLL_TICKS = 20;
++  private static final int CHAT_GAP_TICKS = 3 * POLL_TICKS;
++  private static final double BLOCK_CENTER = .5;
++  private static final double REACH_SQUARED_BLOCKS = 6 * 6;
++  // Authored drawing-local positions. The NPC stands in front of the three-deep counter,
++  // not behind it where a survival player's normal entity reach could not reach them.
++  static final BlockPos DESK = new BlockPos(64, 2, 329);
++  static final BlockPos TERMINAL = new BlockPos(67, 3, 327);
++  private static final int[] TERMINAL_X = {61, 64, 67, 70};
++
++  static boolean receptionist(SarcScientist npc) {
++    return npc.getPersistentData().getBoolean(NPC_ROLE);
++  }
++
++  static int step(CompoundTag intro) {
++    int value = intro.getCompound(SAVE_KEY).getInt("Step");
++    return value < NOT_STARTED || value > COMPLETE ? COMPLETE : value;
++  }
++
++  static boolean ready(ServerPlayer player, CompoundTag intro) {
++    return CoastChapter.eligible(player, intro)
++        && intro.contains(CoastChapter.SAVE_KEY)
++        && CoastChapter.step(CoastChapter.chapter(intro)) == CoastChapter.COMPLETE
++        && BlueprintRooms.drawing(player.serverLevel(), BlockPos.of(intro.getLong("Site")))
++        && CoastChapter.welcomeFinished(
++            FacilityState.get(player.server).progress.get(intro.getLong("Site")));
++  }
++
++  static Component objective(CompoundTag intro) {
++    BlockPos site = BlockPos.of(intro.getLong("Site"));
++    int stage = step(intro);
++    BlockPos target = site.offset(stage == REGISTER ? TERMINAL : DESK);
++    return Component.translatable(
++        "message.timelocked.reception.objective." + stage,
++        target.getX(),
++        target.getY(),
++        target.getZ());
++  }
++
++  static void say(ServerPlayer player, CompoundTag chapter, String key) {
++    player.sendSystemMessage(Component.translatable("message.timelocked.reception." + key));
++    chapter.putInt("Cooldown", CHAT_GAP_TICKS);
++    CoastChapter.dirty(player);
++  }
++
++  /** Never loads a chunk or rebuilds a player's desk. A saved UUID prevents duplicate respawns. */
++  static SarcScientist ensure(ServerLevel level, BlockPos site) {
++    if (!StoryMode.enabled(level.getServer())
++        || level.dimension() != Level.OVERWORLD
++        || !BlueprintRooms.drawing(level, site)) return null;
++    SiteProgress progress = FacilityState.get(level.getServer()).progress.get(site.asLong());
++    if (progress.receptionist != null) {
++      var saved = level.getEntity(progress.receptionist);
++      return saved instanceof SarcScientist npc
++              && receptionist(npc)
++              && npc.getPersistentData().getLong(NPC_SITE) == site.asLong()
++          ? npc
++          : null;
++    }
++    BlockPos home = site.offset(DESK);
++    if (!level.hasChunkAt(home)
++        || !level.getBlockState(home).isAir()
++        || !level.getBlockState(home.above()).isAir()
++        || !level
++            .getBlockState(home.below())
++            .isFaceSturdy(level, home.below(), net.minecraft.core.Direction.UP)) return null;
++    SarcScientist npc = SarcContent.SCIENTIST.get().create(level);
++    if (npc == null) return null;
++    UUID id =
++        UUID.nameUUIDFromBytes(
++            ("timelocked:receptionist:" + level.getSeed() + ":" + site.asLong())
++                .getBytes(StandardCharsets.UTF_8));
++    if (level.getEntity(id) != null) return null;
++    npc.setUUID(id);
++    npc.setKind(SarcScientist.RESEARCHER);
++    npc.setCustomName(Component.translatable("entity.timelocked.receptionist"));
++    npc.setCustomNameVisible(true);
++    npc.setPersistenceRequired();
++    npc.setNoAi(true);
++    npc.setInvulnerable(true);
++    npc.getPersistentData().putBoolean(NPC_ROLE, true);
++    npc.getPersistentData().putLong(NPC_SITE, site.asLong());
++    npc.moveTo(home.getX() + BLOCK_CENTER, home.getY(), home.getZ() + BLOCK_CENTER, 0, 0);
++    if (!level.noCollision(npc) || !level.getEntities(npc, npc.getBoundingBox()).isEmpty())
++      return null;
++    // Deliberately authored staff are allowed by the facility spawn guard. No random spawn route.
++    if (FacilitySpawnProtection.blocked(level, npc, MobSpawnType.STRUCTURE)
++        || !level.addFreshEntity(npc)) return null;
++    progress.receptionist = id;
++    FacilityState.get(level.getServer()).setDirty();
++    return npc;
++  }
++
++  static InteractionResult interact(SarcScientist npc, ServerPlayer player, InteractionHand hand) {
++    if (hand != InteractionHand.MAIN_HAND) return InteractionResult.CONSUME;
++    CompoundTag intro = IntroSequence.state(player);
++    if (!CoastChapter.eligible(player, intro)
++        || npc.distanceToSqr(player) > REACH_SQUARED_BLOCKS
++        || npc.getPersistentData().getLong(NPC_SITE) != intro.getLong("Site"))
++      return InteractionResult.CONSUME;
++    var progress = FacilityState.get(player.server).progress.get(intro.getLong("Site"));
++    if (progress == null || !npc.getUUID().equals(progress.receptionist))
++      return InteractionResult.CONSUME;
++    if (!ready(player, intro)) {
++      player.displayClientMessage(
++          Component.translatable("message.timelocked.reception.wait"), true);
++      return InteractionResult.CONSUME;
++    }
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    if (!intro.contains(SAVE_KEY)) intro.put(SAVE_KEY, chapter);
++    if (chapter.getInt("Cooldown") > 0) {
++      player.displayClientMessage(objective(intro), true);
++      return InteractionResult.CONSUME;
++    }
++    if (step(intro) == NOT_STARTED) {
++      chapter.putInt("Step", REGISTER);
++      say(player, chapter, "start");
++    } else if (step(intro) == RETURN) {
++      chapter.putInt("Step", COMPLETE);
++      say(player, chapter, "complete");
++    } else player.displayClientMessage(objective(intro), true);
++    return InteractionResult.SUCCESS;
++  }
++
++  static boolean terminal(ServerPlayer player, BlockPos position) {
++    CompoundTag intro = IntroSequence.state(player);
++    if (!ready(player, intro)
++        || player.isSecondaryUseActive()
++        || step(intro) != REGISTER
++        || player.distanceToSqr(position.getCenter()) > REACH_SQUARED_BLOCKS
++        || !player.level().getBlockState(position).is(FacilityDetails.WORKSTATION.get()))
++      return false;
++    BlockPos local = position.subtract(BlockPos.of(intro.getLong("Site")));
++    if (local.getY() != TERMINAL.getY() || local.getZ() != TERMINAL.getZ()) return false;
++    boolean authored = false;
++    for (int x : TERMINAL_X) authored |= local.getX() == x;
++    if (!authored) return false;
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    if (chapter.getInt("Cooldown") > 0) return true;
++    chapter.putInt("Step", RETURN);
++    say(player, chapter, "registered");
++    return true;
++  }
++
++  @SubscribeEvent
++  public static void terminalClick(PlayerInteractEvent.RightClickBlock event) {
++    if (event.getHand() == InteractionHand.MAIN_HAND
++        && event.getEntity() instanceof ServerPlayer player
++        && terminal(player, event.getPos())) {
++      event.setCanceled(true);
++      event.setCancellationResult(InteractionResult.SUCCESS);
++    }
++  }
++
++  static void tickPlayer(ServerPlayer player) {
++    CompoundTag intro = IntroSequence.state(player);
++    if (!CoastChapter.eligible(player, intro)) return;
++    BlockPos site = BlockPos.of(intro.getLong("Site"));
++    if (!FacilitySpawnProtection.contains(player.serverLevel(), site, player.blockPosition()))
++      return;
++    if (HubArrival.inside(player, site)) ensure(player.serverLevel(), site);
++    if (!intro.contains(SAVE_KEY)) return;
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    int before = chapter.getInt("Cooldown");
++    int after = Math.max(0, Math.clamp(before, 0, CHAT_GAP_TICKS) - POLL_TICKS);
++    if (before != after) {
++      chapter.putInt("Cooldown", after);
++      CoastChapter.dirty(player);
++    }
++    if (ready(player, intro) && step(intro) > NOT_STARTED && step(intro) < COMPLETE)
++      player.displayClientMessage(objective(intro), true);
++  }
++
++  @SubscribeEvent
++  public static void tick(ServerTickEvent.Post event) {
++    if (event.getServer().overworld().getGameTime() % POLL_TICKS != 0) return;
++    for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) tickPlayer(player);
++  }
++
++  @SubscribeEvent
++  public static void commands(RegisterCommandsEvent event) {
++    event
++        .getDispatcher()
++        .register(
++            Commands.literal("sarcreception")
++                .executes(
++                    context -> {
++                      var player = context.getSource().getPlayerOrException();
++                      var intro = IntroSequence.state(player);
++                      if (!CoastChapter.eligible(player, intro)) return 0;
++                      BlockPos site = BlockPos.of(intro.getLong("Site"));
++                      if (!FacilitySpawnProtection.contains(
++                          player.serverLevel(), site, player.blockPosition())) return 0;
++                      SarcScientist npc = ensure(player.serverLevel(), site);
++                      player.sendSystemMessage(
++                          Component.translatable(
++                              npc == null
++                                  ? "message.timelocked.reception.placement_wait"
++                                  : "message.timelocked.reception.available"));
++                      player.sendSystemMessage(objective(intro));
++                      return npc == null ? 0 : 1;
++                    }));
++  }
++
++  private ReceptionChapter() {}
++}
+diff --git a/src/main/java/com/timelocked/SarcScientist.java b/src/main/java/com/timelocked/SarcScientist.java
+index 656ccc8..a51f121 100644
+--- a/src/main/java/com/timelocked/SarcScientist.java
++++ b/src/main/java/com/timelocked/SarcScientist.java
+@@ -150,6 +150,8 @@ public final class SarcScientist extends AbstractVillager {
+   }
+ 
+   public InteractionResult mobInteract(Player p, InteractionHand hand) {
++    if (ReceptionChapter.receptionist(this) && p instanceof ServerPlayer player)
++      return ReceptionChapter.interact(this, player, hand);
+     ItemStack held = p.getItemInHand(hand);
+     if (!held.is(Items.NAME_TAG)
+         && !(held.getItem() instanceof SpawnEggItem)
+@@ -248,6 +250,11 @@ public final class SarcScientist extends AbstractVillager {
+     return null;
+   }
+ 
++  @Override
++  public boolean isPushable() {
++    return !ReceptionChapter.receptionist(this) && super.isPushable();
++  }
++
+   public boolean removeWhenFarAway(double d) {
+     return false;
+   }
+@@ -261,6 +268,7 @@ public final class SarcScientist extends AbstractVillager {
+ 
+   public void tick() {
+     super.tick();
++    if (ReceptionChapter.receptionist(this)) return;
+     if (!this.level().isClientSide && this.tickCount % 40 == 0 && this.lineCooldown == 0) {
+       Player p = this.level().getNearestPlayer(this, 5.0);
+       if (p != null && !p.isSpectator()) {
+diff --git a/src/main/java/com/timelocked/SiteProgress.java b/src/main/java/com/timelocked/SiteProgress.java
+index d9e3e50..47580d6 100644
+--- a/src/main/java/com/timelocked/SiteProgress.java
++++ b/src/main/java/com/timelocked/SiteProgress.java
+@@ -23,6 +23,7 @@ public final class SiteProgress {
+   public int arrivalWelcomeNext;
+   public int arrivalWelcomeTicks;
+   public int geometryVersion;
++  public UUID receptionist;
+   public boolean powered;
+   public boolean cleared;
+   public boolean fighting;
+@@ -42,6 +43,7 @@ public final class SiteProgress {
+     t.putInt("ArrivalWelcomeTicks", this.arrivalWelcomeTicks);
+     t.putInt("LayoutVersion", this.layoutVersion);
+     t.putInt("GeometryVersion", this.geometryVersion);
++    if (this.receptionist != null) t.putUUID("Receptionist", this.receptionist);
+     t.putBoolean("Powered", this.powered);
+     t.putBoolean("Cleared", this.cleared);
+     t.putBoolean("Fighting", this.fighting);
+@@ -73,6 +75,7 @@ public final class SiteProgress {
+         Math.clamp((long) t.getInt("ArrivalWelcomeTicks"), 0, MAX_WELCOME_DELAY_TICKS);
+     s.layoutVersion = t.getInt("LayoutVersion");
+     s.geometryVersion = t.getInt("GeometryVersion");
++    if (t.hasUUID("Receptionist")) s.receptionist = t.getUUID("Receptionist");
+     s.powered = t.getBoolean("Powered");
+     s.cleared = t.getBoolean("Cleared");
+     s.fighting = t.getBoolean("Fighting");
+diff --git a/src/main/resources/META-INF/neoforge.mods.toml b/src/main/resources/META-INF/neoforge.mods.toml
+index 1713390..e86d087 100644
+--- a/src/main/resources/META-INF/neoforge.mods.toml
++++ b/src/main/resources/META-INF/neoforge.mods.toml
+@@ -3,7 +3,7 @@ loaderVersion="[4,)"
+ license="All Rights Reserved"
+ [[mods]]
+ modId="timelocked"
+-version="0.8.9.22-stair-lighting-dev"
++version="0.8.9.23-first-contact-dev"
+ displayName="TIMELOCKED: Zero Point"
+ description="Standalone SARC facility, Voidspace transit and powered metallurgy."
+ [[dependencies.timelocked]]
+diff --git a/src/main/resources/assets/timelocked/lang/en_us.json b/src/main/resources/assets/timelocked/lang/en_us.json
+index 19fbb03..3286a35 100644
+--- a/src/main/resources/assets/timelocked/lang/en_us.json
++++ b/src/main/resources/assets/timelocked/lang/en_us.json
+@@ -580,5 +580,16 @@
+   "message.timelocked.coast.objective.7": "Listen to the facility welcome. /timelockedstory skip leaves this chapter.",
+   "message.timelocked.coast.objective.8": "A Road Inland complete. Explore SARC at your own pace.",
+   "message.timelocked.coast.unavailable": "No active coastal chapter here. It follows the opening in a Story world; it does not start a new intro or teleport you.",
+-  "message.timelocked.coast.skipped": "Coastal chapter skipped for you. You can explore freely; the facility welcome and world are unchanged."
++  "message.timelocked.coast.skipped": "Coastal chapter skipped for you. You can explore freely; the facility welcome and world are unchanged.",
++  "entity.timelocked.receptionist": "SARC Receptionist",
++  "message.timelocked.reception.start": "[Chapter 2: First Contact] <SARC Receptionist> You came in from the coast? All right\u2014let us get you checked in. Use one of the four terminals on this reception counter to register your arrival, then come back to me. We can talk about what happened once you are on the visitor register.",
++  "message.timelocked.reception.registered": "[Reception terminal] Arrival recorded. Visitor registration is ready for confirmation. Return to the SARC receptionist.",
++  "message.timelocked.reception.complete": "<SARC Receptionist> There\u2014you are checked in. Stay in the public areas for now. I will let the staff know you need to speak with someone. [Chapter 2: First Contact complete]",
++  "message.timelocked.reception.wait": "Finish the arrival welcome and Chapter 1, then speak to the receptionist to check in.",
++  "message.timelocked.reception.available": "The SARC receptionist is at the reception counter. Right-click them to speak.",
++  "message.timelocked.reception.placement_wait": "The receptionist is not currently loaded, or the saved desk position is obstructed. Load the reception area and check its floor/headroom. No blocks or saved NPCs were overwritten.",
++  "message.timelocked.reception.objective.0": "Chapter 2 \u2014 Speak to the SARC receptionist at X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.1": "Chapter 2 \u2014 Use a reception-counter terminal near X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.2": "Chapter 2 \u2014 Return to the receptionist at X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.3": "Chapter 2 complete \u2014 You are checked in at SARC."
+ }
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z10.nbt
+index 0cb5228ad3ce65898bca4723b7424972f82e55b0..614ecd80b5ce75c69b26ccd81d4f3bcc47371e50 100644
+GIT binary patch
+delta 17
+ZcmZ4cnrZE8CN}wQ4vy608`+j`1pq<D2Q&Zx
+
+delta 17
+ZcmZ4cnrZE8CN}wQ4vr&-HnJ_>3IIdr2aW&$
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z11.nbt
+index 8de769084d02f8ebc51563ad775fbf05f541fc18..bf2b3f79e418fad3c5dd35d9b6f8619b8430640a 100644
+GIT binary patch
+literal 21906
+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
+
+literal 21843
+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
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z10.nbt
+index 849dd60c6ec3ddc631d93dc02b20f58fdaaa4bf3..28d9512ecb4ce0b06f3eb6b0e10b2a3f73c4ba89 100644
+GIT binary patch
+delta 17
+YcmX>zi|NcPCN}wQ4vy608`<1?0XuL8M*si-
+
+delta 17
+ZcmX>zi|NcPCN}wQ4vr&-HnO?(0suXc2B81|
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z11.nbt
+index 4ed899bcc053c91d91cb476f71a37c49878e6e1a..3951573c107e0f57efd4350db856057573882f6d 100644
+GIT binary patch
+delta 15
+WcmX@FbY6)~zMF$1_4r0MPeA}Gv;^P)
+
+delta 15
+WcmX@FbY6)~zMF&N=%I~lo`L`@+XXuS
+
+diff --git a/tools/run_story_audit.py b/tools/run_story_audit.py
+index cc3d590..4ce9b80 100644
+--- a/tools/run_story_audit.py
++++ b/tools/run_story_audit.py
+@@ -35,6 +35,7 @@ with tempfile.TemporaryDirectory(prefix="story-", dir=root) as temp:
+         "CoastChapterAudit.java",
+         "FacilitySpawnAudit.java",
+         "GlassStairwellAudit.java",
++        "ReceptionChapterAudit.java",
+     ):
+         shutil.copy(r / "validation" / name, src / name)
+     run = t / "run"
+diff --git a/validation/CoastChapterAudit.java b/validation/CoastChapterAudit.java
+index f663860..ddf8321 100644
+--- a/validation/CoastChapterAudit.java
++++ b/validation/CoastChapterAudit.java
+@@ -299,7 +299,13 @@ final class CoastChapterAudit {
+     check(
+         !CoastChapter.eligible(otherDimension, intro(otherDimension, site)),
+         "other dimensions cannot progress");
++    CompoundTag reception = new CompoundTag();
++    reception.putInt("Step", ReceptionChapter.RETURN);
++    IntroSequence.state(player).put(ReceptionChapter.SAVE_KEY, reception);
+     check(IntroSequence.begin(player), "intro replay can still begin");
++    check(
++        ReceptionChapter.step(IntroSequence.state(player)) == ReceptionChapter.RETURN,
++        "intro replay also retains in-progress Chapter 2");
+     check(
+         CoastChapter.step(CoastChapter.chapter(IntroSequence.state(player)))
+             == CoastChapter.COMPLETE,
+diff --git a/validation/GlassStairwellAudit.java b/validation/GlassStairwellAudit.java
+index bc6c24a..6c1bef7 100644
+--- a/validation/GlassStairwellAudit.java
++++ b/validation/GlassStairwellAudit.java
+@@ -189,6 +189,16 @@ final class GlassStairwellAudit {
+         java.util.Arrays.stream(DrawingAlarmIndex.CELLS)
+             .anyMatch(v -> new BlockPos(v[0], v[1], v[2]).equals(GlassStairwell.WALL_BEACON)),
+         "new beacon mount linked to facility alarm group");
++    check(
++        level.getBlockState(origin.offset(GlassStairwell.OLD_SIREN)).isAir(),
++        "old doorway siren removed");
++    var siren = origin.offset(GlassStairwell.WALL_SIREN);
++    check(
++        level.getBlockState(siren).is(FacilityDetails.ALARM_SIREN.get())
++            && level.getBlockEntity(siren) instanceof AlarmRotorEntity
++            && level.getBlockState(siren).getValue(AlarmBlock.FACING)
++                == net.minecraft.core.Direction.NORTH,
++        "siren beside beacon faces out from photographed wall");
+     int lamps = 0;
+     for (var e : edits.entrySet())
+       if (e.getValue().is(FacilityDetails.EMERGENCY.get())) {
+@@ -230,9 +240,38 @@ final class GlassStairwellAudit {
+         GlassStairwell.obstruction(level, origin, edits, baseline) == null,
+         "0.8.9.21 world accepts new hallway lights safely");
+     check(
+-        GlassStairwell.apply(level, origin, edits) == 8,
+-        "0.8.9.21 repair adds six strips and relocates one beacon");
++        GlassStairwell.apply(level, origin, edits) == 10,
++        "0.8.9.21 repair adds six strips and relocates both alarms");
+     check(GlassStairwell.apply(level, origin, edits) == 0, "0.8.9.21 upgrade idempotent");
++    // Emulate a .22 world: ceiling lights and beacon already updated, siren still at old mount.
++    level.setBlock(
++        origin.offset(GlassStairwell.OLD_SIREN),
++        FacilityDetails.ALARM_SIREN
++            .get()
++            .defaultBlockState()
++            .setValue(AlarmBlock.FACING, net.minecraft.core.Direction.WEST)
++            .setValue(AlarmBlock.MANUAL, true),
++        2);
++    level
++        .getBlockEntity(origin.offset(GlassStairwell.OLD_SIREN))
++        .getPersistentData()
++        .putString("audit", "siren payload");
++    level.setBlock(origin.offset(GlassStairwell.WALL_SIREN), Blocks.AIR.defaultBlockState(), 2);
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) == null,
++        ".22 siren upgrade passes preflight");
++    check(GlassStairwell.apply(level, origin, edits) == 2, ".22 upgrade only moves siren");
++    check(
++        level.getBlockState(origin.offset(GlassStairwell.WALL_SIREN)).getValue(AlarmBlock.MANUAL),
++        "siren manual state retained");
++    check(
++        level
++            .getBlockEntity(origin.offset(GlassStairwell.WALL_SIREN))
++            .getPersistentData()
++            .getString("audit")
++            .equals("siren payload"),
++        "siren payload transferred");
++    check(GlassStairwell.apply(level, origin, edits) == 0, ".22 siren upgrade idempotent");
+     var activeBeacon =
+         FacilityDetails.ALARM_BEACON
+             .get()
+diff --git a/validation/IntroAudit.java b/validation/IntroAudit.java
+index 9f0d5a2..fcf1384 100644
+--- a/validation/IntroAudit.java
++++ b/validation/IntroAudit.java
+@@ -1096,6 +1096,7 @@ public final class IntroAudit {
+             CoastChapterAudit.run(server);
+             FacilitySpawnAudit.run(server);
+             GlassStairwellAudit.run(server);
++            ReceptionChapterAudit.run(server);
+             beds(server);
+             geometry(server.overworld());
+             Listener player = new Listener(server.overworld());
+@@ -1157,7 +1158,7 @@ public final class IntroAudit {
+           }
+           try {
+             var report = new LinkedHashMap<String, Object>();
+-            report.put("version", "0.8.9.22");
++            report.put("version", "0.8.9.23");
+             report.put("checks", checks);
+             report.put("failures", failures);
+             report.put("status", failures.isEmpty() ? "PASS" : "FAIL");
+diff --git a/validation/ReceptionChapterAudit.java b/validation/ReceptionChapterAudit.java
+new file mode 100644
+index 0000000..9d3d6f8
+--- /dev/null
++++ b/validation/ReceptionChapterAudit.java
+@@ -0,0 +1,235 @@
++package com.timelocked;
++
++import java.util.UUID;
++import net.minecraft.core.BlockPos;
++import net.minecraft.nbt.CompoundTag;
++import net.minecraft.server.MinecraftServer;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.entity.EntityType;
++import net.minecraft.world.entity.MobSpawnType;
++import net.minecraft.world.level.GameType;
++import net.minecraft.world.level.block.Blocks;
++import net.minecraft.world.phys.AABB;
++
++/** Actual NPC placement, right-click assignment and saved-game handoff regression tests. */
++final class ReceptionChapterAudit {
++  static void check(boolean value, String label) {
++    IntroAudit.check(value, "reception chapter: " + label);
++  }
++
++  static void quiet(CoastChapterAudit.Reader player) {
++    for (int i = 0; i < 4; i++) ReceptionChapter.tickPlayer(player);
++  }
++
++  static void run(MinecraftServer server) throws Exception {
++    var level = server.overworld();
++    var story = server.getGameRules().getRule(StoryMode.RULE);
++    boolean oldRule = story.get();
++    var facilities = FacilityState.get(server);
++    BlockPos site = new BlockPos(32000, 80, 32000);
++    BlockPos home = site.offset(ReceptionChapter.DESK),
++        terminal = site.offset(ReceptionChapter.TERMINAL);
++    var oldSite = facilities.sites.put(site.asLong(), 43);
++    var progress = new SiteProgress();
++    progress.geometryVersion = BlueprintRooms.VERSION;
++    progress.layoutVersion = 2;
++    var oldProgress = facilities.progress.put(site.asLong(), progress);
++    var player = new CoastChapterAudit.Reader(level, "ReceptionReader");
++    player.setGameMode(GameType.SURVIVAL);
++    SarcScientist npc = null;
++    UUID uuid = null;
++    try {
++      var fresh = GlassStairwell.templateStates(level, "drawing");
++      for (int x = 64; x <= 71; x++)
++        for (int z = 324; z <= 332; z++)
++          for (int y = 1; y <= 5; y++) {
++            var local = new BlockPos(x, y, z);
++            var state = fresh.get(local);
++            check(state != null, "authored reception cell exists " + local);
++            level.getChunkAt(site.offset(local));
++            level.setBlock(site.offset(local), state, 2);
++          }
++      check(
++          level.getBlockState(terminal).is(FacilityDetails.WORKSTATION.get()),
++          "quest uses actual shipped workstation");
++      story.set(false, server);
++      check(
++          ReceptionChapter.ensure(level, site) == null,
++          "no story NPC generated in non-Story worlds");
++      story.set(true, server);
++      level.setBlock(home, Blocks.CHEST.defaultBlockState(), 2);
++      check(
++          ReceptionChapter.ensure(level, site) == null && level.getBlockEntity(home) != null,
++          "player container at NPC position is not overwritten");
++      level.setBlock(home, Blocks.AIR.defaultBlockState(), 2);
++      npc = ReceptionChapter.ensure(level, site);
++      check(npc != null, "real separate receptionist created in existing authored reception");
++      if (npc == null) return;
++      uuid = npc.getUUID();
++      check(
++          ReceptionChapter.receptionist(npc)
++              && npc.isNoAi()
++              && npc.isInvulnerable()
++              && !npc.isPushable()
++              && npc.isPersistenceRequired(),
++          "receptionist persists without wandering or normal damage");
++      check(
++          npc.getCustomName() != null
++              && npc.getCustomName().getContents()
++                  instanceof net.minecraft.network.chat.contents.TranslatableContents t
++              && t.getKey().equals("entity.timelocked.receptionist"),
++          "separate receptionist name, not Dr Everleigh");
++      check(
++          !FacilitySpawnProtection.blocked(level, npc, MobSpawnType.STRUCTURE),
++          "spawn guard explicitly permits authored staff");
++      for (int i = 0; i < 10; i++)
++        check(ReceptionChapter.ensure(level, site) == npc, "repeated placement returns same NPC");
++      check(
++          level.getEntitiesOfClass(SarcScientist.class, new AABB(home).inflate(6)).size() == 1,
++          "only one NPC at desk");
++      check(
++          SiteProgress.load(progress.save()).receptionist.equals(uuid),
++          "NPC UUID survives site save/load");
++      CompoundTag intro = CoastChapterAudit.intro(player, site);
++      CompoundTag coast = new CompoundTag();
++      coast.putInt("Step", CoastChapter.COMPLETE);
++      intro.put(CoastChapter.SAVE_KEY, coast);
++      CoastChapterAudit.stand(player, site.offset(64, 2, 331));
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.NOT_STARTED,
++          "welcome cannot be interrupted by starting Chapter 2");
++      progress.arrivalLogoAnnounced = true;
++      progress.arrivalStep = SiteProgress.FINAL_ARRIVAL_STAGE;
++      progress.arrivalWelcomeNext = SiteProgress.WELCOME_LINE_COUNT;
++      ReceptionChapter.tickPlayer(player);
++      check(
++          !intro.contains(ReceptionChapter.SAVE_KEY),
++          "walking into reception does not auto-start quest");
++      npc.mobInteract(player, InteractionHand.OFF_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.NOT_STARTED,
++          "offhand does not duplicate story interaction");
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.REGISTER,
++          "real NPC main-hand interaction starts Chapter 2");
++      check(
++          player.keys.stream().filter(k -> k.equals("message.timelocked.reception.start")).count()
++              == 1,
++          "one start dialogue");
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          player.keys.stream().filter(k -> k.equals("message.timelocked.reception.start")).count()
++              == 1,
++          "rapid repeated clicks do not spam/restart");
++      BlockPos wrongTerminal = site.offset(67, 3, 320);
++      level.setBlock(wrongTerminal, FacilityDetails.WORKSTATION.get().defaultBlockState(), 2);
++      player.setPos(site.getX() + 67.5, site.getY() + 2, site.getZ() + 322.5);
++      check(
++          !ReceptionChapter.terminal(player, wrongTerminal),
++          "moved/wrong workstation cannot satisfy registration");
++      player.setPos(site.getX() + 90.5, site.getY() + 2, site.getZ() + 329.5);
++      check(!ReceptionChapter.terminal(player, terminal), "distant terminal use is rejected");
++      long ownSite = intro.getLong("Site");
++      intro.putLong("Site", site.east(1000).asLong());
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.REGISTER,
++          "other facility's receptionist cannot advance quest");
++      intro.putLong("Site", ownSite);
++      quiet(player);
++      player.setPos(site.getX() + 67.5, site.getY() + 2, site.getZ() + 329.5);
++      check(
++          ReceptionChapter.terminal(player, terminal),
++          "authored desk terminal accepts registration");
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.RETURN,
++          "terminal advances to actual return assignment");
++      check(
++          !ReceptionChapter.terminal(player, terminal),
++          "repeat terminal click cannot re-award progress");
++      quiet(player);
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.COMPLETE,
++          "return interaction completes playable first-contact chapter");
++      quiet(player);
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          player.keys.stream()
++                  .filter(k -> k.equals("message.timelocked.reception.complete"))
++                  .count()
++              == 1,
++          "completion never repeats");
++      check(
++          CoastChapter.step(CoastChapter.chapter(intro)) == CoastChapter.COMPLETE,
++          "Chapter 1 not reset");
++      var persisted =
++          IntroState.load(
++              IntroState.get(server).save(new CompoundTag(), level.registryAccess()),
++              level.registryAccess());
++      check(
++          ReceptionChapter.step(persisted.players.get(player.getUUID()))
++              == ReceptionChapter.COMPLETE,
++          "quest survives full intro save/load");
++      check(
++          CoastChapter.objective(player, intro).getContents()
++                  instanceof net.minecraft.network.chat.contents.TranslatableContents t
++              && t.getKey().equals("message.timelocked.reception.objective.3"),
++          "existing story command routes to Chapter 2 objective");
++      var second = new CoastChapterAudit.Reader(level, "ReceptionSecond");
++      try {
++        second.setGameMode(GameType.SURVIVAL);
++        var secondIntro = CoastChapterAudit.intro(second, site);
++        secondIntro.put(CoastChapter.SAVE_KEY, coast.copy());
++        second.setPos(player.position());
++        npc.mobInteract(second, InteractionHand.MAIN_HAND);
++        check(
++            ReceptionChapter.step(secondIntro) == ReceptionChapter.REGISTER
++                && ReceptionChapter.step(intro) == ReceptionChapter.COMPLETE,
++            "multiplayer quest progress is independent");
++        check(ReceptionChapter.ensure(level, site) == npc, "two players share one receptionist");
++        story.set(false, server);
++        npc.mobInteract(second, InteractionHand.MAIN_HAND);
++        check(
++            ReceptionChapter.step(secondIntro) == ReceptionChapter.REGISTER,
++            "non-Story interaction cannot advance saved quest");
++        story.set(true, server);
++        second.setGameMode(GameType.SPECTATOR);
++        check(!ReceptionChapter.terminal(second, terminal), "spectator cannot register");
++      } finally {
++        IntroState.get(server).players.remove(second.getUUID());
++      }
++      CompoundTag npcSave = new CompoundTag();
++      npc.save(npcSave);
++      npc.discard();
++      check(
++          ReceptionChapter.ensure(level, site) == null && progress.receptionist.equals(uuid),
++          "missing/unloaded saved NPC does not cause duplicate spawn");
++      var reloaded = EntityType.loadEntityRecursive(npcSave, level, e -> e);
++      check(
++          reloaded instanceof SarcScientist && level.addFreshEntity(reloaded),
++          "saved receptionist reloads as actual entity");
++      npc = (SarcScientist) reloaded;
++      check(
++          ReceptionChapter.ensure(level, site) == npc && npc.getUUID().equals(uuid),
++          "reloaded receptionist retains identity and role");
++      var command = server.getCommands().getDispatcher();
++      check(
++          command.getRoot().getChild("sarcreception") != null,
++          "existing-world receptionist status/placement command registered");
++    } finally {
++      if (npc != null) npc.discard();
++      if (uuid != null && level.getEntity(uuid) != null) level.getEntity(uuid).discard();
++      IntroState.get(server).players.remove(player.getUUID());
++      story.set(oldRule, server);
++      if (oldSite == null) facilities.sites.remove(site.asLong());
++      else facilities.sites.put(site.asLong(), oldSite);
++      if (oldProgress == null) facilities.progress.remove(site.asLong());
++      else facilities.progress.put(site.asLong(), oldProgress);
++    }
++  }
++
++  private ReceptionChapterAudit() {}
++}

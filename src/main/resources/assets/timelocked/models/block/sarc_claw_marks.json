@@ -1,0 +1,42 @@
+{
+ "render_type": "minecraft:cutout",
+ "ambientocclusion": false,
+ "textures": {
+  "claw": "timelocked:block/sarc_claw_marks",
+  "particle": "timelocked:block/sarc_claw_marks"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    15.85
+   ],
+   "to": [
+    16,
+    16,
+    15.95
+   ],
+   "faces": {
+    "north": {
+     "texture": "#claw",
+     "uv": [
+      0,
+      0,
+      16,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#claw",
+     "uv": [
+      16,
+      0,
+      0,
+      16
+     ]
+    }
+   }
+  }
+ ]
+}

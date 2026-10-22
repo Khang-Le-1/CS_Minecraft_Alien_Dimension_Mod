@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  " E ",
+  "CBC",
+  " T "
+ ],
+ "key": {
+  "E": {
+   "item": "minecraft:ender_pearl"
+  },
+  "C": {
+   "item": "timelocked:chronotite_ingot"
+  },
+  "B": {
+   "item": "timelocked:circuit_board"
+  },
+  "T": {
+   "item": "timelocked:titanium_ingot"
+  }
+ },
+ "result": {
+  "id": "timelocked:timeskipper_link",
+  "count": 1
+ }
+}

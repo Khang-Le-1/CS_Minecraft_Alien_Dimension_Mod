@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:chronotite_drive"
+  },
+  "title": {
+   "translate": "advancements.timelocked.first_jump.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.first_jump.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/timeskipper",
+ "rewards": {
+  "experience": 30
+ }
+}

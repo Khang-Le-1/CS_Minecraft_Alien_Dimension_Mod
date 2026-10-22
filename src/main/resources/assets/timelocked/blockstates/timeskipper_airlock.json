@@ -1,0 +1,1 @@
+{"variants": {"facing=north": {"model": "timelocked:block/timeskipper_airlock"}, "facing=east": {"model": "timelocked:block/timeskipper_airlock", "y": 90}, "facing=south": {"model": "timelocked:block/timeskipper_airlock", "y": 180}, "facing=west": {"model": "timelocked:block/timeskipper_airlock", "y": 270}}}

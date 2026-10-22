@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:necronium_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:necronium_block",
+    "count": 1
+  }
+}

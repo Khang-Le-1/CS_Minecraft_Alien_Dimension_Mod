@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:necronium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:necronium_ingot",
+    "count": 9
+  }
+}

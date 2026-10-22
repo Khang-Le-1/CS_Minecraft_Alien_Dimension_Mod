@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "minecraft:tnt"
+  },
+  "title": {
+   "translate": "advancements.timelocked.big_bang.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.big_bang.description"
+  },
+  "frame": "challenge",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/power_trip",
+ "rewards": {
+  "experience": 100
+ }
+}

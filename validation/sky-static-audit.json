@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "sky": "violet/indigo dome, stable stars and galactic band, two procedural auroras, two existing moon textures",
+  "sampled_aurora_vertices": 40960,
+  "new_texture_dependencies": 0,
+  "client_sources_compile": "PASS",
+  "rendered_client_visual_test": "not available; no graphics display in this environment",
+  "lighting_and_fixed_time": "preserved",
+  "previous_resources": "unchanged except dimension type, locale and mod version",
+  "changed_existing_files": [
+    "gradle.properties",
+    "src/main/resources/META-INF/neoforge.mods.toml",
+    "src/main/resources/assets/timelocked/lang/en_us.json",
+    "src/main/resources/data/timelocked/dimension_type/voidspace.json"
+  ]
+}

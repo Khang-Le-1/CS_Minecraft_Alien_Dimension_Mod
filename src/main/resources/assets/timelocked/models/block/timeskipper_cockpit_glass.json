@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "timelocked:block/timeskipper_cockpit_glass"
+  },
+  "render_type": "minecraft:translucent"
+}

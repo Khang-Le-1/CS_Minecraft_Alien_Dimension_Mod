@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/door_top_left", "textures": {"top": "timelocked:block/campus_glass_door_top", "bottom": "timelocked:block/campus_glass_door_bottom"}, "render_type": "minecraft:cutout"}

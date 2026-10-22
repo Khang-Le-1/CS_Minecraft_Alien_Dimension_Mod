@@ -1,0 +1,11 @@
+{
+ "type": "timelocked:luna",
+ "generator": {
+  "type": "timelocked:planet",
+  "planet": "luna",
+  "biome_source": {
+   "type": "minecraft:fixed",
+   "biome": "timelocked:luna"
+  }
+ }
+}

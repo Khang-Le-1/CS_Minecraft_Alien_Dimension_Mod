@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:lead_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:lead_ingot",
+    "count": 9
+  }
+}

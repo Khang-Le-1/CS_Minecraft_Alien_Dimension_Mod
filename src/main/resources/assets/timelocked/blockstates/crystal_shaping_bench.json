@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/crystal_shaping_bench"
+    }
+  }
+}

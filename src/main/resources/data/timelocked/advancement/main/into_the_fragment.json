@@ -1,0 +1,29 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:celestial_frond"
+  },
+  "title": {
+   "translate": "advancements.timelocked.into_the_fragment.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.into_the_fragment.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "arrive": {
+   "trigger": "minecraft:changed_dimension",
+   "conditions": {
+    "to": "timelocked:voidspace"
+   }
+  }
+ },
+ "parent": "timelocked:main/big_red_button",
+ "rewards": {
+  "experience": 30
+ }
+}

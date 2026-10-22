@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_medical_cart"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_medical_cart",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_medical_cart",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_medical_cart",
+      "y": 270
+    }
+  }
+}

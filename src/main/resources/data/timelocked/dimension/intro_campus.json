@@ -1,0 +1,13 @@
+{
+  "type": "timelocked:intro_campus",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "timelocked:intro_campus",
+      "layers": [],
+      "lakes": false,
+      "features": false,
+      "structure_overrides": []
+    }
+  }
+}

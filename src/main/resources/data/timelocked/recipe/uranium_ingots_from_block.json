@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:uranium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:uranium_ingot",
+    "count": 9
+  }
+}

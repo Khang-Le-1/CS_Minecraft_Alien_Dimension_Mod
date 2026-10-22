@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/necronium_ore"
+    }
+  }
+}

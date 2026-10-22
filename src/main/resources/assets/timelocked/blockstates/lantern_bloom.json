@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "timelocked:block/lantern_bloom",
+        "y": 0
+      },
+      {
+        "model": "timelocked:block/lantern_bloom",
+        "y": 90
+      },
+      {
+        "model": "timelocked:block/lantern_bloom",
+        "y": 180
+      },
+      {
+        "model": "timelocked:block/lantern_bloom",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:pulse_rifle"
+  },
+  "title": {
+   "translate": "advancements.timelocked.three_waves.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.three_waves.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/lights_on",
+ "rewards": {
+  "experience": 50
+ }
+}

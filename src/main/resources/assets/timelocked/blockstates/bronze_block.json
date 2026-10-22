@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/bronze_block"
+    }
+  }
+}

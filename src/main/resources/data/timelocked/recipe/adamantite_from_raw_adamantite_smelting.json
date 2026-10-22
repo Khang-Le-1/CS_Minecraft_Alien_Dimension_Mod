@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:raw_adamantite"
+  },
+  "result": {
+    "id": "timelocked:adamantite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

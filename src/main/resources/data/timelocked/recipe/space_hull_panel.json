@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "SFS",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "timelocked:titanium_plate"
+    },
+    "S": {
+      "item": "timelocked:steel_plate"
+    },
+    "F": {
+      "item": "timelocked:insulation_fabric"
+    }
+  },
+  "result": {
+    "id": "timelocked:space_hull_panel",
+    "count": 4
+  }
+}

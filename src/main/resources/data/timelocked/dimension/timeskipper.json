@@ -1,0 +1,13 @@
+{
+ "type": "timelocked:timeskipper",
+ "generator": {
+  "type": "minecraft:flat",
+  "settings": {
+   "biome": "timelocked:deep_space",
+   "layers": [],
+   "lakes": false,
+   "features": false,
+   "structure_overrides": []
+  }
+ }
+}

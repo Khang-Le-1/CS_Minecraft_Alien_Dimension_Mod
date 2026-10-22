@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " SS",
+    "ISC",
+    " G "
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "I": {
+      "item": "timelocked:cast_iron_ingot"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "G": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "timelocked:service_pistol",
+    "count": 1
+  }
+}

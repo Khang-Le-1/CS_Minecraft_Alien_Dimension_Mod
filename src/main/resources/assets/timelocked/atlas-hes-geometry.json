@@ -1,0 +1,2006 @@
+{
+  "format_version": 1,
+  "uv_width": 256,
+  "uv_height": 256,
+  "texture_width": 512,
+  "texture_height": 512,
+  "bones": {
+    "head": [
+      0,
+      0,
+      0
+    ],
+    "hat": [
+      0,
+      0,
+      0
+    ],
+    "body": [
+      0,
+      0,
+      0
+    ],
+    "right_arm": [
+      -5,
+      2,
+      0
+    ],
+    "left_arm": [
+      5,
+      2,
+      0
+    ],
+    "right_leg": [
+      -1.9,
+      12,
+      0
+    ],
+    "left_leg": [
+      1.9,
+      12,
+      0
+    ]
+  },
+  "boxes": [
+    {
+      "name": "crown",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -4.5,
+        -8.5,
+        -4.5
+      ],
+      "size": [
+        9,
+        1,
+        9
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "helmet_left",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -4.5,
+        -7.5,
+        -4.5
+      ],
+      "size": [
+        1,
+        7,
+        9
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        38,
+        0
+      ]
+    },
+    {
+      "name": "helmet_right",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        3.5,
+        -7.5,
+        -4.5
+      ],
+      "size": [
+        1,
+        7,
+        9
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        60,
+        0
+      ]
+    },
+    {
+      "name": "helmet_back",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -3.5,
+        -7.5,
+        3.5
+      ],
+      "size": [
+        7,
+        7,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        82,
+        0
+      ]
+    },
+    {
+      "name": "chin_guard",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -3.5,
+        -0.5,
+        -4.5
+      ],
+      "size": [
+        7,
+        1,
+        2
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        100,
+        0
+      ]
+    },
+    {
+      "name": "visor_brow",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -3.5,
+        -7.5,
+        -4.5
+      ],
+      "size": [
+        7,
+        2,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        120,
+        0
+      ]
+    },
+    {
+      "name": "visor_left_frame",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -3.5,
+        -5.5,
+        -4.5
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        138,
+        0
+      ]
+    },
+    {
+      "name": "visor_right_frame",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        2.5,
+        -5.5,
+        -4.5
+      ],
+      "size": [
+        1,
+        5,
+        1
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        144,
+        0
+      ]
+    },
+    {
+      "name": "cyan_visor",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -3.5,
+        -5.5,
+        -4.65
+      ],
+      "size": [
+        7,
+        4,
+        1
+      ],
+      "material": "visor",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        150,
+        0
+      ]
+    },
+    {
+      "name": "standard_identifier",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -1.5,
+        -7.45,
+        -5.55
+      ],
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "variant": "standard",
+      "uv": [
+        168,
+        0
+      ]
+    },
+    {
+      "name": "personal_crescent",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -1.5,
+        -8.4,
+        -5.55
+      ],
+      "size": [
+        3,
+        3,
+        1
+      ],
+      "material": "moon",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "variant": "everleigh",
+      "uv": [
+        178,
+        0
+      ]
+    },
+    {
+      "name": "personal_ear_housing_-1",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -4.5,
+        -11.5,
+        -1.5
+      ],
+      "size": [
+        3,
+        4,
+        3
+      ],
+      "material": "hex",
+      "pivot": [
+        -3,
+        -7.5,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.3141592653589793
+      ],
+      "glow": false,
+      "variant": "everleigh",
+      "uv": [
+        188,
+        0
+      ]
+    },
+    {
+      "name": "personal_ear_tip_-1",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        -5.2,
+        -13,
+        -1
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "material": "plate",
+      "pivot": [
+        -3,
+        -7.5,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.3141592653589793
+      ],
+      "glow": false,
+      "variant": "everleigh",
+      "uv": [
+        202,
+        0
+      ]
+    },
+    {
+      "name": "personal_ear_housing_1",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        1.5,
+        -11.5,
+        -1.5
+      ],
+      "size": [
+        3,
+        4,
+        3
+      ],
+      "material": "hex",
+      "pivot": [
+        3,
+        -7.5,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.3141592653589793
+      ],
+      "glow": false,
+      "variant": "everleigh",
+      "uv": [
+        212,
+        0
+      ]
+    },
+    {
+      "name": "personal_ear_tip_1",
+      "part": "head",
+      "slot": "head",
+      "from": [
+        3.2,
+        -13,
+        -1
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ],
+      "material": "plate",
+      "pivot": [
+        3,
+        -7.5,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.3141592653589793
+      ],
+      "glow": false,
+      "variant": "everleigh",
+      "uv": [
+        226,
+        0
+      ]
+    },
+    {
+      "name": "torso_flex",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -4,
+        0,
+        -2
+      ],
+      "size": [
+        8,
+        10,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        0,
+        18
+      ]
+    },
+    {
+      "name": "collar",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -3.5,
+        -0.3,
+        -2.6
+      ],
+      "size": [
+        7,
+        2,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        26,
+        18
+      ]
+    },
+    {
+      "name": "left_pectoral",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -3.9,
+        1.3,
+        -3.1
+      ],
+      "size": [
+        4,
+        5,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        1,
+        -2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.08726646259971647
+      ],
+      "glow": false,
+      "uv": [
+        52,
+        18
+      ]
+    },
+    {
+      "name": "right_pectoral",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        0.1,
+        1.3,
+        -3.1
+      ],
+      "size": [
+        4,
+        5,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        1,
+        -2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.08726646259971647
+      ],
+      "glow": false,
+      "uv": [
+        64,
+        18
+      ]
+    },
+    {
+      "name": "sternum",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -0.5,
+        2,
+        -3.3
+      ],
+      "size": [
+        1,
+        4,
+        1
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        76,
+        18
+      ]
+    },
+    {
+      "name": "lower_chest",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -3.5,
+        6.5,
+        -2.8
+      ],
+      "size": [
+        7,
+        2,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        82,
+        18
+      ]
+    },
+    {
+      "name": "abdomen",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -2.5,
+        8.7,
+        -2.7
+      ],
+      "size": [
+        5,
+        2,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        100,
+        18
+      ]
+    },
+    {
+      "name": "abdomen_cyan",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -0.5,
+        8.8,
+        -3.75
+      ],
+      "size": [
+        1,
+        2,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        114,
+        18
+      ]
+    },
+    {
+      "name": "back_plate",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -4,
+        1,
+        2.1
+      ],
+      "size": [
+        8,
+        7,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        120,
+        18
+      ]
+    },
+    {
+      "name": "service_pack",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -2,
+        3,
+        3.15
+      ],
+      "size": [
+        4,
+        5,
+        2
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        140,
+        18
+      ]
+    },
+    {
+      "name": "back_status",
+      "part": "body",
+      "slot": "chest",
+      "from": [
+        -1.5,
+        3.5,
+        5.2
+      ],
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        154,
+        18
+      ]
+    },
+    {
+      "name": "right_arm_flex",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3,
+        -2,
+        -2
+      ],
+      "size": [
+        4,
+        12,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        164,
+        18
+      ]
+    },
+    {
+      "name": "right_pauldron",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3.9,
+        -2.6,
+        -3
+      ],
+      "size": [
+        6,
+        3,
+        6
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        -1,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        -0.20943951023931956
+      ],
+      "glow": false,
+      "uv": [
+        182,
+        18
+      ]
+    },
+    {
+      "name": "right_shoulder_stripe",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3.5,
+        0.7,
+        -3.1
+      ],
+      "size": [
+        5,
+        1,
+        1
+      ],
+      "material": "violet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        208,
+        18
+      ]
+    },
+    {
+      "name": "right_upper_guard",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3.4,
+        2,
+        -2.5
+      ],
+      "size": [
+        5,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        222,
+        18
+      ]
+    },
+    {
+      "name": "right_gauntlet",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3.5,
+        6.3,
+        -2.5
+      ],
+      "size": [
+        5,
+        4,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        0,
+        36
+      ]
+    },
+    {
+      "name": "right_forearm_plate",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -3,
+        6.7,
+        -3.55
+      ],
+      "size": [
+        4,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        22,
+        36
+      ]
+    },
+    {
+      "name": "right_forearm_cyan",
+      "part": "right_arm",
+      "slot": "chest",
+      "from": [
+        -2,
+        7,
+        -4.6
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        34,
+        36
+      ]
+    },
+    {
+      "name": "left_arm_flex",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1,
+        -2,
+        -2
+      ],
+      "size": [
+        4,
+        12,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        42,
+        36
+      ]
+    },
+    {
+      "name": "left_pauldron",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1.9,
+        -2.6,
+        -3
+      ],
+      "size": [
+        6,
+        3,
+        6
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        -1,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.20943951023931956
+      ],
+      "glow": false,
+      "uv": [
+        60,
+        36
+      ]
+    },
+    {
+      "name": "left_shoulder_stripe",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1.5,
+        0.7,
+        -3.1
+      ],
+      "size": [
+        5,
+        1,
+        1
+      ],
+      "material": "violet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        86,
+        36
+      ]
+    },
+    {
+      "name": "left_upper_guard",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1.4,
+        2,
+        -2.5
+      ],
+      "size": [
+        5,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        100,
+        36
+      ]
+    },
+    {
+      "name": "left_gauntlet",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1.5,
+        6.3,
+        -2.5
+      ],
+      "size": [
+        5,
+        4,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        114,
+        36
+      ]
+    },
+    {
+      "name": "left_forearm_plate",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        -1,
+        6.7,
+        -3.55
+      ],
+      "size": [
+        4,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        136,
+        36
+      ]
+    },
+    {
+      "name": "left_forearm_cyan",
+      "part": "left_arm",
+      "slot": "chest",
+      "from": [
+        0,
+        7,
+        -4.6
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        148,
+        36
+      ]
+    },
+    {
+      "name": "waist_flex",
+      "part": "body",
+      "slot": "legs",
+      "from": [
+        -4,
+        10,
+        -2
+      ],
+      "size": [
+        8,
+        2,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        156,
+        36
+      ]
+    },
+    {
+      "name": "belt",
+      "part": "body",
+      "slot": "legs",
+      "from": [
+        -4.5,
+        10,
+        -2.6
+      ],
+      "size": [
+        9,
+        2,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        182,
+        36
+      ]
+    },
+    {
+      "name": "belt_tag",
+      "part": "body",
+      "slot": "legs",
+      "from": [
+        -1,
+        10.4,
+        -3.7
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "violet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        212,
+        36
+      ]
+    },
+    {
+      "name": "right_leg_flex",
+      "part": "right_leg",
+      "slot": "legs",
+      "from": [
+        -2,
+        0,
+        -2
+      ],
+      "size": [
+        4,
+        8,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        220,
+        36
+      ]
+    },
+    {
+      "name": "right_thigh_plate",
+      "part": "right_leg",
+      "slot": "legs",
+      "from": [
+        -1.5,
+        0.6,
+        -2.8
+      ],
+      "size": [
+        3,
+        5,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        238,
+        36
+      ]
+    },
+    {
+      "name": "right_hip_guard",
+      "part": "right_leg",
+      "slot": "legs",
+      "from": [
+        -2,
+        -0.3,
+        -2.6
+      ],
+      "size": [
+        1,
+        3,
+        5
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        0,
+        54
+      ]
+    },
+    {
+      "name": "right_knee",
+      "part": "right_leg",
+      "slot": "legs",
+      "from": [
+        -1.7,
+        5.8,
+        -3.3
+      ],
+      "size": [
+        4,
+        2,
+        1
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        14,
+        54
+      ]
+    },
+    {
+      "name": "right_knee_marker",
+      "part": "right_leg",
+      "slot": "legs",
+      "from": [
+        -0.7,
+        6.1,
+        -4.35
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        26,
+        54
+      ]
+    },
+    {
+      "name": "right_boot_flex",
+      "part": "right_leg",
+      "slot": "feet",
+      "from": [
+        -2,
+        8,
+        -2
+      ],
+      "size": [
+        4,
+        4,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        34,
+        54
+      ]
+    },
+    {
+      "name": "right_shin",
+      "part": "right_leg",
+      "slot": "feet",
+      "from": [
+        -1.7,
+        7.6,
+        -2.7
+      ],
+      "size": [
+        4,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        52,
+        54
+      ]
+    },
+    {
+      "name": "right_ankle",
+      "part": "right_leg",
+      "slot": "feet",
+      "from": [
+        -2.2,
+        10.5,
+        -2.5
+      ],
+      "size": [
+        5,
+        1,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        64,
+        54
+      ]
+    },
+    {
+      "name": "right_boot_toe",
+      "part": "right_leg",
+      "slot": "feet",
+      "from": [
+        -2.1,
+        11,
+        -3.5
+      ],
+      "size": [
+        4,
+        1,
+        6
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        86,
+        54
+      ]
+    },
+    {
+      "name": "right_toe_trim",
+      "part": "right_leg",
+      "slot": "feet",
+      "from": [
+        -1.7,
+        11.1,
+        -4.55
+      ],
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "material": "violet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        108,
+        54
+      ]
+    },
+    {
+      "name": "left_leg_flex",
+      "part": "left_leg",
+      "slot": "legs",
+      "from": [
+        -2,
+        0,
+        -2
+      ],
+      "size": [
+        4,
+        8,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        118,
+        54
+      ]
+    },
+    {
+      "name": "left_thigh_plate",
+      "part": "left_leg",
+      "slot": "legs",
+      "from": [
+        -1.5,
+        0.6,
+        -2.8
+      ],
+      "size": [
+        3,
+        5,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        136,
+        54
+      ]
+    },
+    {
+      "name": "left_hip_guard",
+      "part": "left_leg",
+      "slot": "legs",
+      "from": [
+        1,
+        -0.3,
+        -2.6
+      ],
+      "size": [
+        1,
+        3,
+        5
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        146,
+        54
+      ]
+    },
+    {
+      "name": "left_knee",
+      "part": "left_leg",
+      "slot": "legs",
+      "from": [
+        -1.7,
+        5.8,
+        -3.3
+      ],
+      "size": [
+        4,
+        2,
+        1
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        160,
+        54
+      ]
+    },
+    {
+      "name": "left_knee_marker",
+      "part": "left_leg",
+      "slot": "legs",
+      "from": [
+        -0.7,
+        6.1,
+        -4.35
+      ],
+      "size": [
+        2,
+        1,
+        1
+      ],
+      "material": "cyan",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": true,
+      "uv": [
+        172,
+        54
+      ]
+    },
+    {
+      "name": "left_boot_flex",
+      "part": "left_leg",
+      "slot": "feet",
+      "from": [
+        -2,
+        8,
+        -2
+      ],
+      "size": [
+        4,
+        4,
+        4
+      ],
+      "material": "hex",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        180,
+        54
+      ]
+    },
+    {
+      "name": "left_shin",
+      "part": "left_leg",
+      "slot": "feet",
+      "from": [
+        -1.7,
+        7.6,
+        -2.7
+      ],
+      "size": [
+        4,
+        3,
+        1
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        198,
+        54
+      ]
+    },
+    {
+      "name": "left_ankle",
+      "part": "left_leg",
+      "slot": "feet",
+      "from": [
+        -2.2,
+        10.5,
+        -2.5
+      ],
+      "size": [
+        5,
+        1,
+        5
+      ],
+      "material": "dark",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        210,
+        54
+      ]
+    },
+    {
+      "name": "left_boot_toe",
+      "part": "left_leg",
+      "slot": "feet",
+      "from": [
+        -2.1,
+        11,
+        -3.5
+      ],
+      "size": [
+        4,
+        1,
+        6
+      ],
+      "material": "plate",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        232,
+        54
+      ]
+    },
+    {
+      "name": "left_toe_trim",
+      "part": "left_leg",
+      "slot": "feet",
+      "from": [
+        -1.7,
+        11.1,
+        -4.55
+      ],
+      "size": [
+        3,
+        1,
+        1
+      ],
+      "material": "violet",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "glow": false,
+      "uv": [
+        0,
+        68
+      ]
+    }
+  ],
+  "notes": "ATLAS HES armor only. Slot-specific animated humanoid roots. Personal ear-cover armor, no hair, tails, anatomy or weapons."
+}

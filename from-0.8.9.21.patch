@@ -1,0 +1,2215 @@
+diff --git a/README.md b/README.md
+index 4767cbd..3174439 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+-# TIMELOCKED: Zero Point — 0.8.9.21 FULL SOURCE
++# TIMELOCKED: Zero Point — 0.8.9.23 FULL SOURCE
+ 
+-This is the complete, buildable source project for the 0.8.9.21 recessed-exit development release (retains A Road Inland). It compiles the mod's Java source and includes its assets and data. **No prior TIMELOCKED JAR is needed to build it.** The source ZIP is not an installable mod.
++This is the complete, buildable source project for the 0.8.9.23 recessed-exit development release (retains A Road Inland). It compiles the mod's Java source and includes its assets and data. **No prior TIMELOCKED JAR is needed to build it.** The source ZIP is not an installable mod.
+ 
+ ## Start here (club contributors)
+ 
+@@ -43,7 +43,7 @@ Windows:
+ gradlew.bat clean build --console=plain
+ ```
+ 
+-Install only `build/libs/timelocked-0.8.9.21-recess-exit-dev.jar`. Replace older TIMELOCKED mod JARs rather than installing both. Usual NeoForge development runs are configured in `build.gradle`.
++Install only `build/libs/timelocked-0.8.9.23-first-contact-dev.jar`. Replace older TIMELOCKED mod JARs rather than installing both. Usual NeoForge development runs are configured in `build.gradle`.
+ 
+ For Windows PowerShell use `.\gradlew.bat clean build --console=plain`.
+ No Bash, Python, FFmpeg or asset regeneration is required for this build.
+@@ -175,6 +175,16 @@ See [the chapter script and contributor code map](docs/STORY-CHAPTER-1.md). Use
+ 
+ Registered SARC facilities now prevent ordinary mob spawning across all floors, even with the lights off. This does not disable spawning worldwide or remove existing mobs. Intended scientists, encounter waves and marked meltdown hazards are preserved. See [scope, exceptions and verification](docs/FACILITY-SPAWN-PROTECTION.md).
+ 
+-## Glass-slot stairs: photographed recessed exit (0.8.9.21)
++## Glass-slot stairs: photographed recessed exit (0.8.9.23)
+ 
+ The original glass-surrounded surface slot feeds two stair flights with a halfway landing, then exits west through the photographed recess in the old stairwell room—not into the hallway used by 0.8.9.20. The old spiral is removed, its upper hole is capped, and the previous hallway return flight is restored away. Stair emergency lighting does not bypass the lobby power-up sequence. Fresh facilities include the revised geometry; original or 0.8.9.20 worlds require the guarded `/sarcstairs repair confirm` command after making a backup. See [the stairwell guide](docs/GLASS-STAIRWELL.md).
++
++## Chapter 2: First Contact
++
++Story worlds now include a separate SARC Receptionist at the arrival reception
++counter. Finish Chapter 1/the welcome, speak to the receptionist, use a counter
++terminal, then return to confirm visitor registration. `/timelockedstory` shows
++the current objective; `/sarcreception` checks existing-world placement without
++rebuilding the facility. See [Chapter 2](docs/STORY-CHAPTER-2.md) for save, multiplayer
++and placement details. The siren also joins the beacon on the photographed wall;
++existing facilities use the backed-up stair repair command for that block move.
+diff --git a/build.gradle b/build.gradle
+index 57bfdb8..8e403a3 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -99,6 +99,7 @@ tasks.register('checkArrivalNumbers', Checkstyle) {
+     source = files(
+         'src/main/java/com/timelocked/HubArrival.java',
+         'src/main/java/com/timelocked/CoastChapter.java',
++        'src/main/java/com/timelocked/ReceptionChapter.java',
+         'src/main/java/com/timelocked/FacilitySpawnProtection.java',
+         'src/main/java/com/timelocked/GlassStairwell.java',
+         'src/main/java/com/timelocked/AuthoredGeometry.java',
+diff --git a/docs/CONTRIBUTING.md b/docs/CONTRIBUTING.md
+index 43e38e6..7d70394 100644
+--- a/docs/CONTRIBUTING.md
++++ b/docs/CONTRIBUTING.md
+@@ -56,7 +56,7 @@ task here means the report was produced, NOT that numeric debt is fixed. It cove
+ all main Java, including drawing data; it ignores only -1, 0, 1, 2, constant
+ initializers and hashCode methods according to Checkstyle's configured semantics.
+ No file-wide magic-number suppressions or hidden baseline are used.
+-`build` also enforces numeric checks in the 14 cleaned gameplay/geometry classes
++`build` also enforces numeric checks in the 18 selected gameplay/geometry classes
+ via `checkArrivalNumbers`; the full-codebase inventory remains non-gating. See
+ [geometry and numeric rules](GEOMETRY-AND-NUMERIC-RULES.md) for the exact scope.
+ 
+@@ -109,7 +109,7 @@ artwork: keep existing shipped textures unless the change is intentional.
+ `.cache/` are ignored. Actual `src/generated/resources` game assets are not hidden
+ wholesale: generated assets intended to ship still need review. Historical reports
+ and preview images already in `validation/` remain evidence, not current-run output.
+-`IntroAudit.java`, `CoastChapterAudit.java`, `FacilitySpawnAudit.java` and `GlassStairwellAudit.java` are wired into the current native runner;
++`IntroAudit.java`, `CoastChapterAudit.java`, `FacilitySpawnAudit.java`, `GlassStairwellAudit.java` and `ReceptionChapterAudit.java` are wired into the current native runner;
+ the other audit Java files document earlier releases, not additional automatically executed tests.
+ 
+ ## Finding the Story code
+@@ -166,3 +166,16 @@ manual client checklist, especially with shaders or first-person body mods.
+ 
+ See [geometry and numeric rules](GEOMETRY-AND-NUMERIC-RULES.md) for the next cleanup pass,
+ editable model schemas, unchanged save IDs and expanded numeric gate.
++
++## IntelliJ review versus automated checks
++
++This project uses Gradle Spotless/google-java-format as its canonical TIMELOCKED
++Java formatter. Run `spotlessApply` from IntelliJ's Gradle tool window (or use the
++wrapper command above) before `build`; an IDE's default Reformat Code settings
++may differ. Do not bulk-reformat the preserved club teaching examples.
++
++A passing build is not a clean IntelliJ inspection report. Checkstyle covers only
++the configured static rules, and the named-number gate covers the documented
++classes, not the whole mod. Deprecation and unchecked compiler warnings remain.
++Reviewers should include the exact class, inspection name and line so fixes can
++be verified without suppressing warnings or renaming arbitrary coordinates.
+diff --git a/docs/GLASS-STAIRWELL.md b/docs/GLASS-STAIRWELL.md
+index 4f253c5..459b8fc 100644
+--- a/docs/GLASS-STAIRWELL.md
++++ b/docs/GLASS-STAIRWELL.md
+@@ -1,4 +1,4 @@
+-# Glass-slot stairs and the photographed recessed exit — 0.8.9.21
++# Glass-slot stairs and the photographed recessed exit — 0.8.9.23
+ 
+ The five-wide **glass-surrounded surface slot** stays where it is. The stairs now exit **west through the recessed opening in the old stairwell room**, not into the north/south entrance hallway used by 0.8.9.20. The old spiral staircase is removed and its upper hole is capped.
+ 
+@@ -30,7 +30,7 @@ The route and old-shaft closure are baked into the shipped drawing modules. New
+ ## Existing facilities: back up first
+ 
+ 1. Close Minecraft and copy the world save somewhere safe.
+-2. Install only `timelocked-0.8.9.21-recess-exit-dev.jar` with the normal NeoForge dependencies. Remove the older TIMELOCKED JAR.
++2. Install only `timelocked-0.8.9.23-first-contact-dev.jar` with the normal NeoForge dependencies. Remove the older TIMELOCKED JAR.
+ 3. Enter the intended registered drawing-layout SARC facility in the Overworld. Keep the entrance chunks loaded.
+ 4. Move players, mobs and dropped items out of both the old and new stair areas. Stand back in the main lobby, away from the entrance stairwell.
+ 5. As an operator, run:
+@@ -66,3 +66,49 @@ python3 tools/run_story_audit.py --accept-eula
+ ```
+ 
+ This is dedicated-server geometry verification, not a graphical client playthrough. Check the updated route in a backed-up test world before changing a shared server.
++
++## Stair hallway lighting and arrival-trigger correction
++
++The upper turning landing reaches local Z=333–335, inside the original lobby
++arrival cuboid (Z<337 and Y<19). The arrival test now excludes the stair enclosure,
++including both flights and the turning landing. The lobby boundary outside that
++enclosure is unchanged. This fixes early light/PA startup without moving the
++surface glass, recessed exit, landing, or lobby lights. The visible protrusion
++has not been redesigned in this release.
++
++Six permanent emergency strips light the bottom stair hallway: four in the
++westbound exit ceiling and two along the return passage. They emit block light level
++12 independently of arrival progression. The front doorway beacon is moved to the wall beside the lift; the front doorway siren joins it in this release. The other alarm
++fixtures and walking width/headroom are retained. Shader appearance still needs a client check.
++
++Existing 0.8.9.21 worlds use the same backed-up `/sarcstairs repair confirm`
++command. The preflight recognises the exact preserved .21 templates; upgrading
++an unchanged .21 stairwell changes only ten blocks (six light strips and the four alarm endpoints), and a second run changes zero.
++This command does not reset an arrival sequence that has already fired.
++
++### Beacon beside the lift
++
++The targeted wall is the south wall beside the lift, local `(83, 5, 360)`.
++The beacon occupies the adjacent air cell `(83, 5, 359)` facing north, replacing
++the front doorway beacon at `(86, 6, 356)`. The supplied F3 image targets world
++`(-1677, 74, 1512)` facing south; placement in other facilities remains relative
++to their own anchor, never hardcoded to that world coordinate.
++
++The repair preserves the beacon's active/manual/lit state and complete rotor
++block-entity payload. It refuses containers and other block entities; only the
++expected source/target alarm rotor is permitted. If both mounts already contain
++beacons, the preflight refuses rather than discarding either one. The alarm index
++keeps both mount positions for compatibility with worlds not yet repaired.
++
++### Siren on the same wall
++
++The front doorway siren at `(86, 6, 358)` now occupies `(85, 5, 359)` facing north,
++next to the beacon at `(83, 5, 359)`. The backing clean-panel wall is retained.
++Both fixtures preserve active/manual/lit state and complete rotor payloads during
++repair, and both new mounts are linked to the existing facility alarm group.
++Old mount coordinates stay indexed for worlds not yet repaired. Duplicate source
++and destination alarms cause a preflight refusal rather than an overwrite.
++
++An unchanged .22 facility needs only the same backed-up `/sarcstairs repair confirm`
++command: it changes exactly the two siren endpoints. Receptionist placement and
++Chapter 2 progress are separate and do not require this stair repair.
+diff --git a/docs/STORY-CHAPTER-1.md b/docs/STORY-CHAPTER-1.md
+index 6a55ebb..37b366c 100644
+--- a/docs/STORY-CHAPTER-1.md
++++ b/docs/STORY-CHAPTER-1.md
+@@ -39,7 +39,7 @@ Progress lives in each player's existing intro save compound as `CoastChapter`:
+ 
+ An existing Story save gains progress only while physically on its own saved route. Rejoining does not repeat finished beats; intro replay preserves progress. Other players have separate progress. Non-Story worlds, other dimensions, dead/spectator players, airborne movement and unloaded ground do not advance it. Leaving the route pauses active progression; there is no offline catch-up.
+ 
+-This chapter does not change terrain, inventory, clearance, camera or game mode. It adds no NPCs, rescue explanation or new mandatory quest item.
++This chapter does not change terrain, inventory, clearance, camera or game mode. It adds no NPCs, rescue explanation or new mandatory quest item. After completion, the story objective now hands off to the separate receptionist in [Chapter 2: First Contact](STORY-CHAPTER-2.md).
+ 
+ ## Checks
+ 
+diff --git a/docs/STORY-CHAPTER-2.md b/docs/STORY-CHAPTER-2.md
+new file mode 100644
+index 0000000..d5c85cd
+--- /dev/null
++++ b/docs/STORY-CHAPTER-2.md
+@@ -0,0 +1,74 @@
++# Chapter 2: First Contact
++
++A separate **SARC Receptionist** now stands at the reception counter in Story
++worlds. This uses the existing scientist model with a dedicated saved receptionist
++role and visible name; it is not Dr. Everleigh or another ambient trading NPC.
++The recorded welcome, anthem and arrival lighting remain owned by `HubArrival`.
++
++## Playing
++
++Finish Chapter 1 and the seven-line arrival welcome, then:
++
++1. Right-click the SARC Receptionist with your main hand to begin **First Contact**.
++2. Right-click one of the four workstations on that reception counter to register
++   your arrival. The terminal records the check-in and tells you to return.
++3. Speak to the receptionist again to confirm registration and finish the chapter.
++
++`/timelockedstory` shows the active objective and target coordinates. There is a
++short three-second dialogue cooldown after each completed interaction; repeated
++clicks do not replay lines or advance twice. Sneaking at a workstation preserves
++normal building interaction. No trading UI, bandage, power-restoration task,
++mandatory quest item or creative access is required. This first-contact chapter
++ends after visitor check-in; a later staff mission/Chapter 3 is not implemented.
++Pantheris's identity and motive are not explained.
++
++## Existing saves and placement
++
++The receptionist is added automatically when an eligible Story player enters their
++own registered drawing-layout facility's lobby. No new world, intro replay, stair
++repair or facility rebuild is needed. In that facility, `/sarcreception` checks
++placement and repeats the receptionist's location and current quest objective.
++It cannot skip the welcome, erase quest progress or overwrite a player build.
++
++Drawing-local positions are receptionist feet `(64, 2, 329)` and the main quest
++terminal `(67, 3, 327)`. Terminals at X=61, 64, 67 or 70 on that same counter all
++work. The receptionist stands on the approach side of the three-deep counter,
++where survival interaction reach can reach them. Placement verifies loaded chunks,
++floor support, headroom, collision and entity occupancy. It never generates a
++chunk or removes a player's blocks to make room. If blocked, clear the placement
++area yourself only after checking your build; the command does not force repairs.
++
++One receptionist UUID is saved in the facility's `SiteProgress`. The entity keeps
++its role and site in its persistent entity data, does not wander or get pushed,
++and is invulnerable to normal damage. Its saved UUID prevents a missing/unloaded
++entity from being mistaken for permission to spawn another. Wait for the reception
++chunk/entity to load if the command reports a saved NPC is unavailable. Deliberate
++operator removal of that entity is not automatically undone.
++
++## Progress and multiplayer
++
++Player progress lives in the existing intro save under `ReceptionChapter`: saved
++stages are not-started (0), register (1), return (2), complete (3), plus a bounded
++chat cooldown. Saving, relogging and intro replay retain it. Players share one
++receptionist but have independent assignments and completion. Clicking another
++facility's receptionist or a moved/unrelated workstation cannot advance it.
++Non-Story worlds, unfinished intros, spectators and other dimensions cannot
++advance the chapter. The existing `/timelockedstory skip` still skips **only
++Chapter 1**; it does not complete Chapter 2 or power/restart the PA.
++
++## Contributor map and verification
++
++- `ReceptionChapter`: placement, interaction, counter validation, objectives and
++  saved per-player assignment progression. Named timings, reach limits and authored
++  coordinates are covered by the existing named-number gate.
++- `SarcScientist`: routes the dedicated receptionist role to the chapter instead
++  of ordinary trades/ambient lore. Other staff behavior is unchanged.
++- `SiteProgress`: saves the shared receptionist UUID without changing save IDs.
++- `IntroSequence`: retains Chapter 2 data on intro replay.
++- `CoastChapter`: hands the existing objective command to reception after Chapter 1.
++- `ReceptionChapterAudit`: native entity creation, real NPC right-clicks, terminal
++  interactions, independent multiplayer progress, entity/save reload and duplicate
++  prevention. The existing audit runner includes it; no new Python helper is added.
++
++Run `./gradlew build` and `python tools/run_story_audit.py --accept-eula` with JDK 21.
++These are dedicated-server tests, not a graphical client playthrough.
+diff --git a/gradle.properties b/gradle.properties
+index e8736c6..2bac935 100644
+--- a/gradle.properties
++++ b/gradle.properties
+@@ -14,5 +14,5 @@ loader_version_range=[1,)
+ mod_id=timelocked
+ mod_name=TIMELOCKED: Zero Point
+ mod_license=All Rights Reserved
+-mod_version=0.8.9.21-recess-exit-dev
++mod_version=0.8.9.23-first-contact-dev
+ mod_group_id=com.timelocked
+diff --git a/src/main/java/com/timelocked/CoastChapter.java b/src/main/java/com/timelocked/CoastChapter.java
+index 33e25be..902cf98 100644
+--- a/src/main/java/com/timelocked/CoastChapter.java
++++ b/src/main/java/com/timelocked/CoastChapter.java
+@@ -249,6 +249,9 @@ public final class CoastChapter {
+ 
+   static Component objective(ServerPlayer player, CompoundTag intro) {
+     int step = intro.contains(SAVE_KEY) ? step(chapter(intro)) : 0;
++    if (step == COMPLETE
++        && BlueprintRooms.drawing(player.serverLevel(), BlockPos.of(intro.getLong("Site"))))
++      return ReceptionChapter.objective(intro);
+     BlockPos site = BlockPos.of(intro.getLong("Site"));
+     BlockPos junction = IntroCoast.roadJunction(site), surface = IntroCoast.surfaceOrigin(site);
+     BlockPos target =
+diff --git a/src/main/java/com/timelocked/DrawingAlarmIndex.java b/src/main/java/com/timelocked/DrawingAlarmIndex.java
+index cb329bf..a60f688 100644
+--- a/src/main/java/com/timelocked/DrawingAlarmIndex.java
++++ b/src/main/java/com/timelocked/DrawingAlarmIndex.java
+@@ -89,7 +89,10 @@ final class DrawingAlarmIndex {
+         {82, 6, 342},
+         {82, 6, 173},
+         {82, 6, 175},
++        // Retain the old mount for worlds not yet repaired; both positions share alarm state.
+         {86, 6, 356},
++        {83, 5, 359},
++        {85, 5, 359},
+         {86, 6, 358},
+         {92, 6, 356},
+         {92, 6, 358},
+diff --git a/src/main/java/com/timelocked/GlassStairwell.java b/src/main/java/com/timelocked/GlassStairwell.java
+index 31d83c9..d95a3ab 100644
+--- a/src/main/java/com/timelocked/GlassStairwell.java
++++ b/src/main/java/com/timelocked/GlassStairwell.java
+@@ -1,6 +1,7 @@
+ package com.timelocked;
+ 
+ import java.util.LinkedHashMap;
++import java.util.List;
+ import java.util.Map;
+ import net.minecraft.commands.Commands;
+ import net.minecraft.core.BlockPos;
+@@ -45,6 +46,38 @@ public final class GlassStairwell {
+   static final int FIRST_MODULE_Z = 10, LAST_MODULE_Z = 11;
+   // Bounds include the superseded 0.8.9.20 hallway route that must be restored during upgrades.
+   static final int REPAIR_MIN_X = 76, REPAIR_MIN_Z = 332, REPAIR_MAX_Z = 360;
++  static final int APPROACH_MIN_X = UPPER_LEFT - 1, APPROACH_MAX_X = LOWER_RIGHT + 1;
++  static final int APPROACH_MIN_Z = TURN_BACK_Z - 1, APPROACH_MAX_Z = EXIT_FRONT_Z + 1;
++  static final int RETURN_LIGHT_Y = 4;
++  // Drawing-local mount: north face of the blank wall beside the lift, not world coordinates.
++  static final BlockPos OLD_BEACON = new BlockPos(86, 6, 356);
++  static final BlockPos WALL_BEACON = new BlockPos(83, 5, 359);
++  static final BlockPos BEACON_SUPPORT = WALL_BEACON.south();
++  static final BlockPos OLD_SIREN = new BlockPos(86, 6, 358);
++  static final BlockPos WALL_SIREN = new BlockPos(85, 5, 359);
++
++  private record AlarmMove(BlockPos from, BlockPos to, Block block) {}
++
++  private static List<AlarmMove> alarmMoves() {
++    return List.of(
++        new AlarmMove(OLD_BEACON, WALL_BEACON, FacilityDetails.ALARM_BEACON.get()),
++        new AlarmMove(OLD_SIREN, WALL_SIREN, FacilityDetails.ALARM_SIREN.get()));
++  }
++
++  private static final int[] HALL_LIGHT_X = {88, 92, 96, 100};
++  private static final int[] RETURN_LIGHT_Z = {350, 353};
++
++  // The enclosed turning landing protrudes into the old hub cuboid. Being inside that
++  // enclosure is not entering the lobby. The lobby floor beneath it still counts.
++  static boolean containsApproach(BlockPos local) {
++    return local.getX() >= APPROACH_MIN_X
++        && local.getX() <= APPROACH_MAX_X
++        && local.getZ() >= APPROACH_MIN_Z
++        && local.getZ() <= APPROACH_MAX_Z
++        && local.getY() >= TURN_FLOOR
++        && local.getY() < UPPER_CLEAR_TOP;
++  }
++
+   private static final int[] LIGHT_TREADS = {337, 341, 345, 348};
+   private static final int[] LANDING_LIGHT_X = {89, 94, 99};
+   private static final BlockState AIR = Blocks.AIR.defaultBlockState();
+@@ -135,6 +168,16 @@ public final class GlassStairwell {
+       put(out, x, SURFACE_FLOOR, APPROACH_Z, Blocks.OAK_PLANKS.defaultBlockState());
+       for (int y = GLAZING_HEIGHT; y < UPPER_CLEAR_TOP; y++) put(out, x, y, APPROACH_Z, AIR);
+     }
++    // Permanent emergency strips, independent of the hub's staged arrival lights.
++    // Embed them in the ceiling and return wall, leaving alarms, headroom and width intact.
++    for (int x : HALL_LIGHT_X) put(out, x, EXIT_CEILING, EXIT_FRONT_Z, glow);
++    for (int z : RETURN_LIGHT_Z) put(out, LOWER_RIGHT + 1, RETURN_LIGHT_Y, z, glow);
++    for (AlarmMove move : alarmMoves()) {
++      out.put(move.from(), AIR);
++      out.put(
++          move.to(), move.block().defaultBlockState().setValue(AlarmBlock.FACING, Direction.NORTH));
++      out.put(move.to().south(), baseline.get(move.to().south()));
++    }
+     return out;
+   }
+ 
+@@ -216,14 +259,28 @@ public final class GlassStairwell {
+       Map<BlockPos, BlockState> edits,
+       Map<BlockPos, BlockState> baseline) {
+     var previous = templateStates(level, "stairwell_v20");
++    var recessed = templateStates(level, "stairwell_v21");
+     for (var entry : edits.entrySet()) {
+       BlockPos p = origin.offset(entry.getKey());
+       if (!level.hasChunkAt(p)) return "Unloaded chunk at " + p.toShortString();
+-      if (level.getBlockEntity(p) != null) return "Block entity at " + p.toShortString();
+       BlockState actual = level.getBlockState(p), old = baseline.get(entry.getKey());
++      boolean authoredAlarm = false;
++      for (AlarmMove move : alarmMoves())
++        authoredAlarm |=
++            actual.is(move.block())
++                && level.getBlockEntity(p) instanceof AlarmRotorEntity
++                && ((entry.getKey().equals(move.from())
++                        && actual.getValue(AlarmBlock.FACING) == Direction.WEST)
++                    || (entry.getKey().equals(move.to())
++                        && actual.getValue(AlarmBlock.FACING) == Direction.NORTH));
++      // Only the two explicitly requested alarm rotors may move. Payload/state are preserved.
++      if (level.getBlockEntity(p) != null && !authoredAlarm)
++        return "Block entity at " + p.toShortString();
++      if (authoredAlarm) continue;
+       if (actual.equals(entry.getValue())
+           || actual.equals(old)
+-          || actual.equals(previous.get(entry.getKey()))) continue;
++          || actual.equals(previous.get(entry.getKey()))
++          || actual.equals(recessed.get(entry.getKey()))) continue;
+       // Sparse structure-void cells contain natural terrain, not authored air. Only ordinary
+       // excavation rock is accepted here, never arbitrary blocks, water, containers or machines.
+       if (old == null
+@@ -235,16 +292,45 @@ public final class GlassStairwell {
+               || actual.is(Blocks.ANDESITE))) continue;
+       return "Changed/unsupported block at " + p.toShortString();
+     }
++    for (AlarmMove move : alarmMoves())
++      if (level.getBlockState(origin.offset(move.from())).is(move.block())
++          && level.getBlockState(origin.offset(move.to())).is(move.block()))
++        return "Both alarm mounts are occupied; no fixture will be overwritten";
+     return null;
+   }
+ 
+   static int apply(ServerLevel level, BlockPos origin, Map<BlockPos, BlockState> edits) {
+     int changed = 0;
++    Map<BlockPos, BlockState> movedStates = new LinkedHashMap<>();
++    Map<BlockPos, CompoundTag> movedData = new LinkedHashMap<>();
++    for (AlarmMove move : alarmMoves()) {
++      BlockPos source = origin.offset(move.from());
++      BlockState state = level.getBlockState(source);
++      if (state.is(move.block())) {
++        movedStates.put(move.to(), state.setValue(AlarmBlock.FACING, Direction.NORTH));
++        var rotor = level.getBlockEntity(source);
++        if (rotor != null)
++          movedData.put(move.to(), rotor.saveWithoutMetadata(level.registryAccess()));
++      }
++    }
+     // Explicit authored shapes; suppress neighbour stair-shape rewrites during the batch.
+     for (var entry : edits.entrySet()) {
+       BlockPos p = origin.offset(entry.getKey());
+-      if (!level.getBlockState(p).equals(entry.getValue())) {
+-        level.setBlock(p, entry.getValue(), Block.UPDATE_CLIENTS);
++      BlockState desired = entry.getValue();
++      boolean alreadyMounted = false;
++      for (AlarmMove move : alarmMoves())
++        if (entry.getKey().equals(move.to()) && level.getBlockState(p).is(move.block()))
++          alreadyMounted = true;
++      // A repeated repair must not reset a running or manually enabled alarm.
++      if (alreadyMounted) continue;
++      desired = movedStates.getOrDefault(entry.getKey(), desired);
++      if (!level.getBlockState(p).equals(desired)) {
++        level.setBlock(p, desired, Block.UPDATE_CLIENTS);
++        CompoundTag data = movedData.get(entry.getKey());
++        if (data != null && level.getBlockEntity(p) != null) {
++          level.getBlockEntity(p).loadWithComponents(data, level.registryAccess());
++          level.getBlockEntity(p).setChanged();
++        }
+         changed++;
+       }
+     }
+@@ -266,7 +352,7 @@ public final class GlassStairwell {
+                                   Component.literal(
+                                       "BACK UP YOUR WORLD FIRST. Stand inside the facility but outside the stairwell. "
+                                           + "/sarcstairs repair confirm rebuilds only the glass-slot stairs for drawing geometry 5; "
+-                                          + "refuses edited blocks, inventories, occupied space and unloaded chunks."),
++                                          + "also lights its bottom hallway and moves the doorway beacon and siren beside the lift; refuses edited blocks, inventories, occupied space and unloaded chunks."),
+                               false);
+                       return 1;
+                     })
+@@ -324,9 +410,9 @@ public final class GlassStairwell {
+                                             .sendSuccess(
+                                                 () ->
+                                                     Component.literal(
+-                                                        "Glass-slot stairwell repaired: "
++                                                        "Glass-slot stairwell and beacon repaired: "
+                                                             + count
+-                                                            + " blocks changed. West-facing recessed exit connected; old spiral removed and capped; original entrance glass retained."),
++                                                            + " blocks changed. West-facing recessed exit connected; old spiral removed and capped; original entrance glass retained; hallway strips installed; beacon and siren moved beside lift."),
+                                                 true);
+                                         return 1;
+                                       }
+diff --git a/src/main/java/com/timelocked/HubArrival.java b/src/main/java/com/timelocked/HubArrival.java
+index 533ba9b..5829960 100644
+--- a/src/main/java/com/timelocked/HubArrival.java
++++ b/src/main/java/com/timelocked/HubArrival.java
+@@ -57,7 +57,8 @@ public final class HubArrival {
+         && local.getY() >= HUB_MIN_Y_INCLUSIVE
+         && local.getY() < HUB_MAX_Y_EXCLUSIVE
+         && local.getZ() > HUB_MIN_Z_EXCLUSIVE
+-        && local.getZ() < HUB_MAX_Z_EXCLUSIVE;
++        && local.getZ() < HUB_MAX_Z_EXCLUSIVE
++        && !GlassStairwell.containsApproach(local);
+   }
+ 
+   @SubscribeEvent
+diff --git a/src/main/java/com/timelocked/IntroSequence.java b/src/main/java/com/timelocked/IntroSequence.java
+index 0df8d3c..5d46849 100644
+--- a/src/main/java/com/timelocked/IntroSequence.java
++++ b/src/main/java/com/timelocked/IntroSequence.java
+@@ -275,6 +275,8 @@ public final class IntroSequence {
+     CompoundTag previous = state(p);
+     if (previous != null && previous.contains(CoastChapter.SAVE_KEY))
+       t.put(CoastChapter.SAVE_KEY, previous.getCompound(CoastChapter.SAVE_KEY).copy());
++    if (previous != null && previous.contains(ReceptionChapter.SAVE_KEY))
++      t.put(ReceptionChapter.SAVE_KEY, previous.getCompound(ReceptionChapter.SAVE_KEY).copy());
+     t.putInt("Slot", data.nextSlot++);
+     t.putLong("Site", site.asLong());
+     t.putString("ReturnDimension", p.level().dimension().location().toString());
+diff --git a/src/main/java/com/timelocked/ReceptionChapter.java b/src/main/java/com/timelocked/ReceptionChapter.java
+new file mode 100644
+index 0000000..752c8e7
+--- /dev/null
++++ b/src/main/java/com/timelocked/ReceptionChapter.java
+@@ -0,0 +1,234 @@
++package com.timelocked;
++
++import java.nio.charset.StandardCharsets;
++import java.util.UUID;
++import net.minecraft.commands.Commands;
++import net.minecraft.core.BlockPos;
++import net.minecraft.nbt.CompoundTag;
++import net.minecraft.network.chat.Component;
++import net.minecraft.server.level.ServerLevel;
++import net.minecraft.server.level.ServerPlayer;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.InteractionResult;
++import net.minecraft.world.entity.MobSpawnType;
++import net.minecraft.world.level.Level;
++import net.neoforged.bus.api.SubscribeEvent;
++import net.neoforged.fml.common.EventBusSubscriber;
++import net.neoforged.neoforge.event.RegisterCommandsEvent;
++import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
++import net.neoforged.neoforge.event.tick.ServerTickEvent;
++
++/** Chapter two: a real receptionist, visitor registration, and a return conversation. */
++@EventBusSubscriber(modid = "timelocked")
++public final class ReceptionChapter {
++  static final String SAVE_KEY = "ReceptionChapter";
++  static final String NPC_ROLE = "timelocked_receptionist";
++  static final String NPC_SITE = "timelocked_reception_site";
++  // Persisted quest milestones. Do not renumber existing saves.
++  static final int NOT_STARTED = 0, REGISTER = 1, RETURN = 2, COMPLETE = 3;
++  static final int POLL_TICKS = 20;
++  private static final int CHAT_GAP_TICKS = 3 * POLL_TICKS;
++  private static final double BLOCK_CENTER = .5;
++  private static final double REACH_SQUARED_BLOCKS = 6 * 6;
++  // Authored drawing-local positions. The NPC stands in front of the three-deep counter,
++  // not behind it where a survival player's normal entity reach could not reach them.
++  static final BlockPos DESK = new BlockPos(64, 2, 329);
++  static final BlockPos TERMINAL = new BlockPos(67, 3, 327);
++  private static final int[] TERMINAL_X = {61, 64, 67, 70};
++
++  static boolean receptionist(SarcScientist npc) {
++    return npc.getPersistentData().getBoolean(NPC_ROLE);
++  }
++
++  static int step(CompoundTag intro) {
++    int value = intro.getCompound(SAVE_KEY).getInt("Step");
++    return value < NOT_STARTED || value > COMPLETE ? COMPLETE : value;
++  }
++
++  static boolean ready(ServerPlayer player, CompoundTag intro) {
++    return CoastChapter.eligible(player, intro)
++        && intro.contains(CoastChapter.SAVE_KEY)
++        && CoastChapter.step(CoastChapter.chapter(intro)) == CoastChapter.COMPLETE
++        && BlueprintRooms.drawing(player.serverLevel(), BlockPos.of(intro.getLong("Site")))
++        && CoastChapter.welcomeFinished(
++            FacilityState.get(player.server).progress.get(intro.getLong("Site")));
++  }
++
++  static Component objective(CompoundTag intro) {
++    BlockPos site = BlockPos.of(intro.getLong("Site"));
++    int stage = step(intro);
++    BlockPos target = site.offset(stage == REGISTER ? TERMINAL : DESK);
++    return Component.translatable(
++        "message.timelocked.reception.objective." + stage,
++        target.getX(),
++        target.getY(),
++        target.getZ());
++  }
++
++  static void say(ServerPlayer player, CompoundTag chapter, String key) {
++    player.sendSystemMessage(Component.translatable("message.timelocked.reception." + key));
++    chapter.putInt("Cooldown", CHAT_GAP_TICKS);
++    CoastChapter.dirty(player);
++  }
++
++  /** Never loads a chunk or rebuilds a player's desk. A saved UUID prevents duplicate respawns. */
++  static SarcScientist ensure(ServerLevel level, BlockPos site) {
++    if (!StoryMode.enabled(level.getServer())
++        || level.dimension() != Level.OVERWORLD
++        || !BlueprintRooms.drawing(level, site)) return null;
++    SiteProgress progress = FacilityState.get(level.getServer()).progress.get(site.asLong());
++    if (progress.receptionist != null) {
++      var saved = level.getEntity(progress.receptionist);
++      return saved instanceof SarcScientist npc
++              && receptionist(npc)
++              && npc.getPersistentData().getLong(NPC_SITE) == site.asLong()
++          ? npc
++          : null;
++    }
++    BlockPos home = site.offset(DESK);
++    if (!level.hasChunkAt(home)
++        || !level.getBlockState(home).isAir()
++        || !level.getBlockState(home.above()).isAir()
++        || !level
++            .getBlockState(home.below())
++            .isFaceSturdy(level, home.below(), net.minecraft.core.Direction.UP)) return null;
++    SarcScientist npc = SarcContent.SCIENTIST.get().create(level);
++    if (npc == null) return null;
++    UUID id =
++        UUID.nameUUIDFromBytes(
++            ("timelocked:receptionist:" + level.getSeed() + ":" + site.asLong())
++                .getBytes(StandardCharsets.UTF_8));
++    if (level.getEntity(id) != null) return null;
++    npc.setUUID(id);
++    npc.setKind(SarcScientist.RESEARCHER);
++    npc.setCustomName(Component.translatable("entity.timelocked.receptionist"));
++    npc.setCustomNameVisible(true);
++    npc.setPersistenceRequired();
++    npc.setNoAi(true);
++    npc.setInvulnerable(true);
++    npc.getPersistentData().putBoolean(NPC_ROLE, true);
++    npc.getPersistentData().putLong(NPC_SITE, site.asLong());
++    npc.moveTo(home.getX() + BLOCK_CENTER, home.getY(), home.getZ() + BLOCK_CENTER, 0, 0);
++    if (!level.noCollision(npc) || !level.getEntities(npc, npc.getBoundingBox()).isEmpty())
++      return null;
++    // Deliberately authored staff are allowed by the facility spawn guard. No random spawn route.
++    if (FacilitySpawnProtection.blocked(level, npc, MobSpawnType.STRUCTURE)
++        || !level.addFreshEntity(npc)) return null;
++    progress.receptionist = id;
++    FacilityState.get(level.getServer()).setDirty();
++    return npc;
++  }
++
++  static InteractionResult interact(SarcScientist npc, ServerPlayer player, InteractionHand hand) {
++    if (hand != InteractionHand.MAIN_HAND) return InteractionResult.CONSUME;
++    CompoundTag intro = IntroSequence.state(player);
++    if (!CoastChapter.eligible(player, intro)
++        || npc.distanceToSqr(player) > REACH_SQUARED_BLOCKS
++        || npc.getPersistentData().getLong(NPC_SITE) != intro.getLong("Site"))
++      return InteractionResult.CONSUME;
++    var progress = FacilityState.get(player.server).progress.get(intro.getLong("Site"));
++    if (progress == null || !npc.getUUID().equals(progress.receptionist))
++      return InteractionResult.CONSUME;
++    if (!ready(player, intro)) {
++      player.displayClientMessage(
++          Component.translatable("message.timelocked.reception.wait"), true);
++      return InteractionResult.CONSUME;
++    }
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    if (!intro.contains(SAVE_KEY)) intro.put(SAVE_KEY, chapter);
++    if (chapter.getInt("Cooldown") > 0) {
++      player.displayClientMessage(objective(intro), true);
++      return InteractionResult.CONSUME;
++    }
++    if (step(intro) == NOT_STARTED) {
++      chapter.putInt("Step", REGISTER);
++      say(player, chapter, "start");
++    } else if (step(intro) == RETURN) {
++      chapter.putInt("Step", COMPLETE);
++      say(player, chapter, "complete");
++    } else player.displayClientMessage(objective(intro), true);
++    return InteractionResult.SUCCESS;
++  }
++
++  static boolean terminal(ServerPlayer player, BlockPos position) {
++    CompoundTag intro = IntroSequence.state(player);
++    if (!ready(player, intro)
++        || player.isSecondaryUseActive()
++        || step(intro) != REGISTER
++        || player.distanceToSqr(position.getCenter()) > REACH_SQUARED_BLOCKS
++        || !player.level().getBlockState(position).is(FacilityDetails.WORKSTATION.get()))
++      return false;
++    BlockPos local = position.subtract(BlockPos.of(intro.getLong("Site")));
++    if (local.getY() != TERMINAL.getY() || local.getZ() != TERMINAL.getZ()) return false;
++    boolean authored = false;
++    for (int x : TERMINAL_X) authored |= local.getX() == x;
++    if (!authored) return false;
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    if (chapter.getInt("Cooldown") > 0) return true;
++    chapter.putInt("Step", RETURN);
++    say(player, chapter, "registered");
++    return true;
++  }
++
++  @SubscribeEvent
++  public static void terminalClick(PlayerInteractEvent.RightClickBlock event) {
++    if (event.getHand() == InteractionHand.MAIN_HAND
++        && event.getEntity() instanceof ServerPlayer player
++        && terminal(player, event.getPos())) {
++      event.setCanceled(true);
++      event.setCancellationResult(InteractionResult.SUCCESS);
++    }
++  }
++
++  static void tickPlayer(ServerPlayer player) {
++    CompoundTag intro = IntroSequence.state(player);
++    if (!CoastChapter.eligible(player, intro)) return;
++    BlockPos site = BlockPos.of(intro.getLong("Site"));
++    if (!FacilitySpawnProtection.contains(player.serverLevel(), site, player.blockPosition()))
++      return;
++    if (HubArrival.inside(player, site)) ensure(player.serverLevel(), site);
++    if (!intro.contains(SAVE_KEY)) return;
++    CompoundTag chapter = intro.getCompound(SAVE_KEY);
++    int before = chapter.getInt("Cooldown");
++    int after = Math.max(0, Math.clamp(before, 0, CHAT_GAP_TICKS) - POLL_TICKS);
++    if (before != after) {
++      chapter.putInt("Cooldown", after);
++      CoastChapter.dirty(player);
++    }
++    if (ready(player, intro) && step(intro) > NOT_STARTED && step(intro) < COMPLETE)
++      player.displayClientMessage(objective(intro), true);
++  }
++
++  @SubscribeEvent
++  public static void tick(ServerTickEvent.Post event) {
++    if (event.getServer().overworld().getGameTime() % POLL_TICKS != 0) return;
++    for (ServerPlayer player : event.getServer().getPlayerList().getPlayers()) tickPlayer(player);
++  }
++
++  @SubscribeEvent
++  public static void commands(RegisterCommandsEvent event) {
++    event
++        .getDispatcher()
++        .register(
++            Commands.literal("sarcreception")
++                .executes(
++                    context -> {
++                      var player = context.getSource().getPlayerOrException();
++                      var intro = IntroSequence.state(player);
++                      if (!CoastChapter.eligible(player, intro)) return 0;
++                      BlockPos site = BlockPos.of(intro.getLong("Site"));
++                      if (!FacilitySpawnProtection.contains(
++                          player.serverLevel(), site, player.blockPosition())) return 0;
++                      SarcScientist npc = ensure(player.serverLevel(), site);
++                      player.sendSystemMessage(
++                          Component.translatable(
++                              npc == null
++                                  ? "message.timelocked.reception.placement_wait"
++                                  : "message.timelocked.reception.available"));
++                      player.sendSystemMessage(objective(intro));
++                      return npc == null ? 0 : 1;
++                    }));
++  }
++
++  private ReceptionChapter() {}
++}
+diff --git a/src/main/java/com/timelocked/SarcScientist.java b/src/main/java/com/timelocked/SarcScientist.java
+index 656ccc8..a51f121 100644
+--- a/src/main/java/com/timelocked/SarcScientist.java
++++ b/src/main/java/com/timelocked/SarcScientist.java
+@@ -150,6 +150,8 @@ public final class SarcScientist extends AbstractVillager {
+   }
+ 
+   public InteractionResult mobInteract(Player p, InteractionHand hand) {
++    if (ReceptionChapter.receptionist(this) && p instanceof ServerPlayer player)
++      return ReceptionChapter.interact(this, player, hand);
+     ItemStack held = p.getItemInHand(hand);
+     if (!held.is(Items.NAME_TAG)
+         && !(held.getItem() instanceof SpawnEggItem)
+@@ -248,6 +250,11 @@ public final class SarcScientist extends AbstractVillager {
+     return null;
+   }
+ 
++  @Override
++  public boolean isPushable() {
++    return !ReceptionChapter.receptionist(this) && super.isPushable();
++  }
++
+   public boolean removeWhenFarAway(double d) {
+     return false;
+   }
+@@ -261,6 +268,7 @@ public final class SarcScientist extends AbstractVillager {
+ 
+   public void tick() {
+     super.tick();
++    if (ReceptionChapter.receptionist(this)) return;
+     if (!this.level().isClientSide && this.tickCount % 40 == 0 && this.lineCooldown == 0) {
+       Player p = this.level().getNearestPlayer(this, 5.0);
+       if (p != null && !p.isSpectator()) {
+diff --git a/src/main/java/com/timelocked/SiteProgress.java b/src/main/java/com/timelocked/SiteProgress.java
+index d9e3e50..47580d6 100644
+--- a/src/main/java/com/timelocked/SiteProgress.java
++++ b/src/main/java/com/timelocked/SiteProgress.java
+@@ -23,6 +23,7 @@ public final class SiteProgress {
+   public int arrivalWelcomeNext;
+   public int arrivalWelcomeTicks;
+   public int geometryVersion;
++  public UUID receptionist;
+   public boolean powered;
+   public boolean cleared;
+   public boolean fighting;
+@@ -42,6 +43,7 @@ public final class SiteProgress {
+     t.putInt("ArrivalWelcomeTicks", this.arrivalWelcomeTicks);
+     t.putInt("LayoutVersion", this.layoutVersion);
+     t.putInt("GeometryVersion", this.geometryVersion);
++    if (this.receptionist != null) t.putUUID("Receptionist", this.receptionist);
+     t.putBoolean("Powered", this.powered);
+     t.putBoolean("Cleared", this.cleared);
+     t.putBoolean("Fighting", this.fighting);
+@@ -73,6 +75,7 @@ public final class SiteProgress {
+         Math.clamp((long) t.getInt("ArrivalWelcomeTicks"), 0, MAX_WELCOME_DELAY_TICKS);
+     s.layoutVersion = t.getInt("LayoutVersion");
+     s.geometryVersion = t.getInt("GeometryVersion");
++    if (t.hasUUID("Receptionist")) s.receptionist = t.getUUID("Receptionist");
+     s.powered = t.getBoolean("Powered");
+     s.cleared = t.getBoolean("Cleared");
+     s.fighting = t.getBoolean("Fighting");
+diff --git a/src/main/resources/META-INF/neoforge.mods.toml b/src/main/resources/META-INF/neoforge.mods.toml
+index 0976a74..e86d087 100644
+--- a/src/main/resources/META-INF/neoforge.mods.toml
++++ b/src/main/resources/META-INF/neoforge.mods.toml
+@@ -3,7 +3,7 @@ loaderVersion="[4,)"
+ license="All Rights Reserved"
+ [[mods]]
+ modId="timelocked"
+-version="0.8.9.21-recess-exit-dev"
++version="0.8.9.23-first-contact-dev"
+ displayName="TIMELOCKED: Zero Point"
+ description="Standalone SARC facility, Voidspace transit and powered metallurgy."
+ [[dependencies.timelocked]]
+diff --git a/src/main/resources/assets/timelocked/lang/en_us.json b/src/main/resources/assets/timelocked/lang/en_us.json
+index 19fbb03..3286a35 100644
+--- a/src/main/resources/assets/timelocked/lang/en_us.json
++++ b/src/main/resources/assets/timelocked/lang/en_us.json
+@@ -580,5 +580,16 @@
+   "message.timelocked.coast.objective.7": "Listen to the facility welcome. /timelockedstory skip leaves this chapter.",
+   "message.timelocked.coast.objective.8": "A Road Inland complete. Explore SARC at your own pace.",
+   "message.timelocked.coast.unavailable": "No active coastal chapter here. It follows the opening in a Story world; it does not start a new intro or teleport you.",
+-  "message.timelocked.coast.skipped": "Coastal chapter skipped for you. You can explore freely; the facility welcome and world are unchanged."
++  "message.timelocked.coast.skipped": "Coastal chapter skipped for you. You can explore freely; the facility welcome and world are unchanged.",
++  "entity.timelocked.receptionist": "SARC Receptionist",
++  "message.timelocked.reception.start": "[Chapter 2: First Contact] <SARC Receptionist> You came in from the coast? All right\u2014let us get you checked in. Use one of the four terminals on this reception counter to register your arrival, then come back to me. We can talk about what happened once you are on the visitor register.",
++  "message.timelocked.reception.registered": "[Reception terminal] Arrival recorded. Visitor registration is ready for confirmation. Return to the SARC receptionist.",
++  "message.timelocked.reception.complete": "<SARC Receptionist> There\u2014you are checked in. Stay in the public areas for now. I will let the staff know you need to speak with someone. [Chapter 2: First Contact complete]",
++  "message.timelocked.reception.wait": "Finish the arrival welcome and Chapter 1, then speak to the receptionist to check in.",
++  "message.timelocked.reception.available": "The SARC receptionist is at the reception counter. Right-click them to speak.",
++  "message.timelocked.reception.placement_wait": "The receptionist is not currently loaded, or the saved desk position is obstructed. Load the reception area and check its floor/headroom. No blocks or saved NPCs were overwritten.",
++  "message.timelocked.reception.objective.0": "Chapter 2 \u2014 Speak to the SARC receptionist at X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.1": "Chapter 2 \u2014 Use a reception-counter terminal near X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.2": "Chapter 2 \u2014 Return to the receptionist at X %s, Y %s, Z %s.",
++  "message.timelocked.reception.objective.3": "Chapter 2 complete \u2014 You are checked in at SARC."
+ }
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z10.nbt
+index 760fcc8446d5012dcc5789f2981b9b6a9055c3e1..614ecd80b5ce75c69b26ccd81d4f3bcc47371e50 100644
+GIT binary patch
+delta 17
+ZcmZ4cnrZE8CN}wQ4vy608`+j`1pq<D2Q&Zx
+
+delta 17
+ZcmZ4cnrZE8CN}wQ4i2$B8`+j`1pq&_2HF4s
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x02_y00_z11.nbt
+index 23cab3b1984a4c89ed4775cd55dbc2cb66fcf26b..bf2b3f79e418fad3c5dd35d9b6f8619b8430640a 100644
+GIT binary patch
+literal 21906
+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
+
+literal 21782
+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
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z10.nbt
+index 089b011277d15f0b909a47060245afa4c3723a11..28d9512ecb4ce0b06f3eb6b0e10b2a3f73c4ba89 100644
+GIT binary patch
+delta 5237
+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
+
+literal 36162
+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
+JTZcje{uf0#nUMeh
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/drawing/x03_y00_z11.nbt
+index 1336a701096a9b565bb4dc1303f6a9d3971af7e7..3951573c107e0f57efd4350db856057573882f6d 100644
+GIT binary patch
+literal 4431
+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
+WY|IMdj^Ka_0}i$DN$n~(GWriwu)<IP
+
+literal 4402
+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
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x02_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x02_y00_z10.nbt
+new file mode 100644
+index 0000000000000000000000000000000000000000..760fcc8446d5012dcc5789f2981b9b6a9055c3e1
+GIT binary patch
+literal 46509
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x02_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x02_y00_z11.nbt
+new file mode 100644
+index 0000000000000000000000000000000000000000..23cab3b1984a4c89ed4775cd55dbc2cb66fcf26b
+GIT binary patch
+literal 21782
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x03_y00_z10.nbt b/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x03_y00_z10.nbt
+new file mode 100644
+index 0000000000000000000000000000000000000000..089b011277d15f0b909a47060245afa4c3723a11
+GIT binary patch
+literal 36162
+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
+JTZcje{uf0#nUMeh
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x03_y00_z11.nbt b/src/main/resources/data/timelocked/structure/sarc/stairwell_v21/x03_y00_z11.nbt
+new file mode 100644
+index 0000000000000000000000000000000000000000..1336a701096a9b565bb4dc1303f6a9d3971af7e7
+GIT binary patch
+literal 4402
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/tools/run_story_audit.py b/tools/run_story_audit.py
+index cc3d590..4ce9b80 100644
+--- a/tools/run_story_audit.py
++++ b/tools/run_story_audit.py
+@@ -35,6 +35,7 @@ with tempfile.TemporaryDirectory(prefix="story-", dir=root) as temp:
+         "CoastChapterAudit.java",
+         "FacilitySpawnAudit.java",
+         "GlassStairwellAudit.java",
++        "ReceptionChapterAudit.java",
+     ):
+         shutil.copy(r / "validation" / name, src / name)
+     run = t / "run"
+diff --git a/validation/CoastChapterAudit.java b/validation/CoastChapterAudit.java
+index f663860..ddf8321 100644
+--- a/validation/CoastChapterAudit.java
++++ b/validation/CoastChapterAudit.java
+@@ -299,7 +299,13 @@ final class CoastChapterAudit {
+     check(
+         !CoastChapter.eligible(otherDimension, intro(otherDimension, site)),
+         "other dimensions cannot progress");
++    CompoundTag reception = new CompoundTag();
++    reception.putInt("Step", ReceptionChapter.RETURN);
++    IntroSequence.state(player).put(ReceptionChapter.SAVE_KEY, reception);
+     check(IntroSequence.begin(player), "intro replay can still begin");
++    check(
++        ReceptionChapter.step(IntroSequence.state(player)) == ReceptionChapter.RETURN,
++        "intro replay also retains in-progress Chapter 2");
+     check(
+         CoastChapter.step(CoastChapter.chapter(IntroSequence.state(player)))
+             == CoastChapter.COMPLETE,
+diff --git a/validation/GlassStairwellAudit.java b/validation/GlassStairwellAudit.java
+index d1f2574..6c1bef7 100644
+--- a/validation/GlassStairwellAudit.java
++++ b/validation/GlassStairwellAudit.java
+@@ -141,6 +141,64 @@ final class GlassStairwellAudit {
+       if (previousProgress == null) facilities.progress.remove(origin.asLong());
+       else facilities.progress.put(origin.asLong(), previousProgress);
+     }
++    var triggerPlayer = new IntroAudit.Listener(level);
++    for (int x = 88; x <= 100; x++)
++      for (int z = 333; z <= 336; z++) {
++        triggerPlayer.setPos(origin.getX() + x + .5, origin.getY() + 16, origin.getZ() + z + .5);
++        check(
++            !HubArrival.inside(triggerPlayer, origin),
++            "turning landing never triggers lobby " + x + "," + z);
++      }
++    triggerPlayer.setPos(origin.getX() + 86.5, origin.getY() + 2, origin.getZ() + 330.5);
++    check(HubArrival.inside(triggerPlayer, origin), "real lobby still triggers arrival");
++    triggerPlayer.setPos(origin.getX() + 90.5, origin.getY() + 2, origin.getZ() + 331.5);
++    check(
++        HubArrival.inside(triggerPlayer, origin),
++        "lobby immediately outside stair enclosure still triggers");
++    triggerPlayer.setPos(origin.getX() + 94.5, origin.getY() + 2, origin.getZ() + 334.5);
++    check(HubArrival.inside(triggerPlayer, origin), "lobby floor beneath overhang is not excluded");
++    for (int x : new int[] {88, 92, 96, 100}) {
++      var p = origin.offset(x, 6, 357);
++      check(
++          level.getBlockState(p).getLightEmission(level, p) == 12,
++          "bottom hallway permanent ceiling strip " + x);
++    }
++    for (int z : new int[] {350, 353}) {
++      var p = origin.offset(101, 4, z);
++      check(
++          level.getBlockState(p).getLightEmission(level, p) == 12,
++          "return passage permanent wall strip " + z);
++    }
++    check(
++        level.getBlockState(origin.offset(GlassStairwell.OLD_BEACON)).isAir(),
++        "doorway beacon removed");
++    var mount = origin.offset(GlassStairwell.WALL_BEACON);
++    check(
++        level.getBlockEntity(mount) instanceof AlarmRotorEntity,
++        "relocated beacon has its rotor entity");
++    check(
++        level.getBlockState(mount).getValue(AlarmBlock.FACING)
++            == net.minecraft.core.Direction.NORTH,
++        "beacon faces out from the south wall beside lift");
++    check(
++        level
++            .getBlockState(origin.offset(GlassStairwell.BEACON_SUPPORT))
++            .is(FacilityArchitecture.CLEAN.get()),
++        "beacon mounted against photographed clean-panel wall");
++    check(
++        java.util.Arrays.stream(DrawingAlarmIndex.CELLS)
++            .anyMatch(v -> new BlockPos(v[0], v[1], v[2]).equals(GlassStairwell.WALL_BEACON)),
++        "new beacon mount linked to facility alarm group");
++    check(
++        level.getBlockState(origin.offset(GlassStairwell.OLD_SIREN)).isAir(),
++        "old doorway siren removed");
++    var siren = origin.offset(GlassStairwell.WALL_SIREN);
++    check(
++        level.getBlockState(siren).is(FacilityDetails.ALARM_SIREN.get())
++            && level.getBlockEntity(siren) instanceof AlarmRotorEntity
++            && level.getBlockState(siren).getValue(AlarmBlock.FACING)
++                == net.minecraft.core.Direction.NORTH,
++        "siren beside beacon faces out from photographed wall");
+     int lamps = 0;
+     for (var e : edits.entrySet())
+       if (e.getValue().is(FacilityDetails.EMERGENCY.get())) {
+@@ -176,6 +234,84 @@ final class GlassStairwellAudit {
+     check(
+         !level.getBlockState(origin.offset(80, 10, 341)).is(Blocks.STONE_BRICK_STAIRS),
+         "superseded 0.8.9.20 hallway stair is gone");
++    var recessed = GlassStairwell.templateStates(level, "stairwell_v21");
++    for (var e : recessed.entrySet()) level.setBlock(origin.offset(e.getKey()), e.getValue(), 2);
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) == null,
++        "0.8.9.21 world accepts new hallway lights safely");
++    check(
++        GlassStairwell.apply(level, origin, edits) == 10,
++        "0.8.9.21 repair adds six strips and relocates both alarms");
++    check(GlassStairwell.apply(level, origin, edits) == 0, "0.8.9.21 upgrade idempotent");
++    // Emulate a .22 world: ceiling lights and beacon already updated, siren still at old mount.
++    level.setBlock(
++        origin.offset(GlassStairwell.OLD_SIREN),
++        FacilityDetails.ALARM_SIREN
++            .get()
++            .defaultBlockState()
++            .setValue(AlarmBlock.FACING, net.minecraft.core.Direction.WEST)
++            .setValue(AlarmBlock.MANUAL, true),
++        2);
++    level
++        .getBlockEntity(origin.offset(GlassStairwell.OLD_SIREN))
++        .getPersistentData()
++        .putString("audit", "siren payload");
++    level.setBlock(origin.offset(GlassStairwell.WALL_SIREN), Blocks.AIR.defaultBlockState(), 2);
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) == null,
++        ".22 siren upgrade passes preflight");
++    check(GlassStairwell.apply(level, origin, edits) == 2, ".22 upgrade only moves siren");
++    check(
++        level.getBlockState(origin.offset(GlassStairwell.WALL_SIREN)).getValue(AlarmBlock.MANUAL),
++        "siren manual state retained");
++    check(
++        level
++            .getBlockEntity(origin.offset(GlassStairwell.WALL_SIREN))
++            .getPersistentData()
++            .getString("audit")
++            .equals("siren payload"),
++        "siren payload transferred");
++    check(GlassStairwell.apply(level, origin, edits) == 0, ".22 siren upgrade idempotent");
++    var activeBeacon =
++        FacilityDetails.ALARM_BEACON
++            .get()
++            .defaultBlockState()
++            .setValue(AlarmBlock.FACING, net.minecraft.core.Direction.WEST)
++            .setValue(AlarmBlock.ACTIVE, true)
++            .setValue(AlarmBlock.MANUAL, true)
++            .setValue(AlarmBlock.LIT, true);
++    level.setBlock(origin.offset(GlassStairwell.WALL_BEACON), Blocks.AIR.defaultBlockState(), 2);
++    level.setBlock(origin.offset(GlassStairwell.OLD_BEACON), activeBeacon, 2);
++    level
++        .getBlockEntity(origin.offset(GlassStairwell.OLD_BEACON))
++        .getPersistentData()
++        .putString("audit", "rotor payload");
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) == null,
++        "active original beacon accepted");
++    check(GlassStairwell.apply(level, origin, edits) == 2, "active beacon moved exactly once");
++    check(
++        level
++            .getBlockState(origin.offset(GlassStairwell.WALL_BEACON))
++            .equals(activeBeacon.setValue(AlarmBlock.FACING, net.minecraft.core.Direction.NORTH)),
++        "active/manual/lit beacon state retained");
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) == null,
++        "active moved beacon accepted on repeat");
++    check(
++        GlassStairwell.apply(level, origin, edits) == 0,
++        "repeat repair preserves running beacon state");
++    check(
++        level
++            .getBlockEntity(origin.offset(GlassStairwell.WALL_BEACON))
++            .getPersistentData()
++            .getString("audit")
++            .equals("rotor payload"),
++        "complete beacon block-entity payload transferred");
++    level.setBlock(origin.offset(GlassStairwell.OLD_BEACON), activeBeacon, 2);
++    check(
++        GlassStairwell.obstruction(level, origin, edits, baseline) != null,
++        "duplicate mounts refuse rather than overwrite a beacon");
+     // Test an actual 0.8.9.20 world, not just the original and already-repaired cases.
+     var previous = GlassStairwell.templateStates(level, "stairwell_v20");
+     for (var e : previous.entrySet()) level.setBlock(origin.offset(e.getKey()), e.getValue(), 2);
+@@ -200,6 +336,7 @@ final class GlassStairwellAudit {
+       ServerLevel level, BlockPos origin, double ax, double az, double bx, double bz, int section) {
+     int samples = (int) Math.ceil(Math.hypot(bx - ax, bz - az) * 8);
+     double previous = Double.NaN;
++    var walker = new IntroAudit.Listener(level);
+     for (int i = 0; i <= samples; i++) {
+       double x = ax + (bx - ax) * i / samples, z = az + (bz - az) * i / samples;
+       double rough =
+@@ -211,6 +348,10 @@ final class GlassStairwellAudit {
+       double top = floor(level, origin, x, z, rough);
+       check(Double.isFinite(top), "supported walking surface at " + x + "," + z);
+       if (!Double.isFinite(top)) continue;
++      walker.setPos(origin.getX() + x, origin.getY() + top, origin.getZ() + z);
++      check(
++          !HubArrival.inside(walker, origin),
++          "walking staircase does not start arrival at " + x + "," + top + "," + z);
+       var body =
+           new AABB(
+               origin.getX() + x - .3,
+diff --git a/validation/IntroAudit.java b/validation/IntroAudit.java
+index 12bc8fb..fcf1384 100644
+--- a/validation/IntroAudit.java
++++ b/validation/IntroAudit.java
+@@ -1096,6 +1096,7 @@ public final class IntroAudit {
+             CoastChapterAudit.run(server);
+             FacilitySpawnAudit.run(server);
+             GlassStairwellAudit.run(server);
++            ReceptionChapterAudit.run(server);
+             beds(server);
+             geometry(server.overworld());
+             Listener player = new Listener(server.overworld());
+@@ -1157,7 +1158,7 @@ public final class IntroAudit {
+           }
+           try {
+             var report = new LinkedHashMap<String, Object>();
+-            report.put("version", "0.8.9.21");
++            report.put("version", "0.8.9.23");
+             report.put("checks", checks);
+             report.put("failures", failures);
+             report.put("status", failures.isEmpty() ? "PASS" : "FAIL");
+diff --git a/validation/ReceptionChapterAudit.java b/validation/ReceptionChapterAudit.java
+new file mode 100644
+index 0000000..9d3d6f8
+--- /dev/null
++++ b/validation/ReceptionChapterAudit.java
+@@ -0,0 +1,235 @@
++package com.timelocked;
++
++import java.util.UUID;
++import net.minecraft.core.BlockPos;
++import net.minecraft.nbt.CompoundTag;
++import net.minecraft.server.MinecraftServer;
++import net.minecraft.world.InteractionHand;
++import net.minecraft.world.entity.EntityType;
++import net.minecraft.world.entity.MobSpawnType;
++import net.minecraft.world.level.GameType;
++import net.minecraft.world.level.block.Blocks;
++import net.minecraft.world.phys.AABB;
++
++/** Actual NPC placement, right-click assignment and saved-game handoff regression tests. */
++final class ReceptionChapterAudit {
++  static void check(boolean value, String label) {
++    IntroAudit.check(value, "reception chapter: " + label);
++  }
++
++  static void quiet(CoastChapterAudit.Reader player) {
++    for (int i = 0; i < 4; i++) ReceptionChapter.tickPlayer(player);
++  }
++
++  static void run(MinecraftServer server) throws Exception {
++    var level = server.overworld();
++    var story = server.getGameRules().getRule(StoryMode.RULE);
++    boolean oldRule = story.get();
++    var facilities = FacilityState.get(server);
++    BlockPos site = new BlockPos(32000, 80, 32000);
++    BlockPos home = site.offset(ReceptionChapter.DESK),
++        terminal = site.offset(ReceptionChapter.TERMINAL);
++    var oldSite = facilities.sites.put(site.asLong(), 43);
++    var progress = new SiteProgress();
++    progress.geometryVersion = BlueprintRooms.VERSION;
++    progress.layoutVersion = 2;
++    var oldProgress = facilities.progress.put(site.asLong(), progress);
++    var player = new CoastChapterAudit.Reader(level, "ReceptionReader");
++    player.setGameMode(GameType.SURVIVAL);
++    SarcScientist npc = null;
++    UUID uuid = null;
++    try {
++      var fresh = GlassStairwell.templateStates(level, "drawing");
++      for (int x = 64; x <= 71; x++)
++        for (int z = 324; z <= 332; z++)
++          for (int y = 1; y <= 5; y++) {
++            var local = new BlockPos(x, y, z);
++            var state = fresh.get(local);
++            check(state != null, "authored reception cell exists " + local);
++            level.getChunkAt(site.offset(local));
++            level.setBlock(site.offset(local), state, 2);
++          }
++      check(
++          level.getBlockState(terminal).is(FacilityDetails.WORKSTATION.get()),
++          "quest uses actual shipped workstation");
++      story.set(false, server);
++      check(
++          ReceptionChapter.ensure(level, site) == null,
++          "no story NPC generated in non-Story worlds");
++      story.set(true, server);
++      level.setBlock(home, Blocks.CHEST.defaultBlockState(), 2);
++      check(
++          ReceptionChapter.ensure(level, site) == null && level.getBlockEntity(home) != null,
++          "player container at NPC position is not overwritten");
++      level.setBlock(home, Blocks.AIR.defaultBlockState(), 2);
++      npc = ReceptionChapter.ensure(level, site);
++      check(npc != null, "real separate receptionist created in existing authored reception");
++      if (npc == null) return;
++      uuid = npc.getUUID();
++      check(
++          ReceptionChapter.receptionist(npc)
++              && npc.isNoAi()
++              && npc.isInvulnerable()
++              && !npc.isPushable()
++              && npc.isPersistenceRequired(),
++          "receptionist persists without wandering or normal damage");
++      check(
++          npc.getCustomName() != null
++              && npc.getCustomName().getContents()
++                  instanceof net.minecraft.network.chat.contents.TranslatableContents t
++              && t.getKey().equals("entity.timelocked.receptionist"),
++          "separate receptionist name, not Dr Everleigh");
++      check(
++          !FacilitySpawnProtection.blocked(level, npc, MobSpawnType.STRUCTURE),
++          "spawn guard explicitly permits authored staff");
++      for (int i = 0; i < 10; i++)
++        check(ReceptionChapter.ensure(level, site) == npc, "repeated placement returns same NPC");
++      check(
++          level.getEntitiesOfClass(SarcScientist.class, new AABB(home).inflate(6)).size() == 1,
++          "only one NPC at desk");
++      check(
++          SiteProgress.load(progress.save()).receptionist.equals(uuid),
++          "NPC UUID survives site save/load");
++      CompoundTag intro = CoastChapterAudit.intro(player, site);
++      CompoundTag coast = new CompoundTag();
++      coast.putInt("Step", CoastChapter.COMPLETE);
++      intro.put(CoastChapter.SAVE_KEY, coast);
++      CoastChapterAudit.stand(player, site.offset(64, 2, 331));
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.NOT_STARTED,
++          "welcome cannot be interrupted by starting Chapter 2");
++      progress.arrivalLogoAnnounced = true;
++      progress.arrivalStep = SiteProgress.FINAL_ARRIVAL_STAGE;
++      progress.arrivalWelcomeNext = SiteProgress.WELCOME_LINE_COUNT;
++      ReceptionChapter.tickPlayer(player);
++      check(
++          !intro.contains(ReceptionChapter.SAVE_KEY),
++          "walking into reception does not auto-start quest");
++      npc.mobInteract(player, InteractionHand.OFF_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.NOT_STARTED,
++          "offhand does not duplicate story interaction");
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.REGISTER,
++          "real NPC main-hand interaction starts Chapter 2");
++      check(
++          player.keys.stream().filter(k -> k.equals("message.timelocked.reception.start")).count()
++              == 1,
++          "one start dialogue");
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          player.keys.stream().filter(k -> k.equals("message.timelocked.reception.start")).count()
++              == 1,
++          "rapid repeated clicks do not spam/restart");
++      BlockPos wrongTerminal = site.offset(67, 3, 320);
++      level.setBlock(wrongTerminal, FacilityDetails.WORKSTATION.get().defaultBlockState(), 2);
++      player.setPos(site.getX() + 67.5, site.getY() + 2, site.getZ() + 322.5);
++      check(
++          !ReceptionChapter.terminal(player, wrongTerminal),
++          "moved/wrong workstation cannot satisfy registration");
++      player.setPos(site.getX() + 90.5, site.getY() + 2, site.getZ() + 329.5);
++      check(!ReceptionChapter.terminal(player, terminal), "distant terminal use is rejected");
++      long ownSite = intro.getLong("Site");
++      intro.putLong("Site", site.east(1000).asLong());
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.REGISTER,
++          "other facility's receptionist cannot advance quest");
++      intro.putLong("Site", ownSite);
++      quiet(player);
++      player.setPos(site.getX() + 67.5, site.getY() + 2, site.getZ() + 329.5);
++      check(
++          ReceptionChapter.terminal(player, terminal),
++          "authored desk terminal accepts registration");
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.RETURN,
++          "terminal advances to actual return assignment");
++      check(
++          !ReceptionChapter.terminal(player, terminal),
++          "repeat terminal click cannot re-award progress");
++      quiet(player);
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          ReceptionChapter.step(intro) == ReceptionChapter.COMPLETE,
++          "return interaction completes playable first-contact chapter");
++      quiet(player);
++      npc.mobInteract(player, InteractionHand.MAIN_HAND);
++      check(
++          player.keys.stream()
++                  .filter(k -> k.equals("message.timelocked.reception.complete"))
++                  .count()
++              == 1,
++          "completion never repeats");
++      check(
++          CoastChapter.step(CoastChapter.chapter(intro)) == CoastChapter.COMPLETE,
++          "Chapter 1 not reset");
++      var persisted =
++          IntroState.load(
++              IntroState.get(server).save(new CompoundTag(), level.registryAccess()),
++              level.registryAccess());
++      check(
++          ReceptionChapter.step(persisted.players.get(player.getUUID()))
++              == ReceptionChapter.COMPLETE,
++          "quest survives full intro save/load");
++      check(
++          CoastChapter.objective(player, intro).getContents()
++                  instanceof net.minecraft.network.chat.contents.TranslatableContents t
++              && t.getKey().equals("message.timelocked.reception.objective.3"),
++          "existing story command routes to Chapter 2 objective");
++      var second = new CoastChapterAudit.Reader(level, "ReceptionSecond");
++      try {
++        second.setGameMode(GameType.SURVIVAL);
++        var secondIntro = CoastChapterAudit.intro(second, site);
++        secondIntro.put(CoastChapter.SAVE_KEY, coast.copy());
++        second.setPos(player.position());
++        npc.mobInteract(second, InteractionHand.MAIN_HAND);
++        check(
++            ReceptionChapter.step(secondIntro) == ReceptionChapter.REGISTER
++                && ReceptionChapter.step(intro) == ReceptionChapter.COMPLETE,
++            "multiplayer quest progress is independent");
++        check(ReceptionChapter.ensure(level, site) == npc, "two players share one receptionist");
++        story.set(false, server);
++        npc.mobInteract(second, InteractionHand.MAIN_HAND);
++        check(
++            ReceptionChapter.step(secondIntro) == ReceptionChapter.REGISTER,
++            "non-Story interaction cannot advance saved quest");
++        story.set(true, server);
++        second.setGameMode(GameType.SPECTATOR);
++        check(!ReceptionChapter.terminal(second, terminal), "spectator cannot register");
++      } finally {
++        IntroState.get(server).players.remove(second.getUUID());
++      }
++      CompoundTag npcSave = new CompoundTag();
++      npc.save(npcSave);
++      npc.discard();
++      check(
++          ReceptionChapter.ensure(level, site) == null && progress.receptionist.equals(uuid),
++          "missing/unloaded saved NPC does not cause duplicate spawn");
++      var reloaded = EntityType.loadEntityRecursive(npcSave, level, e -> e);
++      check(
++          reloaded instanceof SarcScientist && level.addFreshEntity(reloaded),
++          "saved receptionist reloads as actual entity");
++      npc = (SarcScientist) reloaded;
++      check(
++          ReceptionChapter.ensure(level, site) == npc && npc.getUUID().equals(uuid),
++          "reloaded receptionist retains identity and role");
++      var command = server.getCommands().getDispatcher();
++      check(
++          command.getRoot().getChild("sarcreception") != null,
++          "existing-world receptionist status/placement command registered");
++    } finally {
++      if (npc != null) npc.discard();
++      if (uuid != null && level.getEntity(uuid) != null) level.getEntity(uuid).discard();
++      IntroState.get(server).players.remove(player.getUUID());
++      story.set(oldRule, server);
++      if (oldSite == null) facilities.sites.remove(site.asLong());
++      else facilities.sites.put(site.asLong(), oldSite);
++      if (oldProgress == null) facilities.progress.remove(site.asLong());
++      else facilities.progress.put(site.asLong(), oldProgress);
++    }
++  }
++
++  private ReceptionChapterAudit() {}
++}

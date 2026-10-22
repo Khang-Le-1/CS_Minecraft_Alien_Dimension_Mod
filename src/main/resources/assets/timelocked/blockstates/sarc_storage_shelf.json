@@ -1,0 +1,1 @@
+{"variants": {"facing=north": {"model": "timelocked:block/sarc_storage_shelf"}, "facing=east": {"model": "timelocked:block/sarc_storage_shelf", "y": 90}, "facing=south": {"model": "timelocked:block/sarc_storage_shelf", "y": 180}, "facing=west": {"model": "timelocked:block/sarc_storage_shelf", "y": 270}}}

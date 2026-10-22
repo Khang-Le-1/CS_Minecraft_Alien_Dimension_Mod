@@ -38,3 +38,16 @@ run/
 **/src/generated/**/.cache/
 repo/
 !**/src/**/repo/
+
+### TIMELOCKED local outputs (append to the club rules above) ###
+runs/
+logs/
+crash-reports/
+*.log
+.audit/
+validation/story-audit-run.log
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.venv/
+node_modules/

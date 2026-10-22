@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "lit=true": {
+   "model": "timelocked:block/sarc_flicker_light"
+  },
+  "lit=false": {
+   "model": "timelocked:block/sarc_flicker_light_off"
+  }
+ }
+}

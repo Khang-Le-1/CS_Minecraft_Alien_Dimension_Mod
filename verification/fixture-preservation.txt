@@ -1,0 +1,1 @@
+PASS: all 18 monitor/rotor payloads retained exactly. Front doorway beacon and siren intentionally relocated; lift and other fixtures retained.

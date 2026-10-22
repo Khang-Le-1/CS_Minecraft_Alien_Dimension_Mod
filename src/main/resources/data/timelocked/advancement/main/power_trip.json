@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "minecraft:redstone_block"
+  },
+  "title": {
+   "translate": "advancements.timelocked.power_trip.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.power_trip.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/shooting_stars",
+ "rewards": {
+  "experience": 20
+ }
+}

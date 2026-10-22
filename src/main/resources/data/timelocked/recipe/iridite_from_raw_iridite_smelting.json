@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:raw_iridite"
+  },
+  "result": {
+    "id": "timelocked:iridite_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

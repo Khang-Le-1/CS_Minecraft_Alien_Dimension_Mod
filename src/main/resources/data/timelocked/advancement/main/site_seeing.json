@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:sarc_access_card"
+  },
+  "title": {
+   "translate": "advancements.timelocked.site_seeing.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.site_seeing.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/on_the_road_again",
+ "rewards": {
+  "experience": 10
+ }
+}

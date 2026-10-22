@@ -1,0 +1,64 @@
+{
+  "version": "0.8.9.16",
+  "camera_samples": 121,
+  "audio": {
+    "rain.ogg": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "10.000000"
+      }
+    },
+    "surf.ogg": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "12.000000"
+      }
+    },
+    "transition.ogg": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "8.000000"
+      }
+    },
+    "tv.ogg": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "sample_rate": "24000",
+          "channels": 1
+        }
+      ],
+      "format": {
+        "duration": "10.000000"
+      }
+    }
+  },
+  "graphical_client_tested": false,
+  "status": "PASS"
+}

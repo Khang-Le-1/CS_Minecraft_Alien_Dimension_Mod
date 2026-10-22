@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:voidsteel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:voidsteel_block",
+    "count": 1
+  }
+}

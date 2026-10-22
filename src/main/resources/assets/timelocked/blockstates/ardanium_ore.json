@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/ardanium_ore"
+    }
+  }
+}

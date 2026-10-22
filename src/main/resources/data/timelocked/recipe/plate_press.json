@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "CIC",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "I": {
+      "item": "timelocked:cast_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:plate_press",
+    "count": 1
+  }
+}

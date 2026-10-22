@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "timelocked:aetherite_ore"
+  },
+  "result": {
+    "id": "timelocked:aetherite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

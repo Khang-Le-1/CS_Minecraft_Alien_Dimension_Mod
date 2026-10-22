@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "ICG",
+    " G "
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "I": {
+      "item": "timelocked:cast_iron_ingot"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "G": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "timelocked:containment_carbine",
+    "count": 1
+  }
+}

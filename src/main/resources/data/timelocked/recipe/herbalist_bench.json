@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "PIP",
+    "P P"
+  ],
+  "key": {
+    "C": {
+      "item": "timelocked:void_crystal_cluster"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    },
+    "I": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "timelocked:herbalist_bench",
+    "count": 1
+  }
+}

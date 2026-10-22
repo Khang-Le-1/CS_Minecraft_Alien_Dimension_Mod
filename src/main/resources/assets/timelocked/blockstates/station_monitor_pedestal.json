@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/station_monitor_pedestal"
+    },
+    "facing=east": {
+      "model": "timelocked:block/station_monitor_pedestal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/station_monitor_pedestal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/station_monitor_pedestal",
+      "y": 270
+    }
+  }
+}

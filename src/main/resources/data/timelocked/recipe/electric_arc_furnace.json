@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WCW",
+    "WBW",
+    "WRW"
+  ],
+  "key": {
+    "W": {
+      "item": "timelocked:tungsten_ingot"
+    },
+    "C": {
+      "item": "timelocked:electrical_conduit"
+    },
+    "B": {
+      "item": "timelocked:circuit_board"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "timelocked:electric_arc_furnace",
+    "count": 1
+  }
+}

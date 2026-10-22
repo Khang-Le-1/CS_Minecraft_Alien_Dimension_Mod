@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "timelocked:tungsten_ore",
+    "timelocked:tin_ore",
+    "timelocked:zinc_ore",
+    "timelocked:lead_ore",
+    "timelocked:nickel_ore",
+    "timelocked:aluminum_ore",
+    "timelocked:silver_ore",
+    "timelocked:platinum_ore",
+    "timelocked:titanium_ore",
+    "timelocked:osmium_ore",
+    "timelocked:uranium_ore",
+    "timelocked:cobaltite_ore",
+    "timelocked:iridite_ore",
+    "timelocked:chromite_ore"
+  ]
+}

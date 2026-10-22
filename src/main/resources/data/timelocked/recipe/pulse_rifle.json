@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "STS",
+    "RCR",
+    " G "
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "T": {
+      "item": "timelocked:tungsten_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "G": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "timelocked:pulse_rifle",
+    "count": 1
+  }
+}

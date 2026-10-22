@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:ardanium_ore"
+  },
+  "result": {
+    "id": "timelocked:ardanium_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": {
+    "item": "timelocked:hot_chocolate_mix"
+  },
+  "result": {
+    "id": "timelocked:hot_chocolate"
+  },
+  "experience": 0.1,
+  "cookingtime": 100
+}

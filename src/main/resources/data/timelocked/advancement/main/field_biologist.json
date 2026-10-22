@@ -1,0 +1,49 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:star_bloom"
+  },
+  "title": {
+   "translate": "advancements.timelocked.field_biologist.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.field_biologist.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "ashback": {
+   "trigger": "minecraft:impossible"
+  },
+  "voidskitter": {
+   "trigger": "minecraft:impossible"
+  },
+  "glimmer_moth": {
+   "trigger": "minecraft:impossible"
+  },
+  "glowkit": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/into_the_fragment",
+ "requirements": [
+  [
+   "ashback"
+  ],
+  [
+   "voidskitter"
+  ],
+  [
+   "glimmer_moth"
+  ],
+  [
+   "glowkit"
+  ]
+ ],
+ "rewards": {
+  "experience": 20
+ }
+}

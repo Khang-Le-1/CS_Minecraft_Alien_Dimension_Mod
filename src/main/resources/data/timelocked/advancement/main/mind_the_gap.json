@@ -1,0 +1,36 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:tram_deployment"
+  },
+  "title": {
+   "translate": "advancements.timelocked.mind_the_gap.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.mind_the_gap.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "tram": {
+   "trigger": "minecraft:started_riding",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "vehicle": {
+        "type": "timelocked:sarc_tram"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "parent": "timelocked:main/site_seeing"
+}

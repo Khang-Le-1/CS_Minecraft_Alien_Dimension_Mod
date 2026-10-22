@@ -1,0 +1,23 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:rover_deployment"
+  },
+  "title": {
+   "translate": "advancements.timelocked.speed_bump.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.speed_bump.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/on_the_road_again"
+}

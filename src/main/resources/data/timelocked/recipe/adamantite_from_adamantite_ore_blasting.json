@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "timelocked:adamantite_ore"
+  },
+  "result": {
+    "id": "timelocked:adamantite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

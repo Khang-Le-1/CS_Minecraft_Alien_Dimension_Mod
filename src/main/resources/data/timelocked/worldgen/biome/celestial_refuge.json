@@ -1,0 +1,48 @@
+{
+ "has_precipitation": false,
+ "temperature": 0.5,
+ "downfall": 0,
+ "effects": {
+  "sky_color": 2630712,
+  "fog_color": 6444918,
+  "water_color": 4344437,
+  "water_fog_color": 2630456,
+  "grass_color": 7695493,
+  "foliage_color": 8886461
+ },
+ "spawners": {
+  "creature": [
+   {
+    "type": "timelocked:ashback",
+    "weight": 12,
+    "minCount": 2,
+    "maxCount": 4
+   },
+   {
+    "type": "timelocked:glowkit",
+    "weight": 14,
+    "minCount": 1,
+    "maxCount": 3
+   }
+  ],
+  "monster": [
+   {
+    "type": "timelocked:voidskitter",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+   }
+  ],
+  "ambient": [
+   {
+    "type": "timelocked:glimmer_moth",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 5
+   }
+  ]
+ },
+ "spawn_costs": {},
+ "carvers": {},
+ "features": []
+}

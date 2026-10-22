@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["SSS", " I ", "SSS"], "key": {"S": {"item": "timelocked:steel_ingot"}, "I": {"item": "minecraft:iron_ingot"}}, "result": {"id": "timelocked:sarc_safety_railing", "count": 8}}

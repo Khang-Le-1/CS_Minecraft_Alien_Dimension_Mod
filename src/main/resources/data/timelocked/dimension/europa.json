@@ -1,0 +1,11 @@
+{
+ "type": "timelocked:europa",
+ "generator": {
+  "type": "timelocked:planet",
+  "planet": "europa",
+  "biome_source": {
+   "type": "minecraft:fixed",
+   "biome": "timelocked:europa"
+  }
+ }
+}

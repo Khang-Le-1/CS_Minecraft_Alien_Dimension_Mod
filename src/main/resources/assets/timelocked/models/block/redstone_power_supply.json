@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "timelocked:block/redstone_power_supply"
+  }
+}

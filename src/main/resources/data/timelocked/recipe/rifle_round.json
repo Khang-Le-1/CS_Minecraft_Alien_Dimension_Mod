@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " G ",
+    " I "
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:rifle_round",
+    "count": 12
+  }
+}

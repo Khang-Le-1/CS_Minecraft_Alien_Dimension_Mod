@@ -1,0 +1,32 @@
+{
+  "room_inclusive_bounds": [
+    4,
+    153,
+    185,
+    336
+  ],
+  "room_center_xz": [
+    79,
+    261
+  ],
+  "logo_center_xz": [
+    79,
+    261.5
+  ],
+  "block_grid_center_error": 0.5,
+  "shift_xyz": [
+    0,
+    0,
+    5
+  ],
+  "logo_segments": 588,
+  "moved_states": 735,
+  "changed_templates": [
+    "x02_y00_z07.nbt",
+    "x02_y00_z08.nbt"
+  ],
+  "previous_template_hashes": {
+    "x02_y00_z07.nbt": "712de91ee748e3e65d8f43cb56e709f5789ab3e03b6a18f0658826cce71624cb",
+    "x02_y00_z08.nbt": "07a715a5acb7565c62b68cb2bb1e67f2e9cccd4ce61cbedf75e194288b5ea564"
+  }
+}

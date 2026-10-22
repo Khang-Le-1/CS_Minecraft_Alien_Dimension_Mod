@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "CBC",
+    "IUI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "timelocked:circuit_board"
+    },
+    "U": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "id": "timelocked:decontamination_station",
+    "count": 1
+  }
+}

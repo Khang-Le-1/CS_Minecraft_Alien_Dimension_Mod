@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/tungsten_steel_block"
+    }
+  }
+}

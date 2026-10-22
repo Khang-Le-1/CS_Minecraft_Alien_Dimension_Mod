@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "P P",
+    "PFP"
+  ],
+  "key": {
+    "P": {
+      "item": "timelocked:titanium_plate"
+    },
+    "F": {
+      "item": "timelocked:insulation_fabric"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_space_boots",
+    "count": 1
+  }
+}

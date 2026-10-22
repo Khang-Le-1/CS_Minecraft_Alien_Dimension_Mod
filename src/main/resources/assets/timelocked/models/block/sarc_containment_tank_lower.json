@@ -1,0 +1,317 @@
+{
+ "render_type": "minecraft:translucent",
+ "ambientocclusion": false,
+ "textures": {
+  "glass": "timelocked:block/sarc_tank_glass",
+  "goo": "timelocked:block/sarc_tank_goo",
+  "metal": "timelocked:block/sarc_tank_metal",
+  "shard": "timelocked:block/sarc_tank_shard",
+  "particle": "timelocked:block/sarc_tank_glass"
+ },
+ "elements": [
+  {
+   "from": [
+    1,
+    0,
+    1
+   ],
+   "to": [
+    15,
+    3,
+    15
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      13,
+      15,
+      16
+     ]
+    },
+    "south": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      13,
+      15,
+      16
+     ]
+    },
+    "east": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      13,
+      15,
+      16
+     ]
+    },
+    "west": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      13,
+      15,
+      16
+     ]
+    },
+    "up": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    },
+    "down": {
+     "texture": "#metal",
+     "uv": [
+      1,
+      1,
+      15,
+      15
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    3,
+    3,
+    3
+   ],
+   "to": [
+    13,
+    16,
+    13
+   ],
+   "faces": {
+    "north": {
+     "texture": "#goo",
+     "uv": [
+      3,
+      0,
+      13,
+      13
+     ]
+    },
+    "south": {
+     "texture": "#goo",
+     "uv": [
+      3,
+      0,
+      13,
+      13
+     ]
+    },
+    "east": {
+     "texture": "#goo",
+     "uv": [
+      3,
+      0,
+      13,
+      13
+     ]
+    },
+    "west": {
+     "texture": "#goo",
+     "uv": [
+      3,
+      0,
+      13,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    2,
+    3,
+    2
+   ],
+   "to": [
+    14,
+    16,
+    14
+   ],
+   "faces": {
+    "north": {
+     "texture": "#glass",
+     "uv": [
+      2,
+      0,
+      14,
+      13
+     ]
+    },
+    "south": {
+     "texture": "#glass",
+     "uv": [
+      2,
+      0,
+      14,
+      13
+     ]
+    },
+    "east": {
+     "texture": "#glass",
+     "uv": [
+      2,
+      0,
+      14,
+      13
+     ]
+    },
+    "west": {
+     "texture": "#glass",
+     "uv": [
+      2,
+      0,
+      14,
+      13
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    1.5,
+    3,
+    1.5
+   ],
+   "to": [
+    2.5,
+    16,
+    2.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      0,
+      2.5,
+      13
+     ]
+    },
+    "south": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      0,
+      2.5,
+      13
+     ]
+    },
+    "east": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      0,
+      2.5,
+      13
+     ]
+    },
+    "west": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      0,
+      2.5,
+      13
+     ]
+    },
+    "up": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      1.5,
+      2.5,
+      2.5
+     ]
+    },
+    "down": {
+     "texture": "#metal",
+     "uv": [
+      1.5,
+      1.5,
+      2.5,
+      2.5
+     ]
+    }
+   }
+  },
+  {
+   "from": [
+    13.5,
+    3,
+    13.5
+   ],
+   "to": [
+    14.5,
+    16,
+    14.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      0,
+      14.5,
+      13
+     ]
+    },
+    "south": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      0,
+      14.5,
+      13
+     ]
+    },
+    "east": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      0,
+      14.5,
+      13
+     ]
+    },
+    "west": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      0,
+      14.5,
+      13
+     ]
+    },
+    "up": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      13.5,
+      14.5,
+      14.5
+     ]
+    },
+    "down": {
+     "texture": "#metal",
+     "uv": [
+      13.5,
+      13.5,
+      14.5,
+      14.5
+     ]
+    }
+   }
+  }
+ ]
+}

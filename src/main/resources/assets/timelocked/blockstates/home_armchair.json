@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/home_armchair",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "timelocked:block/home_armchair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/home_armchair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/home_armchair",
+      "y": 270
+    }
+  }
+}

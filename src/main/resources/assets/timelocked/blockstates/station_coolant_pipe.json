@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "timelocked:block/station_coolant_pipe"
+    },
+    "axis=x": {
+      "model": "timelocked:block/station_coolant_pipe",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "timelocked:block/station_coolant_pipe",
+      "x": 90
+    }
+  }
+}

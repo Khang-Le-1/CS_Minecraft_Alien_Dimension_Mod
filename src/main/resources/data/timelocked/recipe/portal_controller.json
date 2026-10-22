@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    "EBE",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "B": {
+      "item": "timelocked:circuit_board"
+    },
+    "C": {
+      "item": "timelocked:electrical_conduit"
+    }
+  },
+  "result": {
+    "id": "timelocked:portal_controller",
+    "count": 1
+  }
+}

@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["SSS", "SCS", "SSS"], "key": {"S": {"item": "timelocked:steel_ingot"}, "C": {"item": "timelocked:circuit_board"}}, "result": {"id": "timelocked:sarc_portal_frame", "count": 4}}

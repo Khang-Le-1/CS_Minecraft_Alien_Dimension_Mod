@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    " P ",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "item": "timelocked:steel_plate"
+    }
+  },
+  "result": {
+    "id": "timelocked:steel_grating",
+    "count": 4
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.26.1">
+<file name="/data/facility-spawn/src/main/java/com/timelocked/HubArrival.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/CoastChapter.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/ReceptionChapter.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/FacilitySpawnProtection.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/GlassStairwell.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/AuthoredGeometry.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/SarcHangingLogoBlock.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/client/VehicleModels.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/FacilityState.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/SiteProgress.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/AlarmRules.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/BatonItem.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/DockingRules.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/VehicleDeploymentItem.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/IntroDeparture.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/CelestialWorkstationBlock.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/GunItem.java">
+</file>
+<file name="/data/facility-spawn/src/main/java/com/timelocked/client/mixin/StartupOverlayMixin.java">
+</file>
+</checkstyle>

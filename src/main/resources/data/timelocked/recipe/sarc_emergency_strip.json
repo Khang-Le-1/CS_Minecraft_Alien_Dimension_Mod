@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["CCC", "SRS", "SSS"], "key": {"C": {"item": "timelocked:circuit_board"}, "S": {"item": "timelocked:steel_ingot"}, "R": {"item": "minecraft:redstone"}}, "result": {"id": "timelocked:sarc_emergency_strip", "count": 6}}

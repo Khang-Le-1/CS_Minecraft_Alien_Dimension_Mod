@@ -1,0 +1,7288 @@
+{
+  "version": 1,
+  "patches": [
+    {
+      "pos": [
+        103,
+        9,
+        181
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        103,
+        9,
+        186
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        108,
+        9,
+        181
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        108,
+        9,
+        186
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        113,
+        9,
+        181
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        113,
+        9,
+        186
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        118,
+        9,
+        181
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        118,
+        9,
+        186
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor control lighting"
+    },
+    {
+      "pos": [
+        103,
+        16,
+        150
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        103,
+        16,
+        157
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        103,
+        16,
+        164
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        103,
+        16,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        108,
+        16,
+        150
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        108,
+        16,
+        157
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        108,
+        16,
+        164
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        108,
+        16,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        113,
+        16,
+        150
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        113,
+        16,
+        157
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        113,
+        16,
+        164
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        113,
+        16,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        118,
+        16,
+        150
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        118,
+        16,
+        157
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        118,
+        16,
+        164
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        118,
+        16,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "reactor chamber lighting"
+    },
+    {
+      "pos": [
+        85,
+        8,
+        163
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        8,
+        167
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        8,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        8,
+        175
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        8,
+        179
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        8,
+        163
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        8,
+        167
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        8,
+        171
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        8,
+        175
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        8,
+        179
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        87,
+        7,
+        164
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        7,
+        168
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        7,
+        172
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        7,
+        176
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        7,
+        180
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        109,
+        2,
+        184
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "south"
+        }
+      },
+      "region": "reactor desk"
+    },
+    {
+      "pos": [
+        111,
+        2,
+        184
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "south"
+        }
+      },
+      "region": "reactor desk"
+    },
+    {
+      "pos": [
+        85,
+        3,
+        44
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        85,
+        3,
+        52
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        86,
+        3,
+        44
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        86,
+        3,
+        52
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        87,
+        3,
+        44
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        87,
+        3,
+        52
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        85,
+        3,
+        165
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        85,
+        3,
+        178
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        86,
+        3,
+        165
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        86,
+        3,
+        178
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        87,
+        3,
+        165
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        87,
+        3,
+        178
+      ],
+      "before": {
+        "Name": "timelocked:sarc_service_cabinet",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_workstation",
+        "Properties": {
+          "facing": "north"
+        }
+      },
+      "region": "tram counter"
+    },
+    {
+      "pos": [
+        102,
+        6,
+        179
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_siren",
+        "Properties": {
+          "facing": "south"
+        }
+      },
+      "region": "reactor alarm"
+    },
+    {
+      "pos": [
+        119,
+        6,
+        179
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_beacon",
+        "Properties": {
+          "facing": "south"
+        }
+      },
+      "region": "reactor alarm"
+    },
+    {
+      "pos": [
+        84,
+        6,
+        162
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_siren",
+        "Properties": {
+          "facing": "east"
+        }
+      },
+      "region": "tram alarm"
+    },
+    {
+      "pos": [
+        84,
+        6,
+        176
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_beacon",
+        "Properties": {
+          "facing": "east"
+        }
+      },
+      "region": "tram alarm"
+    },
+    {
+      "pos": [
+        84,
+        6,
+        40
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_siren",
+        "Properties": {
+          "facing": "east"
+        }
+      },
+      "region": "tram alarm"
+    },
+    {
+      "pos": [
+        84,
+        6,
+        54
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_alarm_beacon",
+        "Properties": {
+          "facing": "east"
+        }
+      },
+      "region": "tram alarm"
+    },
+    {
+      "pos": [
+        87,
+        6,
+        42
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        6,
+        46
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        6,
+        50
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        87,
+        6,
+        54
+      ],
+      "before": {
+        "Name": "minecraft:lantern",
+        "Properties": {
+          "hanging": "true",
+          "waterlogged": "false"
+        }
+      },
+      "after": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "region": "tram lantern removal"
+    },
+    {
+      "pos": [
+        85,
+        13,
+        49
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        13,
+        53
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        85,
+        13,
+        57
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        13,
+        49
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        88,
+        13,
+        57
+      ],
+      "before": {
+        "Name": "timelocked:sarc_wall_panel",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:emergency_ceiling_light",
+        "Properties": {}
+      },
+      "region": "tram industrial lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        7,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        15,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        23,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        39,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        47,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        67
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        83
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        91
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        99
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        107
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        115
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        123
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        131
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        139
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        71,
+        1,
+        147
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        66
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        66
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        72
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        72
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        78
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        78
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        78
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        78
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        78
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        84
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        84
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        90
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        90
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        90
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        90
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        90
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        96
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        96
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        108
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        108
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        114
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        114
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        114
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        114
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        114
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        120
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        120
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        126
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        126
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        126
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        126
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        126
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        132
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        132
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        138
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        138
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        138
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        138
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        138
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        31,
+        1,
+        144
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        1,
+        144
+      ],
+      "before": {
+        "Name": "timelocked:sarc_route_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        28,
+        14,
+        144
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        14,
+        144
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        46,
+        14,
+        144
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        57,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        63,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        69,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        75,
+        14,
+        66
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        14,
+        78
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        14,
+        90
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        34,
+        14,
+        111
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        14,
+        111
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        3,
+        98
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        3,
+        98
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        6,
+        101
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        6,
+        101
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        9,
+        104
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        9,
+        104
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        12,
+        107
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        12,
+        107
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        1,
+        94
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        1,
+        94
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        30,
+        1,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        32,
+        1,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        3,
+        130
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        3,
+        130
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        6,
+        127
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        6,
+        127
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        9,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        9,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        12,
+        121
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        12,
+        121
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        1,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        1,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        41,
+        1,
+        134
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        1,
+        134
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        50,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        54,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        58,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        62,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        66,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        70,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        74,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        102
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        68
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        92
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        140
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        8,
+        14,
+        148
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        68
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        92
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        140
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        16,
+        14,
+        148
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        68
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        92
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        132
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        140
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        24,
+        14,
+        148
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        52,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        52,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        52,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        52,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        60,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        60,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        60,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        60,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        68,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        68,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        68,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        68,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        68
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        84
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        92
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        100
+      ],
+      "before": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        108
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        116
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        14,
+        124
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        80,
+        1,
+        135
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        10,
+        1,
+        113
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        18,
+        1,
+        129
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        95
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        111
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        127
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        80,
+        1,
+        149
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        25,
+        1,
+        113
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        119
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        27,
+        1,
+        129
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        110
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        68,
+        1,
+        109
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        76,
+        1,
+        143
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        78,
+        1,
+        65
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        5,
+        1,
+        129
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        10,
+        1,
+        70
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        10,
+        1,
+        94
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        10,
+        1,
+        136
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        11,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        11,
+        1,
+        87
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        11,
+        1,
+        103
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        17,
+        1,
+        112
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        18,
+        1,
+        70
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        18,
+        1,
+        94
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        18,
+        1,
+        136
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        19,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        19,
+        1,
+        87
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        19,
+        1,
+        103
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        26,
+        1,
+        142
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        27,
+        1,
+        87
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        27,
+        1,
+        103
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        33,
+        1,
+        105
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        95
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        111
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        119
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        127
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        135
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        51,
+        1,
+        143
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        95
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        119
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        127
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        135
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        59,
+        1,
+        143
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        79
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        95
+      ],
+      "before": {
+        "Name": "minecraft:light_gray_concrete",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        119
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        127
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        135
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        67,
+        1,
+        143
+      ],
+      "before": {
+        "Name": "minecraft:polished_andesite",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        77,
+        1,
+        129
+      ],
+      "before": {
+        "Name": "timelocked:sarc_floor_tile",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        43,
+        14,
+        145
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        64,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        71
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        87
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        95
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        111
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        119
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        129
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        135
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        113
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        129
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        42,
+        14,
+        137
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        55,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        56,
+        14,
+        113
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        72,
+        14,
+        113
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        73,
+        14,
+        102
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        79
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        103
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        4,
+        14,
+        143
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        129
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        136
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        12,
+        14,
+        144
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        72
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        80
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        96
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        104
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        112
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        136
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        20,
+        14,
+        144
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        56,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        64,
+        14,
+        112
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        64,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        72,
+        14,
+        120
+      ],
+      "before": {
+        "Name": "minecraft:smooth_stone",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:sea_lantern",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 research lighting"
+    },
+    {
+      "pos": [
+        79,
+        4,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        4,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        4,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        5,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        5,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        5,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        6,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        6,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        6,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        79,
+        2,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door side jamb closure"
+    },
+    {
+      "pos": [
+        79,
+        3,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "minecraft:white_concrete",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door side jamb closure"
+    },
+    {
+      "pos": [
+        80,
+        4,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        4,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        4,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        5,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        5,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        5,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        6,
+        75
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        6,
+        76
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        6,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door header closure"
+    },
+    {
+      "pos": [
+        80,
+        2,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door side jamb closure"
+    },
+    {
+      "pos": [
+        80,
+        3,
+        77
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_service_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 door side jamb closure"
+    },
+    {
+      "pos": [
+        81,
+        2,
+        89
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_clean_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 equipment end-wall seam"
+    },
+    {
+      "pos": [
+        81,
+        3,
+        89
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_clean_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 equipment end-wall seam"
+    },
+    {
+      "pos": [
+        81,
+        4,
+        89
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_clean_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 equipment end-wall seam"
+    },
+    {
+      "pos": [
+        81,
+        5,
+        89
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_clean_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 equipment end-wall seam"
+    },
+    {
+      "pos": [
+        81,
+        6,
+        89
+      ],
+      "before": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "after": {
+        "Name": "timelocked:sarc_clean_panel",
+        "Properties": {}
+      },
+      "region": "0.8.7.1 equipment end-wall seam"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:gravitite_ore"
+  },
+  "result": {
+    "id": "timelocked:gravitite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

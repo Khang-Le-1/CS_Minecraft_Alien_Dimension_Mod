@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:aluminum_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:aluminum_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,2 @@
+PASS: version, receptionist class, language data and drawing resources in production JAR match source; native test entry points excluded.
+SHA256 e9bafd9c60e2e2bd5922fb85c5ed8e74c69ddf0deba2c254777dd61cb20b08da

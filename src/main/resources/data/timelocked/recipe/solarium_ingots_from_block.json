@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:solarium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:solarium_ingot",
+    "count": 9
+  }
+}

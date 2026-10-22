@@ -1,0 +1,29 @@
+{
+  "type": "timelocked:vehicle_assembly",
+  "group": "sarc_vehicles",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "timelocked:vehicle_wheel"
+    },
+    {
+      "item": "timelocked:vehicle_wheel"
+    },
+    {
+      "item": "timelocked:vehicle_wheel"
+    },
+    {
+      "item": "timelocked:vehicle_wheel"
+    },
+    {
+      "item": "timelocked:vehicle_chassis"
+    },
+    {
+      "item": "timelocked:truck_cab"
+    }
+  ],
+  "result": {
+    "id": "timelocked:truck_deployment",
+    "count": 1
+  }
+}

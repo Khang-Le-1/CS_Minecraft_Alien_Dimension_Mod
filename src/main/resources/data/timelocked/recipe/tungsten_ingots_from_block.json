@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:tungsten_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:tungsten_ingot",
+    "count": 9
+  }
+}

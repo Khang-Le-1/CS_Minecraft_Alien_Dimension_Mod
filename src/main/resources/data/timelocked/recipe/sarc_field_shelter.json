@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PVP",
+    "HCH",
+    "PHP"
+  ],
+  "key": {
+    "P": {
+      "item": "timelocked:titanium_plate"
+    },
+    "V": {
+      "item": "timelocked:space_viewport"
+    },
+    "H": {
+      "item": "timelocked:space_hull_panel"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_field_shelter",
+    "count": 1
+  }
+}

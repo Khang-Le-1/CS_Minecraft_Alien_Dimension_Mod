@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/redstone_power_supply"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:aetherite_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:aetherite_block",
+    "count": 1
+  }
+}

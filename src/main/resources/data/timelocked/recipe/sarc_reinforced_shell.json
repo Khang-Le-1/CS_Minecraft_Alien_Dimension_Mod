@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SIS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "I": {
+      "item": "timelocked:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_reinforced_shell",
+    "count": 8
+  }
+}

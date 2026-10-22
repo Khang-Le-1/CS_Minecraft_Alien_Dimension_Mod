@@ -1,0 +1,19 @@
+{
+  "type": "timelocked:voidspace",
+  "generator": {
+    "type": "timelocked:voidspace_fragment",
+    "biome_source": {
+      "type": "timelocked:voidspace_fragment",
+      "burnt": "timelocked:burnt_fragment",
+      "surviving": "timelocked:celestial_refuge",
+      "ember": "timelocked:ember_wastes",
+      "crystal": "timelocked:crystal_barrens",
+      "spore": "timelocked:spore_hollows",
+      "highlands": "timelocked:shattered_highlands",
+      "moonveil": "timelocked:moonveil_forest",
+      "meadow": "timelocked:prismatic_meadows",
+      "wetland": "timelocked:twilight_wetlands",
+      "dunes": "timelocked:obsidian_dunes"
+    }
+  }
+}

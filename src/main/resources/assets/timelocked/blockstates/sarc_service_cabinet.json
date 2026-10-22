@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "timelocked:block/sarc_service_cabinet"
+    }
+  }
+}

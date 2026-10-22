@@ -1,0 +1,7 @@
+{
+ "parent": "timelocked:block/emergency_ceiling_light",
+ "textures": {
+  "all": "timelocked:block/sarc_flicker_light_off",
+  "particle": "timelocked:block/sarc_flicker_light_off"
+ }
+}

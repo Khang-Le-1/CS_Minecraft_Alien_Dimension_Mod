@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/scc_blue_cable_tray"
+    },
+    "facing=east": {
+      "model": "timelocked:block/scc_blue_cable_tray",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/scc_blue_cable_tray",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/scc_blue_cable_tray",
+      "y": 270
+    }
+  }
+}

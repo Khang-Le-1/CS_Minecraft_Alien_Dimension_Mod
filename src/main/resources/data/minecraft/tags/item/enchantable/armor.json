@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "timelocked:sarc_space_helmet",
+    "timelocked:sarc_space_chestplate",
+    "timelocked:sarc_space_leggings",
+    "timelocked:sarc_space_boots"
+  ]
+}

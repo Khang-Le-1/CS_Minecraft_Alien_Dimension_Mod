@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:chronotite_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:chronotite_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "timelocked:orithichalite_ore"
+  },
+  "result": {
+    "id": "timelocked:orithichalite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 100
+}

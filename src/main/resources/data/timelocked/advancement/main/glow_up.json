@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:glowkit_spawn_egg"
+  },
+  "title": {
+   "translate": "advancements.timelocked.glow_up.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.glow_up.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "bred": {
+   "trigger": "minecraft:bred_animals",
+   "conditions": {
+    "child": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "timelocked:glowkit"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "parent": "timelocked:main/field_biologist",
+ "rewards": {
+  "experience": 30
+ }
+}

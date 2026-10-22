@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:ardanium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:ardanium_ingot",
+    "count": 9
+  }
+}

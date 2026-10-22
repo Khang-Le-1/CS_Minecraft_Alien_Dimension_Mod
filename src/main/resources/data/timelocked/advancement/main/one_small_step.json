@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:lunar_regolith"
+  },
+  "title": {
+   "translate": "advancements.timelocked.one_small_step.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.one_small_step.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/first_jump",
+ "rewards": {
+  "experience": 20
+ }
+}

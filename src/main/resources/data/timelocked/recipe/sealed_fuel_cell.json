@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["IRI", "RCR", "IRI"], "key": {"I": {"item": "timelocked:cast_iron_ingot"}, "R": {"item": "minecraft:redstone"}, "C": {"item": "timelocked:electrical_conduit"}}, "result": {"id": "timelocked:sealed_fuel_cell", "count": 1}}

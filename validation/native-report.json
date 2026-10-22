@@ -1,0 +1,62 @@
+{
+  "biome_samples": {
+    "burnt_fragment": 1187,
+    "celestial_refuge": 4522,
+    "crystal_barrens": 456,
+    "ember_wastes": 315,
+    "moonveil_forest": 3292,
+    "obsidian_dunes": 1661,
+    "prismatic_meadows": 1102,
+    "shattered_highlands": 2898,
+    "spore_hollows": 703,
+    "twilight_wetlands": 2870
+  },
+  "representatives": {
+    "BURNT": [
+      432,
+      -552
+    ],
+    "REFUGE": [
+      -72,
+      72
+    ],
+    "EMBER": [
+      228,
+      480
+    ],
+    "CRYSTAL": [
+      -36,
+      -516
+    ],
+    "SPORE": [
+      108,
+      408
+    ],
+    "HIGHLANDS": [
+      252,
+      -876
+    ],
+    "MOONVEIL": [
+      -528,
+      -156
+    ],
+    "MEADOW": [
+      720,
+      -144
+    ],
+    "WETLAND": [
+      -12,
+      540
+    ],
+    "DUNES": [
+      -24,
+      -180
+    ]
+  },
+  "sanctuary_base": 64,
+  "celestial_jobs": "7 roles: claim exclusivity, persistence, work navigation, replacement, restocking, recipes, buffs and local treatment tested",
+  "pa_welcome": "588 centered logo parts, matching arrival index, one-shot chat/anthem dispatch, persistence and legacy compatibility tested",
+  "status": "PASS",
+  "checks": 3950,
+  "failures": []
+}

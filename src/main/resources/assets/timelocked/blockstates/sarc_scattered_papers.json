@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "timelocked:block/sarc_scattered_papers"
+  },
+  "facing=east": {
+   "model": "timelocked:block/sarc_scattered_papers",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "timelocked:block/sarc_scattered_papers",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "timelocked:block/sarc_scattered_papers",
+   "y": 270
+  }
+ }
+}

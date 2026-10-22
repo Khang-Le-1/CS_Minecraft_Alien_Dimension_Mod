@@ -1,0 +1,230 @@
+{
+  "facility_alarm": {
+    "subtitle": "subtitles.timelocked.facility_alarm",
+    "sounds": [
+      {
+        "name": "timelocked:facility_alarm",
+        "stream": false
+      }
+    ]
+  },
+  "facility_danger_alarm": {
+    "subtitle": "subtitles.timelocked.facility_danger_alarm",
+    "sounds": [
+      {
+        "name": "timelocked:facility_danger_alarm",
+        "stream": false
+      }
+    ]
+  },
+  "core_melt_alarm": {
+    "subtitle": "subtitles.timelocked.core_melt_alarm",
+    "sounds": [
+      {
+        "name": "timelocked:core_melt_alarm",
+        "stream": false
+      }
+    ]
+  },
+  "menu_depths": {
+    "sounds": [
+      {
+        "name": "timelocked:music/menu_depths",
+        "stream": true
+      }
+    ]
+  },
+  "polaris": {
+    "sounds": [
+      {
+        "name": "timelocked:music/polaris",
+        "stream": true
+      }
+    ]
+  },
+  "bionexian_battle": {
+    "sounds": [
+      {
+        "name": "timelocked:music/bionexian_battle",
+        "stream": true
+      }
+    ]
+  },
+  "arrival_power_switch": {
+    "subtitle": "subtitles.timelocked.arrival_power_switch",
+    "sounds": [
+      {
+        "name": "timelocked:facility/light_power_switch",
+        "stream": false
+      }
+    ]
+  },
+  "arrival_power_01": {
+    "subtitle": "subtitles.timelocked.arrival_power_01",
+    "sounds": [
+      {
+        "name": "timelocked:facility/light_power_01",
+        "stream": false
+      }
+    ]
+  },
+  "arrival_power_02": {
+    "subtitle": "subtitles.timelocked.arrival_power_02",
+    "sounds": [
+      {
+        "name": "timelocked:facility/light_power_02",
+        "stream": false
+      }
+    ]
+  },
+  "arrival_power_03": {
+    "subtitle": "subtitles.timelocked.arrival_power_03",
+    "sounds": [
+      {
+        "name": "timelocked:facility/light_power_03",
+        "stream": false
+      }
+    ]
+  },
+  "arrival_power_04": {
+    "subtitle": "subtitles.timelocked.arrival_power_04",
+    "sounds": [
+      {
+        "name": "timelocked:facility/light_power_04",
+        "stream": false
+      }
+    ]
+  },
+  "nau_anthem_pa": {
+    "subtitle": "subtitles.timelocked.nau_anthem_pa",
+    "sounds": [
+      {
+        "name": "timelocked:facility/nau_anthem_pa_startup",
+        "stream": true
+      }
+    ]
+  },
+  "intro_tv": {
+    "sounds": [
+      {
+        "name": "timelocked:intro/tv",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.timelocked.intro_tv"
+  },
+  "intro_rain": {
+    "sounds": [
+      {
+        "name": "timelocked:intro/rain",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.timelocked.intro_rain"
+  },
+  "intro_transition": {
+    "sounds": [
+      {
+        "name": "timelocked:intro/transition",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.timelocked.intro_transition"
+  },
+  "intro_surf": {
+    "sounds": [
+      {
+        "name": "timelocked:intro/surf",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.timelocked.intro_surf"
+  },
+  "truck_in_left": {
+    "subtitle": "subtitles.timelocked.truck_in_left",
+    "sounds": [
+      {
+        "name": "timelocked:truck/in_left",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "truck_in_right": {
+    "subtitle": "subtitles.timelocked.truck_in_right",
+    "sounds": [
+      {
+        "name": "timelocked:truck/in_right",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "truck_idle": {
+    "subtitle": "subtitles.timelocked.truck_idle",
+    "sounds": [
+      {
+        "name": "timelocked:truck/idle",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "truck_out_left": {
+    "subtitle": "subtitles.timelocked.truck_out_left",
+    "sounds": [
+      {
+        "name": "timelocked:truck/out_left",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "truck_out_right": {
+    "subtitle": "subtitles.timelocked.truck_out_right",
+    "sounds": [
+      {
+        "name": "timelocked:truck/out_right",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "truck_drive": {
+    "subtitle": "subtitles.timelocked.truck_drive",
+    "sounds": [
+      {
+        "name": "timelocked:truck/drive",
+        "stream": false,
+        "attenuation_distance": 32
+      }
+    ]
+  },
+  "pushbar_open": {
+    "subtitle": "subtitles.timelocked.pushbar_open",
+    "sounds": [
+      {
+        "name": "timelocked:doors/pushbar_open",
+        "stream": false
+      }
+    ]
+  },
+  "pushbar_close": {
+    "subtitle": "subtitles.timelocked.pushbar_close",
+    "sounds": [
+      {
+        "name": "timelocked:doors/pushbar_close",
+        "stream": false
+      }
+    ]
+  },
+  "atlas_startup": {
+    "subtitle": "subtitles.timelocked.atlas_startup",
+    "sounds": [
+      {
+        "name": "timelocked:atlas/startup",
+        "stream": true
+      }
+    ]
+  }
+}

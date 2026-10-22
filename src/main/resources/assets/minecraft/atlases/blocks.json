@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/quartz_block_bottom",
+      "sprite": "minecraft:block/quartz_block_bottom"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/light_gray_concrete",
+      "sprite": "minecraft:block/light_gray_concrete"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/purple_concrete",
+      "sprite": "minecraft:block/purple_concrete"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/polished_blackstone_bricks",
+      "sprite": "minecraft:block/polished_blackstone_bricks"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/black_concrete",
+      "sprite": "minecraft:block/black_concrete"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/black_stained_glass",
+      "sprite": "minecraft:block/black_stained_glass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/light_blue_stained_glass",
+      "sprite": "minecraft:block/light_blue_stained_glass"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/iron_block",
+      "sprite": "minecraft:block/iron_block"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/copper_block",
+      "sprite": "minecraft:block/copper_block"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:block/sea_lantern",
+      "sprite": "minecraft:block/sea_lantern"
+    }
+  ]
+}

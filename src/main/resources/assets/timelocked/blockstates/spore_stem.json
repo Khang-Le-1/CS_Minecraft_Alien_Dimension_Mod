@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "axis=y": {
+   "model": "timelocked:block/spore_stem"
+  },
+  "axis=z": {
+   "model": "timelocked:block/spore_stem_horizontal",
+   "x": 90
+  },
+  "axis=x": {
+   "model": "timelocked:block/spore_stem_horizontal",
+   "x": 90,
+   "y": 90
+  }
+ }
+}

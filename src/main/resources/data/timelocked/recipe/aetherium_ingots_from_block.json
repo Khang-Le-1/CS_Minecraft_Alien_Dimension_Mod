@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:aetherium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:aetherium_ingot",
+    "count": 9
+  }
+}

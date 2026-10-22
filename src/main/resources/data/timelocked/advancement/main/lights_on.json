@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:sealed_fuel_cell"
+  },
+  "title": {
+   "translate": "advancements.timelocked.lights_on.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.lights_on.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/site_seeing",
+ "rewards": {
+  "experience": 30
+ }
+}

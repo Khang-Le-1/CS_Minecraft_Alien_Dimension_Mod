@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:chromite_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:chromite_block",
+    "count": 1
+  }
+}

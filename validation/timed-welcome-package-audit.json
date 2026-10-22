@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "changed_existing_files": [
+    "README.md",
+    "gradle.properties",
+    "src/main/java/com/timelocked/HubArrival.java",
+    "src/main/java/com/timelocked/SiteProgress.java",
+    "src/main/resources/assets/timelocked/lang/en_us.json"
+  ],
+  "prior_assets_and_structure_templates": "byte-for-byte retained except welcome locale entries",
+  "locale_message_count": 7,
+  "message_times_seconds": [
+    0,
+    7,
+    16,
+    24,
+    34,
+    43,
+    50
+  ],
+  "release_jar_contains_test_classes": false,
+  "jar_sha256": "551217559967ce3f6a8856bb3911bbaac55c08f5f673462402d01df0477db0e8"
+}

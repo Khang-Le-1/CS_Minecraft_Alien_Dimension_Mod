@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:raw_uranium"
+  },
+  "result": {
+    "id": "timelocked:uranium_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

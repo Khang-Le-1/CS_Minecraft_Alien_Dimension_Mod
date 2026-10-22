@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SIS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "I": {
+      "item": "minecraft:gray_dye"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_floor_tile",
+    "count": 8
+  }
+}

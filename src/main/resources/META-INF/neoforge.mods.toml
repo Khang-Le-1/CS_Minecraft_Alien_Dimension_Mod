@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="timelocked"
+version="0.8.9.38-story-expansion-dev"
+displayName="TIMELOCKED: Zero Point"
+description="Standalone SARC facility, Voidspace transit and powered metallurgy."
+[[dependencies.timelocked]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.timelocked]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[mixins]]
+config="timelocked.client.mixins.json"
+
+# Retain the club's beginner examples as an independent mod, with their own namespace.
+[[mods]]
+modId="minecraftalienmod"
+version="1.0.0"
+displayName="Minecraft Alien Mod (club examples)"
+description="Original CS Club reference examples, preserved alongside TIMELOCKED."
+[[dependencies.minecraftalienmod]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.minecraftalienmod]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"

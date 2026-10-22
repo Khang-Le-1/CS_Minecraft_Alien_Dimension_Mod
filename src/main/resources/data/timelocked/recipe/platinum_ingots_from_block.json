@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:platinum_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:platinum_ingot",
+    "count": 9
+  }
+}

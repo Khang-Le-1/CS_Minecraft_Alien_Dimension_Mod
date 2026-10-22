@@ -1,0 +1,25 @@
+# DEBUG ONLY: places all modules synchronously. Clears the full bounds. Back up your test world.
+place template timelocked:sarc/modules/x00_y00_z00 ~0 ~0 ~0
+place template timelocked:sarc/modules/x00_y01_z00 ~0 ~32 ~0
+place template timelocked:sarc/modules/x00_y00_z01 ~0 ~0 ~32
+place template timelocked:sarc/modules/x00_y01_z01 ~0 ~32 ~32
+place template timelocked:sarc/modules/x00_y00_z02 ~0 ~0 ~64
+place template timelocked:sarc/modules/x00_y01_z02 ~0 ~32 ~64
+place template timelocked:sarc/modules/x00_y00_z03 ~0 ~0 ~96
+place template timelocked:sarc/modules/x00_y01_z03 ~0 ~32 ~96
+place template timelocked:sarc/modules/x01_y00_z00 ~32 ~0 ~0
+place template timelocked:sarc/modules/x01_y01_z00 ~32 ~32 ~0
+place template timelocked:sarc/modules/x01_y00_z01 ~32 ~0 ~32
+place template timelocked:sarc/modules/x01_y01_z01 ~32 ~32 ~32
+place template timelocked:sarc/modules/x01_y00_z02 ~32 ~0 ~64
+place template timelocked:sarc/modules/x01_y01_z02 ~32 ~32 ~64
+place template timelocked:sarc/modules/x01_y00_z03 ~32 ~0 ~96
+place template timelocked:sarc/modules/x01_y01_z03 ~32 ~32 ~96
+place template timelocked:sarc/modules/x02_y00_z00 ~64 ~0 ~0
+place template timelocked:sarc/modules/x02_y01_z00 ~64 ~32 ~0
+place template timelocked:sarc/modules/x02_y00_z01 ~64 ~0 ~32
+place template timelocked:sarc/modules/x02_y01_z01 ~64 ~32 ~32
+place template timelocked:sarc/modules/x02_y00_z02 ~64 ~0 ~64
+place template timelocked:sarc/modules/x02_y01_z02 ~64 ~32 ~64
+place template timelocked:sarc/modules/x02_y00_z03 ~64 ~0 ~96
+place template timelocked:sarc/modules/x02_y01_z03 ~64 ~32 ~96

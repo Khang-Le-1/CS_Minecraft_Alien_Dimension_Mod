@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["SSS", "CCC", "SSS"], "key": {"S": {"item": "timelocked:steel_ingot"}, "C": {"item": "timelocked:circuit_board"}}, "result": {"id": "timelocked:reactor_fuel_system", "count": 1}}

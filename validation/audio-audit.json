@@ -1,0 +1,17 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "vorbis",
+      "sample_rate": "48000",
+      "channels": 1
+    }
+  ],
+  "format": {
+    "duration": "47.300000"
+  },
+  "sha256": "26c8aa499e82dcb0f82db3ae93aed7775fb9a8868d13caf9f9fca0ca1a73cae7",
+  "startup_seconds": 3.2,
+  "source": "User-provided NAU_Anthem.mp3"
+}

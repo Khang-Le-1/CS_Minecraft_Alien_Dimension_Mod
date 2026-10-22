@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/orientable", "textures": {"front": "timelocked:block/timeskipper_airlock_front", "side": "timelocked:block/timeskipper_hull_side", "top": "timelocked:block/timeskipper_panel_top"}}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_coolant_pump"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_coolant_pump",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_coolant_pump",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_coolant_pump",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/campus_parked_car_front",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "timelocked:block/campus_parked_car_front",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/campus_parked_car_front",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/campus_parked_car_front",
+      "y": 270
+    }
+  }
+}

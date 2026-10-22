@@ -1,0 +1,3685 @@
+{
+  "version": 7,
+  "release": "0.8.6",
+  "bounds": {
+    "x0": -64,
+    "x1": 64,
+    "z0": -80,
+    "z1": 96
+  },
+  "depth": 50,
+  "rooms": [
+    {
+      "name": "reactor_vault",
+      "x0": -22,
+      "x1": 22,
+      "z0": -28,
+      "z1": 8,
+      "floor": 0,
+      "height": 22
+    },
+    {
+      "name": "control_gallery",
+      "x0": -12,
+      "x1": 12,
+      "z0": 8,
+      "z1": 26,
+      "floor": 3,
+      "height": 13
+    },
+    {
+      "name": "access_concourse",
+      "x0": -10,
+      "x1": 10,
+      "z0": 26,
+      "z1": 62,
+      "floor": 0,
+      "height": 9
+    },
+    {
+      "name": "west_distribution",
+      "x0": -56,
+      "x1": -12,
+      "z0": 10,
+      "z1": 22,
+      "floor": 0,
+      "height": 7
+    },
+    {
+      "name": "east_distribution",
+      "x0": 12,
+      "x1": 60,
+      "z0": 10,
+      "z1": 22,
+      "floor": 0,
+      "height": 7
+    },
+    {
+      "name": "coolant_hall",
+      "x0": -64,
+      "x1": -36,
+      "z0": -22,
+      "z1": 10,
+      "floor": 0,
+      "height": 10
+    },
+    {
+      "name": "fuel_handling",
+      "x0": -64,
+      "x1": -36,
+      "z0": -58,
+      "z1": -22,
+      "floor": 0,
+      "height": 9
+    },
+    {
+      "name": "switchgear",
+      "x0": -64,
+      "x1": -36,
+      "z0": 22,
+      "z1": 46,
+      "floor": 0,
+      "height": 8
+    },
+    {
+      "name": "workshop",
+      "x0": -64,
+      "x1": -36,
+      "z0": 46,
+      "z1": 76,
+      "floor": 0,
+      "height": 8
+    },
+    {
+      "name": "turbine_hall",
+      "x0": 28,
+      "x1": 64,
+      "z0": -50,
+      "z1": 10,
+      "floor": 0,
+      "height": 14
+    },
+    {
+      "name": "generator_hall",
+      "x0": 36,
+      "x1": 64,
+      "z0": 22,
+      "z1": 48,
+      "floor": 0,
+      "height": 10
+    },
+    {
+      "name": "water_treatment",
+      "x0": 36,
+      "x1": 64,
+      "z0": 48,
+      "z1": 78,
+      "floor": 0,
+      "height": 12
+    },
+    {
+      "name": "reactor_support",
+      "x0": -20,
+      "x1": 20,
+      "z0": -72,
+      "z1": -28,
+      "floor": 0,
+      "height": 9
+    },
+    {
+      "name": "lower_reactor_service",
+      "x0": -22,
+      "x1": 22,
+      "z0": -28,
+      "z1": 8,
+      "floor": -14,
+      "height": 10
+    },
+    {
+      "name": "lower_service_hub",
+      "x0": -20,
+      "x1": 20,
+      "z0": 8,
+      "z1": 40,
+      "floor": -14,
+      "height": 8
+    },
+    {
+      "name": "emergency_exit_link",
+      "x0": -52,
+      "x1": -44,
+      "z0": 76,
+      "z1": 88,
+      "floor": 0,
+      "height": 5
+    }
+  ],
+  "connections": [
+    {
+      "a": "reactor_vault",
+      "b": "control_gallery",
+      "x0": -11,
+      "x1": -9,
+      "z0": 8,
+      "z1": 8,
+      "floor": 3
+    },
+    {
+      "a": "control_gallery",
+      "b": "access_concourse",
+      "x0": -2,
+      "x1": 2,
+      "z0": 26,
+      "z1": 26,
+      "floor": 3
+    },
+    {
+      "a": "control_gallery",
+      "b": "west_distribution",
+      "x0": -12,
+      "x1": -12,
+      "z0": 13,
+      "z1": 17,
+      "floor": 3
+    },
+    {
+      "a": "control_gallery",
+      "b": "east_distribution",
+      "x0": 12,
+      "x1": 12,
+      "z0": 13,
+      "z1": 17,
+      "floor": 3
+    },
+    {
+      "a": "west_distribution",
+      "b": "coolant_hall",
+      "x0": -52,
+      "x1": -48,
+      "z0": 10,
+      "z1": 10,
+      "floor": 0
+    },
+    {
+      "a": "west_distribution",
+      "b": "switchgear",
+      "x0": -52,
+      "x1": -48,
+      "z0": 22,
+      "z1": 22,
+      "floor": 0
+    },
+    {
+      "a": "coolant_hall",
+      "b": "fuel_handling",
+      "x0": -52,
+      "x1": -48,
+      "z0": -22,
+      "z1": -22,
+      "floor": 0
+    },
+    {
+      "a": "switchgear",
+      "b": "workshop",
+      "x0": -52,
+      "x1": -48,
+      "z0": 46,
+      "z1": 46,
+      "floor": 0
+    },
+    {
+      "a": "workshop",
+      "b": "emergency_exit_link",
+      "x0": -50,
+      "x1": -46,
+      "z0": 76,
+      "z1": 76,
+      "floor": 0
+    },
+    {
+      "a": "east_distribution",
+      "b": "turbine_hall",
+      "x0": 42,
+      "x1": 46,
+      "z0": 10,
+      "z1": 10,
+      "floor": 0
+    },
+    {
+      "a": "east_distribution",
+      "b": "generator_hall",
+      "x0": 48,
+      "x1": 52,
+      "z0": 22,
+      "z1": 22,
+      "floor": 0
+    },
+    {
+      "a": "generator_hall",
+      "b": "water_treatment",
+      "x0": 48,
+      "x1": 52,
+      "z0": 48,
+      "z1": 48,
+      "floor": 0
+    },
+    {
+      "a": "reactor_vault",
+      "b": "reactor_support",
+      "x0": -2,
+      "x1": 2,
+      "z0": -28,
+      "z1": -28,
+      "floor": 0
+    },
+    {
+      "a": "lower_reactor_service",
+      "b": "lower_service_hub",
+      "x0": -2,
+      "x1": 2,
+      "z0": 8,
+      "z1": 8,
+      "floor": -14
+    }
+  ],
+  "catwalk_levels": [
+    8,
+    16
+  ],
+  "core": [
+    0,
+    1,
+    -10
+  ],
+  "new_generation_only": true,
+  "industrial_reactor": {
+    "radius": 5,
+    "heights": [
+      18,
+      14,
+      16,
+      16
+    ],
+    "mesh_width_scale": 2.4
+  },
+  "airlocks": [
+    {
+      "name": "gallery",
+      "x": -10,
+      "z0": 3,
+      "z1": 8,
+      "floor": 3
+    },
+    {
+      "name": "rear_service",
+      "x": 0,
+      "z0": -28,
+      "z1": -23,
+      "floor": 0
+    },
+    {
+      "name": "lower_service",
+      "x": 0,
+      "z0": 3,
+      "z1": 8,
+      "floor": -14
+    }
+  ],
+  "station_monitors": [
+    {
+      "name": "thermal",
+      "x": -4,
+      "y": 5,
+      "z": 10,
+      "facing": "south",
+      "stand": true,
+      "theme": 0,
+      "lines": [
+        "THERMAL CONTROL",
+        "TEMP -- / 1000",
+        "CHECK COOLANT",
+        "CHECK CORE BEFORE START"
+      ]
+    },
+    {
+      "name": "rod",
+      "x": 4,
+      "y": 5,
+      "z": 10,
+      "facing": "south",
+      "stand": true,
+      "theme": 1,
+      "lines": [
+        "ROD CONTROL",
+        "CLICK: WITHDRAW ROD",
+        "SHIFT + USE: SCRAM",
+        "FUEL: {fuel}"
+      ]
+    },
+    {
+      "name": "gallery_warning",
+      "x": -8,
+      "y": 6,
+      "z": 9,
+      "facing": "south",
+      "stand": false,
+      "theme": 2,
+      "lines": [
+        "SHIELDED REACTOR ACCESS",
+        "ONE DOOR BANK AT A TIME",
+        "PURGE BEFORE OPENING",
+        "LIVE CORE: EXPOSURE RISK"
+      ]
+    },
+    {
+      "name": "rear_warning",
+      "x": 3,
+      "y": 3,
+      "z": -29,
+      "facing": "north",
+      "stand": false,
+      "theme": 2,
+      "lines": [
+        "REACTOR SERVICE AIRLOCK",
+        "SHIELDED VESTIBULE",
+        "CLOSE DOORS BEHIND YOU",
+        "NO POWER REQUIRED FOR EXIT"
+      ]
+    },
+    {
+      "name": "station_overview",
+      "x": 6,
+      "y": 5,
+      "z": 25,
+      "facing": "north",
+      "stand": false,
+      "theme": 0,
+      "lines": [
+        "SARC POWER STATION",
+        "REACTOR / COOLANT / GRID",
+        "SERVICE LEVEL BELOW",
+        "EMERGENCY EXIT: WEST"
+      ]
+    },
+    {
+      "name": "switchgear_west1",
+      "x": -60,
+      "y": 2,
+      "z": 29,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "WEST CABINET 1",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_west2",
+      "x": -60,
+      "y": 2,
+      "z": 33,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "WEST CABINET 2",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_west3",
+      "x": -60,
+      "y": 2,
+      "z": 37,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "WEST CABINET 3",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_west4",
+      "x": -60,
+      "y": 2,
+      "z": 41,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "WEST CABINET 4",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_east1",
+      "x": -40,
+      "y": 2,
+      "z": 29,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "EAST CABINET 1",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_east2",
+      "x": -40,
+      "y": 2,
+      "z": 33,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "EAST CABINET 2",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_east3",
+      "x": -40,
+      "y": 2,
+      "z": 37,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "EAST CABINET 3",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    },
+    {
+      "name": "switchgear_east4",
+      "x": -40,
+      "y": 2,
+      "z": 41,
+      "facing": "south",
+      "stand": false,
+      "theme": 1,
+      "lines": [
+        "SARC SWITCHGEAR",
+        "EAST CABINET 4",
+        "ISOLATE BEFORE SERVICING",
+        "LOCAL IDENTIFICATION PANEL"
+      ]
+    }
+  ],
+  "gallery_console": [
+    0,
+    4,
+    10
+  ],
+  "station_alarms": [
+    {
+      "name": "gallery_siren",
+      "x": -10,
+      "y": 6,
+      "z": 9,
+      "facing": "south",
+      "beacon": false
+    },
+    {
+      "name": "gallery_beacon",
+      "x": -10,
+      "y": 7,
+      "z": 9,
+      "facing": "south",
+      "beacon": true
+    },
+    {
+      "name": "vault_west_siren",
+      "x": -21,
+      "y": 4,
+      "z": -10,
+      "facing": "east",
+      "beacon": false
+    },
+    {
+      "name": "vault_west_beacon",
+      "x": -21,
+      "y": 5,
+      "z": -10,
+      "facing": "east",
+      "beacon": true
+    },
+    {
+      "name": "vault_east_siren",
+      "x": 21,
+      "y": 4,
+      "z": -10,
+      "facing": "west",
+      "beacon": false
+    },
+    {
+      "name": "vault_east_beacon",
+      "x": 21,
+      "y": 5,
+      "z": -10,
+      "facing": "west",
+      "beacon": true
+    },
+    {
+      "name": "rear_service_siren",
+      "x": -4,
+      "y": 3,
+      "z": -29,
+      "facing": "north",
+      "beacon": false
+    },
+    {
+      "name": "rear_service_beacon",
+      "x": -4,
+      "y": 4,
+      "z": -29,
+      "facing": "north",
+      "beacon": true
+    },
+    {
+      "name": "lower_west_siren",
+      "x": -21,
+      "y": -10,
+      "z": -10,
+      "facing": "east",
+      "beacon": false
+    },
+    {
+      "name": "lower_west_beacon",
+      "x": -21,
+      "y": -9,
+      "z": -10,
+      "facing": "east",
+      "beacon": true
+    },
+    {
+      "name": "lower_east_siren",
+      "x": 21,
+      "y": -10,
+      "z": -10,
+      "facing": "west",
+      "beacon": false
+    },
+    {
+      "name": "lower_east_beacon",
+      "x": 21,
+      "y": -9,
+      "z": -10,
+      "facing": "west",
+      "beacon": true
+    },
+    {
+      "name": "exit_route_siren",
+      "x": 9,
+      "y": 3,
+      "z": 45,
+      "facing": "west",
+      "beacon": false
+    },
+    {
+      "name": "exit_route_beacon",
+      "x": 9,
+      "y": 4,
+      "z": 45,
+      "facing": "west",
+      "beacon": true
+    }
+  ],
+  "station_lights": [
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 3,
+      "z": -24,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 3,
+      "z": -16,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 3,
+      "z": -8,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 3,
+      "z": 0,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 3,
+      "z": 4,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 11,
+      "z": -24,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 11,
+      "z": -16,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 11,
+      "z": -8,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 11,
+      "z": 0,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 11,
+      "z": 4,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 19,
+      "z": -24,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 19,
+      "z": -16,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 19,
+      "z": -8,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 19,
+      "z": 0,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": -21,
+      "y": 19,
+      "z": 4,
+      "facing": "east"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 3,
+      "z": -24,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 3,
+      "z": -16,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 3,
+      "z": -8,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 3,
+      "z": 0,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 3,
+      "z": 4,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 11,
+      "z": -24,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 11,
+      "z": -16,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 11,
+      "z": -8,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 11,
+      "z": 0,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 11,
+      "z": 4,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 19,
+      "z": -24,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 19,
+      "z": -16,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 19,
+      "z": -8,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 19,
+      "z": 0,
+      "facing": "west"
+    },
+    {
+      "name": "vault_perimeter",
+      "x": 21,
+      "y": 19,
+      "z": 4,
+      "facing": "west"
+    },
+    {
+      "name": "rear_service",
+      "x": -16,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": -8,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 8,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 16,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": -16,
+      "y": 11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": -8,
+      "y": 11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 8,
+      "y": 11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 16,
+      "y": 11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": -16,
+      "y": 19,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": -8,
+      "y": 19,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 8,
+      "y": 19,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "rear_service",
+      "x": 16,
+      "y": 19,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "dais_service",
+      "x": -6,
+      "y": 4,
+      "z": -17,
+      "facing": "north"
+    },
+    {
+      "name": "dais_service",
+      "x": -6,
+      "y": 4,
+      "z": -3,
+      "facing": "south"
+    },
+    {
+      "name": "dais_service",
+      "x": 6,
+      "y": 4,
+      "z": -17,
+      "facing": "north"
+    },
+    {
+      "name": "dais_service",
+      "x": 6,
+      "y": 4,
+      "z": -3,
+      "facing": "south"
+    },
+    {
+      "name": "console_task",
+      "x": -4,
+      "y": 7,
+      "z": 12,
+      "facing": "down"
+    },
+    {
+      "name": "console_task",
+      "x": 0,
+      "y": 7,
+      "z": 12,
+      "facing": "down"
+    },
+    {
+      "name": "console_task",
+      "x": 4,
+      "y": 7,
+      "z": 12,
+      "facing": "down"
+    },
+    {
+      "name": "control_gallery_task",
+      "x": -4,
+      "y": 7,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": 16
+    },
+    {
+      "name": "control_gallery_task",
+      "x": -4,
+      "y": 7,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 16
+    },
+    {
+      "name": "control_gallery_task",
+      "x": 4,
+      "y": 7,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": 16
+    },
+    {
+      "name": "control_gallery_task",
+      "x": 4,
+      "y": 7,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 16
+    },
+    {
+      "name": "access_concourse_task",
+      "x": -4,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "access_concourse_task",
+      "x": -4,
+      "y": 4,
+      "z": 48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "access_concourse_task",
+      "x": -4,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "access_concourse_task",
+      "x": 4,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "access_concourse_task",
+      "x": 4,
+      "y": 4,
+      "z": 48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "access_concourse_task",
+      "x": 4,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -60,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -52,
+      "y": 4,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -52,
+      "y": 4,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -52,
+      "y": 4,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -52,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -44,
+      "y": 4,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -44,
+      "y": 4,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -44,
+      "y": 4,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "coolant_hall_task",
+      "x": -44,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -60,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -60,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -60,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -60,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -60,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -52,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -52,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -52,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -52,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -52,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -44,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -44,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -44,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -44,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "fuel_handling_task",
+      "x": -44,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "switchgear_task",
+      "x": -60,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -52,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -52,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -52,
+      "y": 4,
+      "z": 40,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -44,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -44,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "switchgear_task",
+      "x": -44,
+      "y": 4,
+      "z": 40,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -60,
+      "y": 4,
+      "z": 48,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -60,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -60,
+      "y": 4,
+      "z": 64,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -60,
+      "y": 4,
+      "z": 72,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -52,
+      "y": 4,
+      "z": 48,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -52,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -52,
+      "y": 4,
+      "z": 64,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -52,
+      "y": 4,
+      "z": 72,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -44,
+      "y": 4,
+      "z": 48,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -44,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -44,
+      "y": 4,
+      "z": 64,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "workshop_task",
+      "x": -44,
+      "y": 4,
+      "z": 72,
+      "facing": "down",
+      "ceiling_y": 8
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 36,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 36,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "turbine_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": 8,
+      "facing": "down",
+      "ceiling_y": 14
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 44,
+      "y": 4,
+      "z": 40,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 52,
+      "y": 4,
+      "z": 40,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "generator_hall_task",
+      "x": 60,
+      "y": 4,
+      "z": 40,
+      "facing": "down",
+      "ceiling_y": 10
+    },
+    {
+      "name": "water_treatment_task",
+      "x": 44,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 12
+    },
+    {
+      "name": "water_treatment_task",
+      "x": 52,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 12
+    },
+    {
+      "name": "water_treatment_task",
+      "x": 52,
+      "y": 4,
+      "z": 64,
+      "facing": "down",
+      "ceiling_y": 12
+    },
+    {
+      "name": "water_treatment_task",
+      "x": 52,
+      "y": 4,
+      "z": 72,
+      "facing": "down",
+      "ceiling_y": 12
+    },
+    {
+      "name": "water_treatment_task",
+      "x": 60,
+      "y": 4,
+      "z": 56,
+      "facing": "down",
+      "ceiling_y": 12
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -12,
+      "y": 4,
+      "z": -64,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -12,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -12,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -12,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -12,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -4,
+      "y": 4,
+      "z": -64,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -4,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -4,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -4,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": -4,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 4,
+      "y": 4,
+      "z": -64,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 4,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 4,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 4,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 4,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 12,
+      "y": 4,
+      "z": -64,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 12,
+      "y": 4,
+      "z": -56,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 12,
+      "y": 4,
+      "z": -48,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 12,
+      "y": 4,
+      "z": -40,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "reactor_support_task",
+      "x": 12,
+      "y": 4,
+      "z": -32,
+      "facing": "down",
+      "ceiling_y": 9
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -20,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -20,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -20,
+      "y": -10,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -20,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -12,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -12,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -12,
+      "y": -10,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -12,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -4,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -4,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -4,
+      "y": -10,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": -4,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 4,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 4,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 4,
+      "y": -10,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 4,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 12,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 12,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 12,
+      "y": -10,
+      "z": -8,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 12,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 20,
+      "y": -10,
+      "z": -24,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 20,
+      "y": -10,
+      "z": -16,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_reactor_service_task",
+      "x": 20,
+      "y": -10,
+      "z": 0,
+      "facing": "down",
+      "ceiling_y": -4
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -12,
+      "y": -10,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -12,
+      "y": -10,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -12,
+      "y": -10,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -4,
+      "y": -10,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -4,
+      "y": -10,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": -4,
+      "y": -10,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 4,
+      "y": -10,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 4,
+      "y": -10,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 4,
+      "y": -10,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 12,
+      "y": -10,
+      "z": 16,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 12,
+      "y": -10,
+      "z": 24,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "lower_service_hub_task",
+      "x": 12,
+      "y": -10,
+      "z": 32,
+      "facing": "down",
+      "ceiling_y": -6
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -21,
+      "y": 3,
+      "z": -25,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 21,
+      "y": 3,
+      "z": -25,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -21,
+      "y": 3,
+      "z": -17,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 21,
+      "y": 3,
+      "z": -17,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -21,
+      "y": 3,
+      "z": -9,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 21,
+      "y": 3,
+      "z": -9,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -21,
+      "y": 3,
+      "z": -1,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 21,
+      "y": 3,
+      "z": -1,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -19,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -19,
+      "y": 3,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -11,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": -3,
+      "y": 3,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 5,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 5,
+      "y": 3,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 13,
+      "y": 3,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_vault_wall",
+      "x": 13,
+      "y": 3,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": -11,
+      "y": 6,
+      "z": 11,
+      "facing": "east"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": 11,
+      "y": 6,
+      "z": 11,
+      "facing": "west"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": -11,
+      "y": 6,
+      "z": 19,
+      "facing": "east"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": 11,
+      "y": 6,
+      "z": 19,
+      "facing": "west"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": -9,
+      "y": 6,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": -9,
+      "y": 6,
+      "z": 25,
+      "facing": "north"
+    },
+    {
+      "name": "control_gallery_wall",
+      "x": 7,
+      "y": 6,
+      "z": 25,
+      "facing": "north"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -9,
+      "y": 3,
+      "z": 29,
+      "facing": "east"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": 9,
+      "y": 3,
+      "z": 29,
+      "facing": "west"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -9,
+      "y": 3,
+      "z": 37,
+      "facing": "east"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": 9,
+      "y": 3,
+      "z": 37,
+      "facing": "west"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -9,
+      "y": 3,
+      "z": 45,
+      "facing": "east"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -9,
+      "y": 3,
+      "z": 53,
+      "facing": "east"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": 9,
+      "y": 3,
+      "z": 53,
+      "facing": "west"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -7,
+      "y": 3,
+      "z": 27,
+      "facing": "south"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": -7,
+      "y": 3,
+      "z": 61,
+      "facing": "north"
+    },
+    {
+      "name": "access_concourse_wall",
+      "x": 1,
+      "y": 3,
+      "z": 61,
+      "facing": "north"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -55,
+      "y": 3,
+      "z": 13,
+      "facing": "east"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -53,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -53,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -45,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -45,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -37,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -37,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -29,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -29,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -21,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "west_distribution_wall",
+      "x": -21,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 59,
+      "y": 3,
+      "z": 13,
+      "facing": "west"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 15,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 15,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 23,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 23,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 31,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 31,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 39,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 39,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 47,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 47,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 55,
+      "y": 3,
+      "z": 11,
+      "facing": "south"
+    },
+    {
+      "name": "east_distribution_wall",
+      "x": 55,
+      "y": 3,
+      "z": 21,
+      "facing": "north"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -63,
+      "y": 3,
+      "z": -19,
+      "facing": "east"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -37,
+      "y": 3,
+      "z": -19,
+      "facing": "west"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -63,
+      "y": 3,
+      "z": -11,
+      "facing": "east"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -37,
+      "y": 3,
+      "z": -11,
+      "facing": "west"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -63,
+      "y": 3,
+      "z": -3,
+      "facing": "east"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -37,
+      "y": 3,
+      "z": -3,
+      "facing": "west"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -63,
+      "y": 3,
+      "z": 5,
+      "facing": "east"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -37,
+      "y": 3,
+      "z": 5,
+      "facing": "west"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -61,
+      "y": 3,
+      "z": -21,
+      "facing": "south"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -61,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -53,
+      "y": 3,
+      "z": -21,
+      "facing": "south"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -53,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -45,
+      "y": 3,
+      "z": -21,
+      "facing": "south"
+    },
+    {
+      "name": "coolant_hall_wall",
+      "x": -45,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -63,
+      "y": 3,
+      "z": -55,
+      "facing": "east"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -37,
+      "y": 3,
+      "z": -55,
+      "facing": "west"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -63,
+      "y": 3,
+      "z": -47,
+      "facing": "east"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -37,
+      "y": 3,
+      "z": -47,
+      "facing": "west"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -63,
+      "y": 3,
+      "z": -39,
+      "facing": "east"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -37,
+      "y": 3,
+      "z": -39,
+      "facing": "west"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -63,
+      "y": 3,
+      "z": -31,
+      "facing": "east"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -37,
+      "y": 3,
+      "z": -31,
+      "facing": "west"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -61,
+      "y": 3,
+      "z": -57,
+      "facing": "south"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -61,
+      "y": 3,
+      "z": -23,
+      "facing": "north"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -53,
+      "y": 3,
+      "z": -57,
+      "facing": "south"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -53,
+      "y": 3,
+      "z": -23,
+      "facing": "north"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -45,
+      "y": 3,
+      "z": -57,
+      "facing": "south"
+    },
+    {
+      "name": "fuel_handling_wall",
+      "x": -45,
+      "y": 3,
+      "z": -23,
+      "facing": "north"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -63,
+      "y": 3,
+      "z": 25,
+      "facing": "east"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -37,
+      "y": 3,
+      "z": 25,
+      "facing": "west"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -63,
+      "y": 3,
+      "z": 33,
+      "facing": "east"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -37,
+      "y": 3,
+      "z": 33,
+      "facing": "west"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -63,
+      "y": 3,
+      "z": 41,
+      "facing": "east"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -37,
+      "y": 3,
+      "z": 41,
+      "facing": "west"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -61,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -61,
+      "y": 3,
+      "z": 45,
+      "facing": "north"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -53,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -53,
+      "y": 3,
+      "z": 45,
+      "facing": "north"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -45,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "switchgear_wall",
+      "x": -45,
+      "y": 3,
+      "z": 45,
+      "facing": "north"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -63,
+      "y": 3,
+      "z": 49,
+      "facing": "east"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -37,
+      "y": 3,
+      "z": 49,
+      "facing": "west"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -63,
+      "y": 3,
+      "z": 57,
+      "facing": "east"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -37,
+      "y": 3,
+      "z": 57,
+      "facing": "west"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -63,
+      "y": 3,
+      "z": 65,
+      "facing": "east"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -37,
+      "y": 3,
+      "z": 65,
+      "facing": "west"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -63,
+      "y": 3,
+      "z": 73,
+      "facing": "east"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -37,
+      "y": 3,
+      "z": 73,
+      "facing": "west"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -61,
+      "y": 3,
+      "z": 47,
+      "facing": "south"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -61,
+      "y": 3,
+      "z": 75,
+      "facing": "north"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -53,
+      "y": 3,
+      "z": 47,
+      "facing": "south"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -53,
+      "y": 3,
+      "z": 75,
+      "facing": "north"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -45,
+      "y": 3,
+      "z": 47,
+      "facing": "south"
+    },
+    {
+      "name": "workshop_wall",
+      "x": -45,
+      "y": 3,
+      "z": 75,
+      "facing": "north"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -47,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -47,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -39,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -39,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -31,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -31,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -23,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -23,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -15,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -15,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": -7,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": -7,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 29,
+      "y": 3,
+      "z": 1,
+      "facing": "east"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": 1,
+      "facing": "west"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 31,
+      "y": 3,
+      "z": -49,
+      "facing": "south"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 31,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 39,
+      "y": 3,
+      "z": -49,
+      "facing": "south"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 39,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 47,
+      "y": 3,
+      "z": -49,
+      "facing": "south"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 47,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 55,
+      "y": 3,
+      "z": -49,
+      "facing": "south"
+    },
+    {
+      "name": "turbine_hall_wall",
+      "x": 55,
+      "y": 3,
+      "z": 9,
+      "facing": "north"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 37,
+      "y": 3,
+      "z": 25,
+      "facing": "east"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": 25,
+      "facing": "west"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 37,
+      "y": 3,
+      "z": 33,
+      "facing": "east"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": 33,
+      "facing": "west"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 37,
+      "y": 3,
+      "z": 41,
+      "facing": "east"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 63,
+      "y": 3,
+      "z": 41,
+      "facing": "west"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 39,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 39,
+      "y": 3,
+      "z": 47,
+      "facing": "north"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 47,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 47,
+      "y": 3,
+      "z": 47,
+      "facing": "north"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 55,
+      "y": 3,
+      "z": 23,
+      "facing": "south"
+    },
+    {
+      "name": "generator_hall_wall",
+      "x": 55,
+      "y": 3,
+      "z": 47,
+      "facing": "north"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 37,
+      "y": 3,
+      "z": 51,
+      "facing": "east"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 63,
+      "y": 3,
+      "z": 51,
+      "facing": "west"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 37,
+      "y": 3,
+      "z": 59,
+      "facing": "east"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 63,
+      "y": 3,
+      "z": 59,
+      "facing": "west"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 37,
+      "y": 3,
+      "z": 67,
+      "facing": "east"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 63,
+      "y": 3,
+      "z": 67,
+      "facing": "west"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 37,
+      "y": 3,
+      "z": 75,
+      "facing": "east"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 63,
+      "y": 3,
+      "z": 75,
+      "facing": "west"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 39,
+      "y": 3,
+      "z": 49,
+      "facing": "south"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 39,
+      "y": 3,
+      "z": 77,
+      "facing": "north"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 47,
+      "y": 3,
+      "z": 49,
+      "facing": "south"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 47,
+      "y": 3,
+      "z": 77,
+      "facing": "north"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 55,
+      "y": 3,
+      "z": 49,
+      "facing": "south"
+    },
+    {
+      "name": "water_treatment_wall",
+      "x": 55,
+      "y": 3,
+      "z": 77,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -19,
+      "y": 3,
+      "z": -69,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 19,
+      "y": 3,
+      "z": -69,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -19,
+      "y": 3,
+      "z": -61,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 19,
+      "y": 3,
+      "z": -61,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -19,
+      "y": 3,
+      "z": -53,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 19,
+      "y": 3,
+      "z": -53,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -19,
+      "y": 3,
+      "z": -45,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 19,
+      "y": 3,
+      "z": -45,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -19,
+      "y": 3,
+      "z": -37,
+      "facing": "east"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 19,
+      "y": 3,
+      "z": -37,
+      "facing": "west"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -17,
+      "y": 3,
+      "z": -71,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -17,
+      "y": 3,
+      "z": -29,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -9,
+      "y": 3,
+      "z": -71,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -9,
+      "y": 3,
+      "z": -29,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -1,
+      "y": 3,
+      "z": -71,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": -1,
+      "y": 3,
+      "z": -29,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 7,
+      "y": 3,
+      "z": -71,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 7,
+      "y": 3,
+      "z": -29,
+      "facing": "north"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 15,
+      "y": 3,
+      "z": -71,
+      "facing": "south"
+    },
+    {
+      "name": "reactor_support_wall",
+      "x": 15,
+      "y": 3,
+      "z": -29,
+      "facing": "north"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -21,
+      "y": -11,
+      "z": -25,
+      "facing": "east"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 21,
+      "y": -11,
+      "z": -25,
+      "facing": "west"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -21,
+      "y": -11,
+      "z": -17,
+      "facing": "east"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 21,
+      "y": -11,
+      "z": -17,
+      "facing": "west"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -21,
+      "y": -11,
+      "z": -9,
+      "facing": "east"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 21,
+      "y": -11,
+      "z": -9,
+      "facing": "west"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -21,
+      "y": -11,
+      "z": -1,
+      "facing": "east"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 21,
+      "y": -11,
+      "z": -1,
+      "facing": "west"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -19,
+      "y": -11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -19,
+      "y": -11,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -11,
+      "y": -11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -11,
+      "y": -11,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": -3,
+      "y": -11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 5,
+      "y": -11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 5,
+      "y": -11,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 13,
+      "y": -11,
+      "z": -27,
+      "facing": "south"
+    },
+    {
+      "name": "lower_reactor_service_wall",
+      "x": 13,
+      "y": -11,
+      "z": 7,
+      "facing": "north"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -19,
+      "y": -11,
+      "z": 11,
+      "facing": "east"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 19,
+      "y": -11,
+      "z": 11,
+      "facing": "west"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -19,
+      "y": -11,
+      "z": 19,
+      "facing": "east"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 19,
+      "y": -11,
+      "z": 19,
+      "facing": "west"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -19,
+      "y": -11,
+      "z": 27,
+      "facing": "east"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 19,
+      "y": -11,
+      "z": 27,
+      "facing": "west"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -19,
+      "y": -11,
+      "z": 35,
+      "facing": "east"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 19,
+      "y": -11,
+      "z": 35,
+      "facing": "west"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -17,
+      "y": -11,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -17,
+      "y": -11,
+      "z": 39,
+      "facing": "north"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -9,
+      "y": -11,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -9,
+      "y": -11,
+      "z": 39,
+      "facing": "north"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -1,
+      "y": -11,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": -1,
+      "y": -11,
+      "z": 39,
+      "facing": "north"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 7,
+      "y": -11,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 7,
+      "y": -11,
+      "z": 39,
+      "facing": "north"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 15,
+      "y": -11,
+      "z": 9,
+      "facing": "south"
+    },
+    {
+      "name": "lower_service_hub_wall",
+      "x": 15,
+      "y": -11,
+      "z": 39,
+      "facing": "north"
+    },
+    {
+      "name": "emergency_exit_link_wall",
+      "x": -51,
+      "y": 3,
+      "z": 79,
+      "facing": "east"
+    },
+    {
+      "name": "emergency_exit_link_wall",
+      "x": -45,
+      "y": 3,
+      "z": 79,
+      "facing": "west"
+    }
+  ]
+}

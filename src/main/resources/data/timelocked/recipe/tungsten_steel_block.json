@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:tungsten_steel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:tungsten_steel_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "timelocked:block/station_utility_light"
+    },
+    "facing=up": {
+      "model": "timelocked:block/station_utility_light",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "timelocked:block/station_utility_light_wall",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "timelocked:block/station_utility_light_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/station_utility_light_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/station_utility_light_wall",
+      "y": 270
+    }
+  }
+}

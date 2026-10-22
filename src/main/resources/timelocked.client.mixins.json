@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8.7",
+  "package": "com.timelocked.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "StartupOverlayMixin",
+    "PortalAvatarPoseMixin",
+    "PortalActorRotationMixin",
+    "PortalPlayerVisibilityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

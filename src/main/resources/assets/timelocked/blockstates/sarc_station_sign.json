@@ -1,0 +1,124 @@
+{
+ "variants": {
+  "facing=north,legend=0": {
+   "model": "timelocked:block/sarc_station_sign_0"
+  },
+  "facing=north,legend=1": {
+   "model": "timelocked:block/sarc_station_sign_1"
+  },
+  "facing=north,legend=2": {
+   "model": "timelocked:block/sarc_station_sign_2"
+  },
+  "facing=north,legend=3": {
+   "model": "timelocked:block/sarc_station_sign_3"
+  },
+  "facing=north,legend=4": {
+   "model": "timelocked:block/sarc_station_sign_4"
+  },
+  "facing=north,legend=5": {
+   "model": "timelocked:block/sarc_station_sign_5"
+  },
+  "facing=north,legend=6": {
+   "model": "timelocked:block/sarc_station_sign_6"
+  },
+  "facing=north,legend=7": {
+   "model": "timelocked:block/sarc_station_sign_7"
+  },
+  "facing=east,legend=0": {
+   "model": "timelocked:block/sarc_station_sign_0",
+   "y": 90
+  },
+  "facing=east,legend=1": {
+   "model": "timelocked:block/sarc_station_sign_1",
+   "y": 90
+  },
+  "facing=east,legend=2": {
+   "model": "timelocked:block/sarc_station_sign_2",
+   "y": 90
+  },
+  "facing=east,legend=3": {
+   "model": "timelocked:block/sarc_station_sign_3",
+   "y": 90
+  },
+  "facing=east,legend=4": {
+   "model": "timelocked:block/sarc_station_sign_4",
+   "y": 90
+  },
+  "facing=east,legend=5": {
+   "model": "timelocked:block/sarc_station_sign_5",
+   "y": 90
+  },
+  "facing=east,legend=6": {
+   "model": "timelocked:block/sarc_station_sign_6",
+   "y": 90
+  },
+  "facing=east,legend=7": {
+   "model": "timelocked:block/sarc_station_sign_7",
+   "y": 90
+  },
+  "facing=south,legend=0": {
+   "model": "timelocked:block/sarc_station_sign_0",
+   "y": 180
+  },
+  "facing=south,legend=1": {
+   "model": "timelocked:block/sarc_station_sign_1",
+   "y": 180
+  },
+  "facing=south,legend=2": {
+   "model": "timelocked:block/sarc_station_sign_2",
+   "y": 180
+  },
+  "facing=south,legend=3": {
+   "model": "timelocked:block/sarc_station_sign_3",
+   "y": 180
+  },
+  "facing=south,legend=4": {
+   "model": "timelocked:block/sarc_station_sign_4",
+   "y": 180
+  },
+  "facing=south,legend=5": {
+   "model": "timelocked:block/sarc_station_sign_5",
+   "y": 180
+  },
+  "facing=south,legend=6": {
+   "model": "timelocked:block/sarc_station_sign_6",
+   "y": 180
+  },
+  "facing=south,legend=7": {
+   "model": "timelocked:block/sarc_station_sign_7",
+   "y": 180
+  },
+  "facing=west,legend=0": {
+   "model": "timelocked:block/sarc_station_sign_0",
+   "y": 270
+  },
+  "facing=west,legend=1": {
+   "model": "timelocked:block/sarc_station_sign_1",
+   "y": 270
+  },
+  "facing=west,legend=2": {
+   "model": "timelocked:block/sarc_station_sign_2",
+   "y": 270
+  },
+  "facing=west,legend=3": {
+   "model": "timelocked:block/sarc_station_sign_3",
+   "y": 270
+  },
+  "facing=west,legend=4": {
+   "model": "timelocked:block/sarc_station_sign_4",
+   "y": 270
+  },
+  "facing=west,legend=5": {
+   "model": "timelocked:block/sarc_station_sign_5",
+   "y": 270
+  },
+  "facing=west,legend=6": {
+   "model": "timelocked:block/sarc_station_sign_6",
+   "y": 270
+  },
+  "facing=west,legend=7": {
+   "model": "timelocked:block/sarc_station_sign_7",
+   "y": 270
+  }
+ }
+}

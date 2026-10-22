@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:steel_bricks",
+    "count": 4
+  }
+}

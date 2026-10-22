@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "GCG",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    }
+  },
+  "result": {
+    "id": "timelocked:truck_cab",
+    "count": 1
+  }
+}

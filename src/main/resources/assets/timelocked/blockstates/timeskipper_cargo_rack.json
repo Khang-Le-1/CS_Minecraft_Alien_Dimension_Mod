@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_cargo_rack"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_cargo_rack",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_cargo_rack",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_cargo_rack",
+      "y": 270
+    }
+  }
+}

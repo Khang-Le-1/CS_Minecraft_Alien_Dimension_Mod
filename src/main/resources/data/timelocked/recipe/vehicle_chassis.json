@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "IMI",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "I": {
+      "item": "timelocked:cast_iron_ingot"
+    },
+    "M": {
+      "item": "timelocked:vehicle_motor"
+    }
+  },
+  "result": {
+    "id": "timelocked:vehicle_chassis",
+    "count": 1
+  }
+}

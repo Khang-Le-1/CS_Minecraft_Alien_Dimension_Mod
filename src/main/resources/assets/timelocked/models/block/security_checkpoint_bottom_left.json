@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/door_bottom_left", "textures": {"top": "timelocked:block/security_checkpoint_top", "bottom": "timelocked:block/security_checkpoint_bottom"}, "render_type": "minecraft:cutout"}

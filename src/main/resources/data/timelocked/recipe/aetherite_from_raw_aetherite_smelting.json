@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:raw_aetherite"
+  },
+  "result": {
+    "id": "timelocked:aetherite_ingot"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

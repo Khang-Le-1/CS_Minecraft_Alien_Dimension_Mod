@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "shape=north_south,powered=false": {
+      "model": "timelocked:block/sarc_tram_track",
+      "y": 0
+    },
+    "shape=north_south,powered=true": {
+      "model": "timelocked:block/sarc_tram_track",
+      "y": 0
+    },
+    "shape=east_west,powered=false": {
+      "model": "timelocked:block/sarc_tram_track",
+      "y": 90
+    },
+    "shape=east_west,powered=true": {
+      "model": "timelocked:block/sarc_tram_track",
+      "y": 90
+    },
+    "shape=ascending_north,powered=false": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 180
+    },
+    "shape=ascending_north,powered=true": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 180
+    },
+    "shape=ascending_south,powered=false": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 0
+    },
+    "shape=ascending_south,powered=true": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 0
+    },
+    "shape=ascending_east,powered=false": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 270
+    },
+    "shape=ascending_east,powered=true": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 270
+    },
+    "shape=ascending_west,powered=false": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 90
+    },
+    "shape=ascending_west,powered=true": {
+      "model": "timelocked:block/sarc_tram_track_ascending",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,upper=false": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_lower"
+    },
+    "facing=north,upper=true": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_upper"
+    },
+    "facing=east,upper=false": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_lower",
+      "y": 90
+    },
+    "facing=east,upper=true": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_upper",
+      "y": 90
+    },
+    "facing=south,upper=false": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_lower",
+      "y": 180
+    },
+    "facing=south,upper=true": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_upper",
+      "y": 180
+    },
+    "facing=west,upper=false": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_lower",
+      "y": 270
+    },
+    "facing=west,upper=true": {
+      "model": "timelocked:block/timeskipper_boarding_airlock_upper",
+      "y": 270
+    }
+  }
+}

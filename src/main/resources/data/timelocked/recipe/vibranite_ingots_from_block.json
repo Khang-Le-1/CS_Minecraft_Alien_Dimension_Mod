@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:vibranite_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:vibranite_ingot",
+    "count": 9
+  }
+}

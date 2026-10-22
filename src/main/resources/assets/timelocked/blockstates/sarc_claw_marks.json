@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "timelocked:block/sarc_claw_marks"
+  },
+  "facing=east": {
+   "model": "timelocked:block/sarc_claw_marks",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "timelocked:block/sarc_claw_marks",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "timelocked:block/sarc_claw_marks",
+   "y": 270
+  }
+ }
+}

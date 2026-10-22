@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SIS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "I": {
+      "item": "timelocked:circuit_board"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_status_display",
+    "count": 8
+  }
+}

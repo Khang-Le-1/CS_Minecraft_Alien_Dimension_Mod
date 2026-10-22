@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/scc_network_rack_upper"
+    },
+    "facing=east": {
+      "model": "timelocked:block/scc_network_rack_upper",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/scc_network_rack_upper",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/scc_network_rack_upper",
+      "y": 270
+    }
+  }
+}

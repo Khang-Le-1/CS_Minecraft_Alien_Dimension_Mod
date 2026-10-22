@@ -1,0 +1,1 @@
+{"type": "minecraft:block", "pools": [{"rolls": 1, "entries": [{"type": "minecraft:item", "name": "timelocked:timeskipper_boarding_airlock"}], "conditions": [{"condition": "minecraft:block_state_property", "block": "timelocked:timeskipper_boarding_airlock", "properties": {"upper": "false"}}, {"condition": "minecraft:survives_explosion"}]}]}

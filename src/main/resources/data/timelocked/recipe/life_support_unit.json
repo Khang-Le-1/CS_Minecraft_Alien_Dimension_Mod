@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "TGT",
+  "BLB",
+  "TST"
+ ],
+ "key": {
+  "T": {
+   "item": "timelocked:titanium_ingot"
+  },
+  "G": {
+   "item": "minecraft:glass"
+  },
+  "B": {
+   "item": "timelocked:circuit_board"
+  },
+  "L": {
+   "item": "minecraft:oak_leaves"
+  },
+  "S": {
+   "item": "timelocked:steel_ingot"
+  }
+ },
+ "result": {
+  "id": "timelocked:life_support_unit",
+  "count": 1
+ }
+}

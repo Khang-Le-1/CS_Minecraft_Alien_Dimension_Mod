@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_crew_locker"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_crew_locker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_crew_locker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_crew_locker",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "timelocked:block/containment_light"
+    },
+    "lit=false": {
+      "model": "timelocked:block/containment_light_off"
+    }
+  }
+}

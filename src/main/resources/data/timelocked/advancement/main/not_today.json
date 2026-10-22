@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:sarc_plant_console"
+  },
+  "title": {
+   "translate": "advancements.timelocked.not_today.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.not_today.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/power_trip",
+ "rewards": {
+  "experience": 50
+ }
+}

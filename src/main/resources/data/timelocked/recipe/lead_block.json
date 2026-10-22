@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "timelocked:lead_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:lead_block",
+    "count": 1
+  }
+}

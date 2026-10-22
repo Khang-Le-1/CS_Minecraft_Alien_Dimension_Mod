@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/cube_column", "textures": {"end": "timelocked:block/timeskipper_beacon_top", "side": "timelocked:block/timeskipper_beacon_side"}}

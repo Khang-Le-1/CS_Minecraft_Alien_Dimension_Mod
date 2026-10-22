@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "timelocked:burnt_fragment",
+    "timelocked:celestial_refuge",
+    "timelocked:ember_wastes",
+    "timelocked:crystal_barrens",
+    "timelocked:spore_hollows",
+    "timelocked:shattered_highlands"
+  ],
+  "features": "timelocked:gravitite_ore",
+  "step": "underground_ores"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "north": "timelocked:block/sarc_floor_tile",
+    "south": "timelocked:block/sarc_floor_tile",
+    "east": "timelocked:block/sarc_floor_tile",
+    "west": "timelocked:block/sarc_floor_tile",
+    "down": "timelocked:block/sarc_floor_tile",
+    "particle": "timelocked:block/sarc_floor_tile",
+    "up": "timelocked:block/sarc_recessed_floor_light"
+  }
+}

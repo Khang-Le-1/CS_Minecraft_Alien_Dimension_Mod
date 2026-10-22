@@ -1,0 +1,3 @@
+# Optional checks only. Normal Gradle builds do not need Python.
+ruff==0.14.1
+PyYAML>=6.0,<7

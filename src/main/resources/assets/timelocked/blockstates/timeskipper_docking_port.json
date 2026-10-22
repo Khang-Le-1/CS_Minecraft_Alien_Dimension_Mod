@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "facing=north,phase=0,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed"
+    },
+    "facing=north,phase=0,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed"
+    },
+    "facing=north,phase=1,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed"
+    },
+    "facing=north,phase=1,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed"
+    },
+    "facing=north,phase=2,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed"
+    },
+    "facing=north,phase=2,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed"
+    },
+    "facing=north,phase=3,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed"
+    },
+    "facing=north,phase=3,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed"
+    },
+    "facing=north,phase=4,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_open"
+    },
+    "facing=north,phase=4,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_open"
+    },
+    "facing=east,phase=0,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 90
+    },
+    "facing=east,phase=0,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 90
+    },
+    "facing=east,phase=1,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 90
+    },
+    "facing=east,phase=1,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 90
+    },
+    "facing=east,phase=2,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 90
+    },
+    "facing=east,phase=2,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 90
+    },
+    "facing=east,phase=3,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 90
+    },
+    "facing=east,phase=3,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 90
+    },
+    "facing=east,phase=4,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_open",
+      "y": 90
+    },
+    "facing=east,phase=4,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_open",
+      "y": 90
+    },
+    "facing=south,phase=0,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 180
+    },
+    "facing=south,phase=0,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 180
+    },
+    "facing=south,phase=1,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 180
+    },
+    "facing=south,phase=1,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 180
+    },
+    "facing=south,phase=2,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 180
+    },
+    "facing=south,phase=2,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 180
+    },
+    "facing=south,phase=3,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 180
+    },
+    "facing=south,phase=3,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 180
+    },
+    "facing=south,phase=4,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_open",
+      "y": 180
+    },
+    "facing=south,phase=4,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_open",
+      "y": 180
+    },
+    "facing=west,phase=0,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 270
+    },
+    "facing=west,phase=0,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 270
+    },
+    "facing=west,phase=1,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 270
+    },
+    "facing=west,phase=1,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 270
+    },
+    "facing=west,phase=2,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 270
+    },
+    "facing=west,phase=2,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 270
+    },
+    "facing=west,phase=3,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_closed",
+      "y": 270
+    },
+    "facing=west,phase=3,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_closed",
+      "y": 270
+    },
+    "facing=west,phase=4,upper=false": {
+      "model": "timelocked:block/timeskipper_dock_lower_open",
+      "y": 270
+    },
+    "facing=west,phase=4,upper=true": {
+      "model": "timelocked:block/timeskipper_dock_upper_open",
+      "y": 270
+    }
+  }
+}

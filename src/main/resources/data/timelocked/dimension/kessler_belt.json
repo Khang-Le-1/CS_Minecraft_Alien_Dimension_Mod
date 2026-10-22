@@ -1,0 +1,11 @@
+{
+ "type": "timelocked:kessler_belt",
+ "generator": {
+  "type": "timelocked:planet",
+  "planet": "kessler_belt",
+  "biome_source": {
+   "type": "minecraft:fixed",
+   "biome": "timelocked:kessler_belt"
+  }
+ }
+}

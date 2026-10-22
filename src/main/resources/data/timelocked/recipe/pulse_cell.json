@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "TCT",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "T": {
+      "item": "timelocked:tungsten_ingot"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    }
+  },
+  "result": {
+    "id": "timelocked:pulse_cell",
+    "count": 6
+  }
+}

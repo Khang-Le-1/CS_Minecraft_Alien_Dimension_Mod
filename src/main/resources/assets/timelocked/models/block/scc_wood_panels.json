@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "timelocked:block/scc_wood_panels"
+  }
+}

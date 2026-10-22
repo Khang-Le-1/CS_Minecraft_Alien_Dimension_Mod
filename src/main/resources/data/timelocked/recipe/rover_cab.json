@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "TTT",
+    "GCG",
+    "TST"
+  ],
+  "key": {
+    "T": {
+      "item": "timelocked:titanium_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "S": {
+      "item": "timelocked:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:rover_cab",
+    "count": 1
+  }
+}

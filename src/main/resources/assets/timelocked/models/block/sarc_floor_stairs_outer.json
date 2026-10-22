@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/outer_stairs", "textures": {"top": "timelocked:block/sarc_floor_tile", "bottom": "timelocked:block/sarc_floor_tile", "side": "timelocked:block/sarc_floor_tile"}}

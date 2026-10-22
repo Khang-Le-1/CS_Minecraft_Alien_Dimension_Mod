@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "building",
+ "ingredients": [
+  {
+   "item": "minecraft:glass_pane"
+  },
+  {
+   "item": "timelocked:circuit_board"
+  },
+  {
+   "item": "timelocked:steel_ingot"
+  },
+  {
+   "item": "timelocked:steel_ingot"
+  }
+ ],
+ "result": {
+  "id": "timelocked:sarc_monitor",
+  "count": 2
+ }
+}

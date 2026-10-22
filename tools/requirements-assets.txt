@@ -1,0 +1,3 @@
+# Optional image/audio authoring helpers (FFmpeg is an external executable).
+Pillow>=10,<13
+numpy>=1.26,<3

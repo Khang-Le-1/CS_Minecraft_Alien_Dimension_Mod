@@ -1,0 +1,11 @@
+{
+  "name": "timelocked-contributor-checks",
+  "private": true,
+  "scripts": {
+    "lint:docs": "prettier --check README.md docs/**/*.md .github/workflows/*.yml",
+    "format:docs": "prettier --write README.md docs/**/*.md .github/workflows/*.yml"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

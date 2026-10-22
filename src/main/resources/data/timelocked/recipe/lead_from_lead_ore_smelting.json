@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "timelocked:lead_ore"
+  },
+  "result": {
+    "id": "timelocked:lead_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 200
+}

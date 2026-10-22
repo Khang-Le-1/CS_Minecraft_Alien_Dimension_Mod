@@ -1,0 +1,35 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:portal_controller"
+  },
+  "title": {
+   "translate": "advancements.timelocked.big_red_button.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.big_red_button.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "press": {
+   "trigger": "minecraft:any_block_use",
+   "conditions": {
+    "location": [
+     {
+      "condition": "minecraft:location_check",
+      "predicate": {
+       "block": {
+        "blocks": "timelocked:portal_controller"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "parent": "timelocked:main/three_waves"
+}

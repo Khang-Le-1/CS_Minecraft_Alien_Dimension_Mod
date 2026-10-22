@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F  ",
+    "FF ",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "timelocked:sarc_floor_tile"
+    }
+  },
+  "result": {
+    "id": "timelocked:sarc_floor_stairs",
+    "count": 4
+  }
+}

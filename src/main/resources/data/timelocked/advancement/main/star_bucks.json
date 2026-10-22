@@ -1,0 +1,37 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:void_crystal_cluster"
+  },
+  "title": {
+   "translate": "advancements.timelocked.star_bucks.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.star_bucks.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "trade": {
+   "trigger": "minecraft:villager_trade",
+   "conditions": {
+    "villager": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "timelocked:celestial"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "parent": "timelocked:main/refuge",
+ "rewards": {
+  "experience": 20
+ }
+}

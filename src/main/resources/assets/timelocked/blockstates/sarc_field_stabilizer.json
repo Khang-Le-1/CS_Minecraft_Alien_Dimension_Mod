@@ -1,0 +1,16 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "timelocked:block/sarc_field_stabilizer"
+  },
+  "facing=east": {
+   "model": "timelocked:block/sarc_field_stabilizer"
+  },
+  "facing=south": {
+   "model": "timelocked:block/sarc_field_stabilizer"
+  },
+  "facing=west": {
+   "model": "timelocked:block/sarc_field_stabilizer"
+  }
+ }
+}

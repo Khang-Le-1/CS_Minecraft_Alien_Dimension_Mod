@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "RBR",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "timelocked:circuit_board"
+    },
+    "C": {
+      "item": "timelocked:electrical_conduit"
+    }
+  },
+  "result": {
+    "id": "timelocked:redstone_power_supply",
+    "count": 1
+  }
+}

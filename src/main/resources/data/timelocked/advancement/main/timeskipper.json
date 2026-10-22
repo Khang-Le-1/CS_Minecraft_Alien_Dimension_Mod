@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:timeskipper_nav_console"
+  },
+  "title": {
+   "translate": "advancements.timelocked.timeskipper.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.timeskipper.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/shooting_stars",
+ "rewards": {
+  "experience": 40
+ }
+}

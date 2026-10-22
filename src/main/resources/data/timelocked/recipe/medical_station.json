@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "ABA",
+    "ISI"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "A": {
+      "item": "timelocked:bandage"
+    },
+    "B": {
+      "item": "timelocked:circuit_board"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "timelocked:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "timelocked:medical_station",
+    "count": 1
+  }
+}

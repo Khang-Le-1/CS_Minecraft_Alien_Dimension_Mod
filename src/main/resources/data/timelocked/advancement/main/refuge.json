@@ -1,0 +1,36 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:celestial_masonry"
+  },
+  "title": {
+   "translate": "advancements.timelocked.refuge.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.refuge.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "refuge": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "biomes": "timelocked:celestial_refuge"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "parent": "timelocked:main/into_the_fragment"
+}

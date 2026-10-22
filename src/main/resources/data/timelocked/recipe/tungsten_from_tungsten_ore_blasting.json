@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "timelocked:tungsten_ore"
+  },
+  "result": {
+    "id": "timelocked:tungsten_ingot"
+  },
+  "experience": 0.7,
+  "cookingtime": 100
+}

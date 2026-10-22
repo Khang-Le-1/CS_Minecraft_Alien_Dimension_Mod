@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:cobaltite_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:cobaltite_ingot",
+    "count": 9
+  }
+}

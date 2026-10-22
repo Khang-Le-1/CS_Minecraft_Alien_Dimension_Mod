@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["SSS", "GRG", "SSS"], "key": {"S": {"item": "timelocked:steel_ingot"}, "G": {"item": "minecraft:glass"}, "R": {"item": "minecraft:redstone"}}, "result": {"id": "timelocked:emergency_ceiling_light", "count": 6}}

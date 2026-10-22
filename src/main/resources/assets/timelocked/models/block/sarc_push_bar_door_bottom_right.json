@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/door_bottom_right", "textures": {"top": "timelocked:block/sarc_push_bar_door_top", "bottom": "timelocked:block/sarc_push_bar_door_bottom"}, "render_type": "minecraft:cutout"}

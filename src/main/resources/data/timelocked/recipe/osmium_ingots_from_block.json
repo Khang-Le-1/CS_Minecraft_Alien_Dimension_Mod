@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:osmium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:osmium_ingot",
+    "count": 9
+  }
+}

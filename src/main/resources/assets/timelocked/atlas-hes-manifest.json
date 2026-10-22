@@ -1,0 +1,35 @@
+{
+  "display_name": "ATLAS Hazardous Environments System",
+  "version": "0.5.6",
+  "variants": [
+    "standard",
+    "everleigh"
+  ],
+  "standard_ids": [
+    "sarc_space_helmet",
+    "sarc_space_chestplate",
+    "sarc_space_leggings",
+    "sarc_space_boots"
+  ],
+  "personal_ids": [
+    "everleigh_atlas_helmet",
+    "everleigh_atlas_chestplate",
+    "everleigh_atlas_leggings",
+    "everleigh_atlas_boots"
+  ],
+  "standard_acquisition": "existing titanium plates + insulation fabric crafting recipes",
+  "personal_acquisition": "Creative/operator only; no survival recipe or generated loot",
+  "geometry_boxes": 63,
+  "native_uv_size": [
+    256,
+    256
+  ],
+  "atlas_pixels": [
+    512,
+    512
+  ],
+  "emissive_accents": "dedicated fullbright child rendering, no bloom effect",
+  "visor": "cutout opening; not a translucent glass shader",
+  "functional_hazard_or_life_support": false,
+  "hair_tails_anatomy_included": false
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "timelocked:spore_stem",
+    "timelocked:celestial_bark",
+    "timelocked:herbalist_bench",
+    "timelocked:crystal_shaping_bench",
+    "timelocked:cultivation_table",
+    "timelocked:celestial_hearth",
+    "timelocked:attunement_altar",
+    "timelocked:warden_desk",
+    "timelocked:celestial_medical_station"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SCS",
+    "IMI",
+    "SRS"
+  ],
+  "key": {
+    "S": {
+      "item": "timelocked:steel_ingot"
+    },
+    "C": {
+      "item": "timelocked:circuit_board"
+    },
+    "I": {
+      "item": "timelocked:cast_iron_ingot"
+    },
+    "M": {
+      "item": "minecraft:minecart"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "timelocked:tram_deployment",
+    "count": 1
+  }
+}

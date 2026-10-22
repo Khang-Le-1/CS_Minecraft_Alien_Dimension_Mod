@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:moonbreath_lantern"
+  },
+  "title": {
+   "translate": "advancements.timelocked.audience_with_luna.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.audience_with_luna.description"
+  },
+  "frame": "goal",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/one_small_step",
+ "rewards": {
+  "experience": 50
+ }
+}

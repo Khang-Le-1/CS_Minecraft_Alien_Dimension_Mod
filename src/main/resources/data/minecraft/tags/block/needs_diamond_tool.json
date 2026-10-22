@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "timelocked:ardanium_ore",
+    "timelocked:orithichalite_ore",
+    "timelocked:arthilite_ore",
+    "timelocked:adamantite_ore",
+    "timelocked:vibranite_ore",
+    "timelocked:aetherite_ore",
+    "timelocked:celestrium_ore",
+    "timelocked:luminite_ore",
+    "timelocked:necronium_ore",
+    "timelocked:solarium_ore",
+    "timelocked:ecliptite_ore",
+    "timelocked:neutronium_ore",
+    "timelocked:gravitite_ore",
+    "timelocked:chronotite_ore",
+    "timelocked:aetherium_ore",
+    "timelocked:station_monitor_pedestal"
+  ]
+}

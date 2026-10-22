@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "timelocked:celestrium_block"
+    }
+  ],
+  "result": {
+    "id": "timelocked:celestrium_ingot",
+    "count": 9
+  }
+}

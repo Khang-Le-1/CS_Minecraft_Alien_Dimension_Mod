@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/timeskipper_boarding_ramp"
+    },
+    "facing=east": {
+      "model": "timelocked:block/timeskipper_boarding_ramp",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/timeskipper_boarding_ramp",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/timeskipper_boarding_ramp",
+      "y": 270
+    }
+  }
+}

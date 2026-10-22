@@ -1,0 +1,1 @@
+{"variants": {"open=false": {"model": "timelocked:block/tram_clearance_interlock"}, "open=true": {"model": "timelocked:block/tram_clearance_interlock_open"}}}

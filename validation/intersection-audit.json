@@ -1,0 +1,53 @@
+{
+  "version": "0.8.9.14",
+  "walkway_borders": {
+    "x": [
+      73,
+      85
+    ],
+    "z": [
+      265,
+      280
+    ]
+  },
+  "intersection_center_xz": [
+    79.5,
+    273.0
+  ],
+  "medallion_center_xz": [
+    79.5,
+    273.5
+  ],
+  "logo_block_bounds_center_xz": [
+    79.0,
+    273.5
+  ],
+  "assembly_shift_xyz": [
+    0,
+    0,
+    12
+  ],
+  "medallion_shift_xyz": [
+    0,
+    0,
+    16
+  ],
+  "assembly_blocks": 735,
+  "logo_blocks": 588,
+  "medallion_footprint_blocks": 231,
+  "changed_block_states": 1909,
+  "changed_templates": [
+    "x02_y00_z07.nbt",
+    "x02_y00_z08.nbt"
+  ],
+  "changed_template_original_hashes": {
+    "x02_y00_z07.nbt": "6214c22e5c81a33034ed4b39345d1a4bc63978afcbfdfa290aaf3a5acebb8406",
+    "x02_y00_z08.nbt": "dba36d9df8901404326f7dc70159a706a11dacfd8495f4eee04124dbe8150b90"
+  },
+  "arrival_cells_shifted": 591,
+  "status": "PASS",
+  "native_checks": 3582,
+  "release_build": "PASS",
+  "prior_anthem_and_timed_script": "unchanged",
+  "existing_facilities": "not relocated; fresh facility required"
+}

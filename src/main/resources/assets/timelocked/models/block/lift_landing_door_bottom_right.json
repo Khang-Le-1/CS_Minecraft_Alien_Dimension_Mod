@@ -1,0 +1,1 @@
+{"parent": "minecraft:block/door_bottom_right", "textures": {"top": "timelocked:block/powered_airlock_top", "bottom": "timelocked:block/powered_airlock_bottom"}, "render_type": "minecraft:cutout"}

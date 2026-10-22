@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": [" G ", "CSC", "SSS"], "key": {"G": {"item": "minecraft:glass"}, "C": {"item": "timelocked:circuit_board"}, "S": {"item": "timelocked:steel_ingot"}}, "result": {"id": "timelocked:sarc_workstation", "count": 1}}

@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "timelocked:asteroid_rock"
+  },
+  "title": {
+   "translate": "advancements.timelocked.rock_hopper.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.rock_hopper.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/first_jump",
+ "rewards": {
+  "experience": 20
+ }
+}

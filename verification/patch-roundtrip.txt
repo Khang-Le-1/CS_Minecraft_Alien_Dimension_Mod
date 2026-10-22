@@ -1,0 +1,4 @@
+PASS: patch from 0.8.9.19 reproduces full final source tree 83aa9548a1e8daccb033f0034a93b71f8842c0f1
+PASS: patch from 0.8.9.20 reproduces full final source tree 83aa9548a1e8daccb033f0034a93b71f8842c0f1
+PASS: patch from 0.8.9.21 reproduces full final source tree 83aa9548a1e8daccb033f0034a93b71f8842c0f1
+PASS: patch from 0.8.9.22 reproduces full final source tree 83aa9548a1e8daccb033f0034a93b71f8842c0f1

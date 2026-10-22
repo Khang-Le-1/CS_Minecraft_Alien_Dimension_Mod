@@ -1,0 +1,26 @@
+{
+ "display": {
+  "icon": {
+   "id": "minecraft:emerald"
+  },
+  "title": {
+   "translate": "advancements.timelocked.peer_review.title"
+  },
+  "description": {
+   "translate": "advancements.timelocked.peer_review.description"
+  },
+  "frame": "task",
+  "show_toast": true,
+  "announce_to_chat": true,
+  "hidden": false
+ },
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "timelocked:main/power_trip",
+ "rewards": {
+  "experience": 15
+ }
+}

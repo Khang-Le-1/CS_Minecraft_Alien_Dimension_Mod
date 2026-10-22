@@ -1,0 +1,34 @@
+{
+ "variants": {
+  "facing=north,pressed=false": {
+   "model": "timelocked:block/portal_controller"
+  },
+  "facing=north,pressed=true": {
+   "model": "timelocked:block/portal_controller_pressed"
+  },
+  "facing=east,pressed=false": {
+   "model": "timelocked:block/portal_controller",
+   "y": 90
+  },
+  "facing=east,pressed=true": {
+   "model": "timelocked:block/portal_controller_pressed",
+   "y": 90
+  },
+  "facing=south,pressed=false": {
+   "model": "timelocked:block/portal_controller",
+   "y": 180
+  },
+  "facing=south,pressed=true": {
+   "model": "timelocked:block/portal_controller_pressed",
+   "y": 180
+  },
+  "facing=west,pressed=false": {
+   "model": "timelocked:block/portal_controller",
+   "y": 270
+  },
+  "facing=west,pressed=true": {
+   "model": "timelocked:block/portal_controller_pressed",
+   "y": 270
+  }
+ }
+}

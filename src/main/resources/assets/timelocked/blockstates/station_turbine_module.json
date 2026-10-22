@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "timelocked:block/station_turbine_module"
+    },
+    "facing=east": {
+      "model": "timelocked:block/station_turbine_module",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "timelocked:block/station_turbine_module",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "timelocked:block/station_turbine_module",
+      "y": 270
+    }
+  }
+}
